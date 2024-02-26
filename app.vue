@@ -3,8 +3,12 @@
 </template>
 
 <script>
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-
-AOS.init()
 </script>
+
+<style>
+
+* {
+font-family: "K2D";
+}
+
+</style>

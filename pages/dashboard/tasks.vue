@@ -1,3 +1,3 @@
 <template>
-  <DashboardTasksView/>
+  <DashboardViewsTasks/>
 </template>

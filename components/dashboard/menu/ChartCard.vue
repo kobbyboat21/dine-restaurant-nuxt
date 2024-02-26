@@ -15,7 +15,7 @@ defineProps({
   <p class="font-bold text-l text-green-400">{{ type }}</p>
     <p class="mt-2"> Most Ordered {{meal}} Meal </p>
     <p> This Year </p>
-  <DashboardBarChart/>
+  <DashboardUtilsChartsBar/>
 </UCard>
 
 </template>

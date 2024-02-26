@@ -1,3 +1,3 @@
 <template>
-  <DashboardInventoryView/>
+  <DashboardViewsInventory/>
 </template>

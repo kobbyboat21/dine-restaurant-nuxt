@@ -49,6 +49,21 @@ const columns = [{
 
 ]
 
+const mobile_columns = [{
+
+  key: 'id',
+  label: 'ID'
+}, {
+  key: 'priority',
+  label: 'Priority',
+}, {
+  key: 'employee',
+  label: 'Assigned to',
+}, {
+  key: 'edit',
+  label: 'Edit',
+}]
+
 const tasks = [{
   
   id: 1,
@@ -77,15 +92,22 @@ const selected = ref([tasks[1]])
 
 <template>
   <div>
-  <UContainer class="grid grid-cols-2 mt-8 " >
-      <DashboardBookingsStatusCard value=12 icon="i-heroicons-book-open" type="New Tasks" />
-      <DashboardBookingsStatusCard value=1 icon="i-heroicons-academic-cap" type="New Learning Modules" />
-  </UContainer>
-  <UContainer class="grid grid-cols-2 mb-8 ">
-      <DashboardBookingsStatusCard value=19 icon="i-heroicons-book-open" type="Completed Tasks" />
-      <DashboardBookingsStatusCard value=0 icon="i-heroicons-academic-cap" type="Overdue Learning Modules" />
-  </UContainer>
-  <DashboardTasksDataTable v-model="selected" :columns='columns' :rows='tasks'/>
+  <div class="grid grid-cols-1 sm:grid-cols-2 my-5 " >
+      <DashboardBookingsStatusCard class="my-3 sm:my-0" value=12 icon="i-heroicons-book-open" type="New Tasks" data-aos="fade-right"/>
+      <DashboardBookingsStatusCard value=1 icon="i-heroicons-academic-cap" type="New Learning Modules" data-aos="fade-left"/>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 my-5 ">
+      <DashboardBookingsStatusCard class="my-3 sm:my-0" value=19 icon="i-heroicons-book-open" type="Completed Tasks" data-aos="fade-right"/>
+      <DashboardBookingsStatusCard value=0 icon="i-heroicons-academic-cap" type="Overdue Learning Modules" data-aos="fade-left"/>
+  </div>
+  <UCard>
+  <div v-if="$viewport.isLessThan('tablet')">
+  <DashboardTasksDataTable v-model="selected" :columns='mobile_columns' :rows='tasks' data-aos="flip-up" class="mt-4"/>
+  </div>
+  <div v-else>
+  <DashboardTasksDataTable v-model="selected" :columns='columns' :rows='tasks' data-aos="flip-up" class="mt-4"/>
+  </div>
+  </UCard>
   </div>
   <!--  ^ change menu attribute to use JS props ":menu" to pass through the menu data rather than a string of "breakfast_meals"-->
   <!--  pass through columns object with JS props ":columns"-->

@@ -15,10 +15,10 @@ const cards = [{
 <UTabs :items="cards" :default-index="0" class="w-full">
   <template #item="{item}">
     <div v-if="item.label === 'Today'">
-      <DashboardLineChart class="mt-2"/>
+      <DashboardUtilsChartsLine class="mt-2"/>
     </div>
     <div v-if="item.label === 'This Week'">
-      <DashboardLineChart class="mt-2" />
+      <DashboardUtilsChartsLine class="mt-2" />
     </div>
   </template>
 </UTabs>

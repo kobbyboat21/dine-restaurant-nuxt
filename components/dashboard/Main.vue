@@ -53,32 +53,25 @@ const columns = [{
 
 ]
 
-const breakfast_meals = [{
-  id: 1,
-  name: 'Avocado Toast with Smoked Salmon',
-  price: '$17',
-  description: 'Sliced avocado on toasted artisanal bread, topped with smoked salmon, poached eggs, and a drizzle of lemon-infused hollandaise sauce. Served with a side of mixed greens.',
-  image: 'https://www.seriouseats.com/thmb/lVZskabVRdVqcJIUeD3OJlD-mI0=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2016__05__20160502-avocado-toast-vicky-wasik-salmon-8-a7a4152ebdf3456a9df61ee9dd1179d6.jpg',
-  ingredients: 'Artisanal bread, Avocado, Smoked salmon, Eggs, Hollandaise sauce, Mixed greens',
-  section: 'Breakfast'
+const mobile_columns = [{
+  key: 'name',
+  label: 'Meal Name',
+  sortable: true
 }, {
-  id: 2,
-  name: 'Eggs Benedict Trio',
-  price: '$16',
-  description: 'Three variations of eggs Benedict - classic with Canadian bacon, spinach and mushroom with truffle hollandaise, and smoked salmon with dill hollandaise. Accompanied by crispy hash browns.',
-  image: 'https://ik.imagekit.io/munchery/blog/tr:w-768/perfect-eggs-benedict-3-ways-and-the-best-breakfast-potatoes-on-the-side.jpeg',
-  ingredients: 'English muffins, Canadian bacon, Spinach, Mushrooms, Truffle hollandaise sauce, Smoked salmon, Poached eggs, Hash browns',
-  section: 'Breakfast'
+  key: 'price',
+  label: 'Meal Price',
+  sortable: true
 }, {
-  id: 3,
-  name: 'Chia Seed Pudding Parfait',
-  price: '$14',
-  description: 'Layers of vanilla-infused chia seed pudding, fresh mixed berries, and granola, topped with a dollop of Greek yogurt. Served with a side of honey and a selection of tropical fruits.',
-  image: 'https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2014/11/Pomegranate-Chia-Pudding-Parfait-5.jpg',
-  ingredients: 'Chia seeds, Vanilla-infused almond milk, Mixed berries, Granola, Greek yogurt, Honey, Tropical fruits',
-  section: 'Dessert'
-}]
+  key: 'ingredients',
+  label: 'More',
+}, {
+  key: 'edit',
+  label: 'Edit',
+}, {
+  key: 'delete',
+  label: 'Delete',
 
+}]
 
 
 const lunch_meals = [{
@@ -135,6 +128,8 @@ const dinner_meals = [{
 
 const isOpen = ref(false)
 
+import { useNuxtApp } from '#app'
+const {$viewport} = useNuxtApp()
 </script>
 
 
@@ -142,16 +137,40 @@ const isOpen = ref(false)
  <!-- You'd make a new component called DashboardView which is where the grids would be done -->
   <!-- DashboardSidebar would span 1 column, DashboardMain would span 11 columns inside the component above ^^^^ -->
   <div>
-  <UContainer class="grid grid-cols-3 my-5">
-      <DashboardStatusCard value=34 icon="i-heroicons-rectangle-stack" type="Tasks" data-aos="fade-right"/>
-      <DashboardStatusCard value=29 icon="i-heroicons-book-open" type="Bookings" />
-      <DashboardStatusCard value=54 icon="i-heroicons-archive-box" type="Inventory" />
+  <UContainer class="grid grid-cols-1 sm:grid-cols-3 my-5">
+      <DashboardStatusCard class="my-3 sm:my-0" value=34 icon="i-heroicons-rectangle-stack" type="Tasks" data-aos="fade-right"/>
+      <DashboardStatusCard class="my-3 sm:my-0" value=29 icon="i-heroicons-book-open" type="Bookings" data-aos="fade-down"/>
+      <DashboardStatusCard class="my-3 sm:my-0" value=54 icon="i-heroicons-archive-box" type="Inventory" data-aos="fade-left"/>
   </UContainer>
-  <UContainer class="grid grid-cols-3 my-5">
-      <DashboardChartCard value=19 icon="i-heroicons-rectangle-stack" type="Tasks" />
-      <DashboardChartCard value=12 icon="i-heroicons-book-open" type="Bookings" />
-      <DashboardChartCard value=37 icon="i-heroicons-archive-box" type="Inventory" />
+  <UContainer class="grid grid-cols-1 sm:grid-cols-3 my-5">
+      <DashboardChartCard value=19 icon="i-heroicons-rectangle-stack" type="Tasks" data-aos="fade-right"/>
+      <DashboardChartCard class="my-3 sm:my-0" value=12 icon="i-heroicons-book-open" type="Bookings" data-aos="fade-down"/>
+      <DashboardChartCard class="my-3 sm:my-0" value=37 icon="i-heroicons-archive-box" type="Inventory" data-aos="fade-left"/>
   </UContainer>
+  <div v-if="$viewport.isLessThan('tablet')" class="hidden my-5">
+  <UContainer class="grid grid-cols-2">
+      <UCard class="mx-3 text-center" data-aos="flip-right">
+        <p> Total Resevations </p>
+        <DashboardUtilsChartsPie/>
+      </UCard>
+      <UCard class="mx-3 text-center" data-aos="fade-left">
+        <p> Total Revenue </p>
+        <DashboardUtilsChartsPie/>
+      </UCard>
+  </UContainer>
+  </div>
+  <div v-else class="visible">
+  <UContainer class="grid grid-cols-2">
+      <UCard class="mx-3 text-center" data-aos="flip-right">
+        <p> Total Resevations </p>
+        <DashboardUtilsChartsPie/>
+      </UCard>
+      <UCard class="mx-3 text-center" data-aos="fade-left">
+        <p> Total Revenue </p>
+        <DashboardUtilsChartsPie/>
+      </UCard>
+  </UContainer>
+  </div>
   <!--  ^ change menu attribute to use JS props ":menu" to pass through the menu data rather than a string of "breakfast_meals"-->
   <!--  pass through columns object with JS props ":columns"-->
 

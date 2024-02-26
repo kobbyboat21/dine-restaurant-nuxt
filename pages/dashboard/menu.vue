@@ -1,3 +1,3 @@
 <template>
-  <DashboardMenuView/>
-</template>
+  <DashboardViewsMenu/>
+</template> 

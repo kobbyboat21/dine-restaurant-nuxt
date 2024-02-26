@@ -16,14 +16,14 @@ const selected = ref([status[0]])
       <UButton 
         icon="i-heroicons-pencil-square"
         size="sm"
-        color="black"
+        color="blue"
         variant="ghost" />
     </template>
     <template #delete-data>
       <UButton 
         icon="i-heroicons-trash"
         size="sm"
-        color="black"
+        color="red"
         variant="ghost" />
     </template>
     <template #employee-data="{row}">
