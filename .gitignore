@@ -6,17 +6,32 @@
 .cache
 dist
 
+src/.output
+src/.data
+src/.nuxt
+src/.nitro
+src/.cache
+src/dist
+
+
 # Node dependencies
 node_modules
+src/node_modules
 
 # Logs
 logs
+src/logs
 *.log
 
 # Misc
 .DS_Store
+src/.DS_Store
 
 # Local env files
 .env
 .env.*
 !.env.example
+
+src/.env
+src/.env.*
+src/!.env.example
