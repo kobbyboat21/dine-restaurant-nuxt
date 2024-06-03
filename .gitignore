@@ -12,8 +12,6 @@ src/.nuxt
 src/.nitro
 src/.cache
 src/dist
-
-
 # Node dependencies
 node_modules
 src/node_modules
@@ -35,3 +33,55 @@ src/.DS_Store
 src/.env
 src/.env.*
 src/!.env.example
+
+
+# -------------------------------- FLASK
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Editor directories and files
+.vscode/
+.idea/
+
+# Flask stuff
+instance/
+.webassets-cache/
+
+# Miscellaneous
+*.log
+*.pot
+*.pyc
+__pycache__/
+
+# Cache files in all directories
+**/__pycache__/
+**/*.pyc
+
+# Ignore cache directories
+__cache__/
+.cache/
+
