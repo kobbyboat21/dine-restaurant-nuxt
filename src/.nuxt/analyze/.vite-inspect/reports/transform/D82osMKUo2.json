@@ -1,0 +1,222 @@
+{
+  "resolvedId": "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/stores/breakfast_menu.ts",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { defineStore } from \"pinia\";\n\nexport const useBreakfastStore = defineStore('breakfastStore', {\n  state: () => ({\n\t\t// List of all meals\n\t\tbreakfast_meals: [] \n\t}),\n  actions: {\n \n  async getBreakfast() {\n    let data = await $fetch(\"/api/menus/breakfast\") // meals gotten from the database\n      //\n  // 2 -- Use Javascript For - In Loop on data array to set breakfast_meals to contain data's contents\n    this.breakfast_meals = data\n    return data\n  },\n\n  async createBreakfastMeal(meal) {\n    // Get Auto-increment ID\n    let id = this.breakfast_meals.length + 1\n    // Assign ID to meal\n    meal.id = id\n    // POST Request\n    await $fetch( \"/api/menus/breakfast/create\" ,  {\n        // $fetch sends request to api which sends it to database to add the new breakfast meal\n      method: \"POST\", //\"POST\" is an http method used to send data, in this case, to the API\n      body: meal\n    }\n    )\n    this.breakfast_meals.push(meal)\n    console.log(\"Creating breakfast meal for the following meal:\")\n    console.log(meal)\n  },\n\n  async editBreakfast(meal) {\n    let found = this.breakfast_meals.find(p => p.id === meal.id)\n    if (found) {\n      console.log('edit' + found.name)\n      found.name = meal.name\n      found.price = meal.price\n      found.description = meal.description\n      found.ingredients = meal.ingredients\n      found.section = meal.section\n      let id = found._id\n\n      let edit_endpoint = `/api/menus/breakfast/${id}`\n\n      await $fetch(edit_endpoint, {\n          method: \"PUT\", // \"PUT\" as well is an http method that sends data to be replaced/ updated\n          body: found\n        }\n        )\n    }\n\n      \n  },\n\n  async deleteBreakfast(meal) {\n    let foundIndex = this.breakfast_meals.findIndex(p => p.id === meal.id)\n    let found = this.breakfast_meals.find(p => p.id === meal.id)\n    console.log('delete' + meal.name)\n    if (foundIndex !== -1) this.breakfast_meals.splice(foundIndex, 1)\n\n    let id = found._id\n\n    let delete_endpoint = `/api/menus/breakfast/${id}`\n      \n    await $fetch(delete_endpoint, {\n      method: \"DELETE\",\n      })\n\n  },\n\n}\n}\n) /* \n    id: 1,\n    name: 'Avocado Toast with Smoked Salmon',\n    price: '$17',\n    description:'Sliced avocadp on toasted artisanal bread, topped with smoked salmon, poached eggs, and a drizzle of lemon-infused hollandaise sauce. Served with a side of mixed greens.',\n    image: 'https://www.seriouseats.com/thmb/lVZskabVRdVqcJIUeD3OJlD-mI0=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2016__05__20160502-avocado-toast-vicky-wasik-salmon-8-a7a4152ebdf3456a9df61ee9dd1179d6.jpg',\n    ingredients: 'Artisanal bread, Avocado, Smoked salmon, Eggs, Hollandaise sauce, Mixed greens',\n    section: 'Main'\n  }, \n    {\n    id: 2,\n    name: 'Eggs Benedict Trio',\n    price: '$16',\n    description: 'Three variations of eggs Benedict - classic with Canadian bacon, spinach and mushroom with truffle hollandaise, and smoked salmon with dill hollandaise. Accompanied by crispy hash browns.',\n    image: 'https://ik.imagekit.io/munchery/blog/tr:w-768/perfect-eggs-benedict-3-ways-and-the-best-breakfast-potatoes-on-the-side.jpeg',\n    ingredients: 'English muffins, Canadian bacon, Spinach, Mushrooms, Truffle hollandaise sauce, Smoked salmon, Poached eggs, Hash browns',\n    section: 'Main'\n  }, \n    {\n    id: 3,\n    name: 'Chia Seed Pudding Parfait',\n    price: '$14',\n    description: 'Layers of vanilla-infused chia seed pudding, fresh mixed berries, and granola, topped with a dollop of Greek yogurt. Served with a side of honey and a selection of tropical fruits.',\n    image: 'https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2014/11/Pomegranate-Chia-Pudding-Parfait-5.jpg',\n    ingredients: 'Chia seeds, Vanilla-infused almond milk, Mixed berries, Granola, Greek yogurt, Honey, Tropical fruits',\n    section: Side\n  }]) */\n \n",
+      "start": 1717261248090,
+      "end": 1717261248495,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1717261248495,
+      "end": 1717261248495,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1717261248495,
+      "end": 1717261248496,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1717261248496,
+      "end": 1717261248496,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1717261248496,
+      "end": 1717261248496,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineStore } from \"pinia\";\nexport const useBreakfastStore = defineStore(\n  \"breakfastStore\",\n  {\n    state: () => ({\n      // List of all meals\n      breakfast_meals: []\n    }),\n    actions: {\n      async getBreakfast() {\n        let data = await $fetch(\"/api/menus/breakfast\");\n        this.breakfast_meals = data;\n        return data;\n      },\n      async createBreakfastMeal(meal) {\n        let id = this.breakfast_meals.length + 1;\n        meal.id = id;\n        await $fetch(\n          \"/api/menus/breakfast/create\",\n          {\n            // $fetch sends request to api which sends it to database to add the new breakfast meal\n            method: \"POST\",\n            //\"POST\" is an http method used to send data, in this case, to the API\n            body: meal\n          }\n        );\n        this.breakfast_meals.push(meal);\n        console.log(\"Creating breakfast meal for the following meal:\");\n        console.log(meal);\n      },\n      async editBreakfast(meal) {\n        let found = this.breakfast_meals.find((p) => p.id === meal.id);\n        if (found) {\n          console.log(\"edit\" + found.name);\n          found.name = meal.name;\n          found.price = meal.price;\n          found.description = meal.description;\n          found.ingredients = meal.ingredients;\n          found.section = meal.section;\n          let id = found._id;\n          let edit_endpoint = `/api/menus/breakfast/${id}`;\n          await $fetch(\n            edit_endpoint,\n            {\n              method: \"PUT\",\n              // \"PUT\" as well is an http method that sends data to be replaced/ updated\n              body: found\n            }\n          );\n        }\n      },\n      async deleteBreakfast(meal) {\n        let foundIndex = this.breakfast_meals.findIndex((p) => p.id === meal.id);\n        let found = this.breakfast_meals.find((p) => p.id === meal.id);\n        console.log(\"delete\" + meal.name);\n        if (foundIndex !== -1)\n          this.breakfast_meals.splice(foundIndex, 1);\n        let id = found._id;\n        let delete_endpoint = `/api/menus/breakfast/${id}`;\n        await $fetch(delete_endpoint, {\n          method: \"DELETE\"\n        });\n      }\n    }\n  }\n);\n",
+      "start": 1717261248496,
+      "end": 1717261248541,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/stores/breakfast_menu.ts"
+        ],
+        "sourcesContent": [
+          "import { defineStore } from \"pinia\";\n\nexport const useBreakfastStore = defineStore('breakfastStore', {\n  state: () => ({\n\t\t// List of all meals\n\t\tbreakfast_meals: [] \n\t}),\n  actions: {\n \n  async getBreakfast() {\n    let data = await $fetch(\"/api/menus/breakfast\") // meals gotten from the database\n      //\n  // 2 -- Use Javascript For - In Loop on data array to set breakfast_meals to contain data's contents\n    this.breakfast_meals = data\n    return data\n  },\n\n  async createBreakfastMeal(meal) {\n    // Get Auto-increment ID\n    let id = this.breakfast_meals.length + 1\n    // Assign ID to meal\n    meal.id = id\n    // POST Request\n    await $fetch( \"/api/menus/breakfast/create\" ,  {\n        // $fetch sends request to api which sends it to database to add the new breakfast meal\n      method: \"POST\", //\"POST\" is an http method used to send data, in this case, to the API\n      body: meal\n    }\n    )\n    this.breakfast_meals.push(meal)\n    console.log(\"Creating breakfast meal for the following meal:\")\n    console.log(meal)\n  },\n\n  async editBreakfast(meal) {\n    let found = this.breakfast_meals.find(p => p.id === meal.id)\n    if (found) {\n      console.log('edit' + found.name)\n      found.name = meal.name\n      found.price = meal.price\n      found.description = meal.description\n      found.ingredients = meal.ingredients\n      found.section = meal.section\n      let id = found._id\n\n      let edit_endpoint = `/api/menus/breakfast/${id}`\n\n      await $fetch(edit_endpoint, {\n          method: \"PUT\", // \"PUT\" as well is an http method that sends data to be replaced/ updated\n          body: found\n        }\n        )\n    }\n\n      \n  },\n\n  async deleteBreakfast(meal) {\n    let foundIndex = this.breakfast_meals.findIndex(p => p.id === meal.id)\n    let found = this.breakfast_meals.find(p => p.id === meal.id)\n    console.log('delete' + meal.name)\n    if (foundIndex !== -1) this.breakfast_meals.splice(foundIndex, 1)\n\n    let id = found._id\n\n    let delete_endpoint = `/api/menus/breakfast/${id}`\n      \n    await $fetch(delete_endpoint, {\n      method: \"DELETE\",\n      })\n\n  },\n\n}\n}\n) /* \n    id: 1,\n    name: 'Avocado Toast with Smoked Salmon',\n    price: '$17',\n    description:'Sliced avocadp on toasted artisanal bread, topped with smoked salmon, poached eggs, and a drizzle of lemon-infused hollandaise sauce. Served with a side of mixed greens.',\n    image: 'https://www.seriouseats.com/thmb/lVZskabVRdVqcJIUeD3OJlD-mI0=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2016__05__20160502-avocado-toast-vicky-wasik-salmon-8-a7a4152ebdf3456a9df61ee9dd1179d6.jpg',\n    ingredients: 'Artisanal bread, Avocado, Smoked salmon, Eggs, Hollandaise sauce, Mixed greens',\n    section: 'Main'\n  }, \n    {\n    id: 2,\n    name: 'Eggs Benedict Trio',\n    price: '$16',\n    description: 'Three variations of eggs Benedict - classic with Canadian bacon, spinach and mushroom with truffle hollandaise, and smoked salmon with dill hollandaise. Accompanied by crispy hash browns.',\n    image: 'https://ik.imagekit.io/munchery/blog/tr:w-768/perfect-eggs-benedict-3-ways-and-the-best-breakfast-potatoes-on-the-side.jpeg',\n    ingredients: 'English muffins, Canadian bacon, Spinach, Mushrooms, Truffle hollandaise sauce, Smoked salmon, Poached eggs, Hash browns',\n    section: 'Main'\n  }, \n    {\n    id: 3,\n    name: 'Chia Seed Pudding Parfait',\n    price: '$14',\n    description: 'Layers of vanilla-infused chia seed pudding, fresh mixed berries, and granola, topped with a dollop of Greek yogurt. Served with a side of honey and a selection of tropical fruits.',\n    image: 'https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2014/11/Pomegranate-Chia-Pudding-Parfait-5.jpg',\n    ingredients: 'Chia seeds, Vanilla-infused almond milk, Mixed berries, Granola, Greek yogurt, Honey, Tropical fruits',\n    section: Side\n  }]) */\n \n"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB;AAErB,aAAM,oBAAoB;AAAA,EAAY;AAAA,EAAkB;AAAA,IAC7D,OAAO,OAAO;AAAA;AAAA,MAEd,iBAAiB,CAAC;AAAA,IACnB;AAAA,IACC,SAAS;AAAA,MAET,MAAM,eAAe;AACnB,YAAI,OAAO,MAAM,OAAO,sBAAsB;AAG9C,aAAK,kBAAkB;AACvB,eAAO;AAAA,MACT;AAAA,MAEA,MAAM,oBAAoB,MAAM;AAE9B,YAAI,KAAK,KAAK,gBAAgB,SAAS;AAEvC,aAAK,KAAK;AAEV,cAAM;AAAA,UAAQ;AAAA,UAAiC;AAAA;AAAA,YAE7C,QAAQ;AAAA;AAAA,YACR,MAAM;AAAA,UACR;AAAA,QACA;AACA,aAAK,gBAAgB,KAAK,IAAI;AAC9B,gBAAQ,IAAI,iDAAiD;AAC7D,gBAAQ,IAAI,IAAI;AAAA,MAClB;AAAA,MAEA,MAAM,cAAc,MAAM;AACxB,YAAI,QAAQ,KAAK,gBAAgB,KAAK,OAAK,EAAE,OAAO,KAAK,EAAE;AAC3D,YAAI,OAAO;AACT,kBAAQ,IAAI,SAAS,MAAM,IAAI;AAC/B,gBAAM,OAAO,KAAK;AAClB,gBAAM,QAAQ,KAAK;AACnB,gBAAM,cAAc,KAAK;AACzB,gBAAM,cAAc,KAAK;AACzB,gBAAM,UAAU,KAAK;AACrB,cAAI,KAAK,MAAM;AAEf,cAAI,gBAAgB,wBAAwB,EAAE;AAE9C,gBAAM;AAAA,YAAO;AAAA,YAAe;AAAA,cACxB,QAAQ;AAAA;AAAA,cACR,MAAM;AAAA,YACR;AAAA,UACA;AAAA,QACJ;AAAA,MAGF;AAAA,MAEA,MAAM,gBAAgB,MAAM;AAC1B,YAAI,aAAa,KAAK,gBAAgB,UAAU,OAAK,EAAE,OAAO,KAAK,EAAE;AACrE,YAAI,QAAQ,KAAK,gBAAgB,KAAK,OAAK,EAAE,OAAO,KAAK,EAAE;AAC3D,gBAAQ,IAAI,WAAW,KAAK,IAAI;AAChC,YAAI,eAAe;AAAI,eAAK,gBAAgB,OAAO,YAAY,CAAC;AAEhE,YAAI,KAAK,MAAM;AAEf,YAAI,kBAAkB,wBAAwB,EAAE;AAEhD,cAAM,OAAO,iBAAiB;AAAA,UAC5B,QAAQ;AAAA,QACR,CAAC;AAAA,MAEL;AAAA,IAEF;AAAA,EACA;AACA;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1717261248541,
+      "end": 1717261248541,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1717261248541,
+      "end": 1717261248541,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1717261248541,
+      "end": 1717261248541,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1717261248541,
+      "end": 1717261248541,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261248541,
+      "end": 1717261248542,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1717261248542,
+      "end": 1717261248542,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1717261248542,
+      "end": 1717261248542,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1717261248542,
+      "end": 1717261248542,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261248542,
+      "end": 1717261248542,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1717261248543,
+      "end": 1717261248543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1717261248543,
+      "end": 1717261248543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1717261248543,
+      "end": 1717261248543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1717261248543,
+      "end": 1717261248543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1717261248543,
+      "end": 1717261248543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1717261248543,
+      "end": 1717261248543,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1717261248543,
+      "end": 1717261248543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1717261248543,
+      "end": 1717261248543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1717261248543,
+      "end": 1717261248543,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1717261248543,
+      "end": 1717261248543,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1717261248543,
+      "end": 1717261248548,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1717261248548,
+      "end": 1717261248548,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1717261248549,
+      "end": 1717261248549,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1717261248549,
+      "end": 1717261248549,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1717261248549,
+      "end": 1717261248549,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1717261248549,
+      "end": 1717261248549,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1717261248549,
+      "end": 1717261248549,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1717261248549,
+      "end": 1717261248550,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1717261248550,
+      "end": 1717261248550,
+      "order": "normal"
+    }
+  ]
+}

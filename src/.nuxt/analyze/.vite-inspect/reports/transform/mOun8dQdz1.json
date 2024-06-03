@@ -1,0 +1,215 @@
+{
+  "resolvedId": "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/LandingPage/section/allday.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div class=\"all-day-section-container\" v-bind:class=\"rootClassName\">\n    <div class=\"all-day-section-lunchslide\">\n      <div class=\"all-day-section-container1\">\n        <div class=\"all-day-section-lunchbutton\">\n          <span class=\"all-day-section-text\">\n            <span>\n              <span>All-day menu</span>\n              <br />\n              <span></span>\n            </span>\n          </span>\n          <button @click=\"gotoAllDayMenu\" type=\"button\" class=\"all-day-section-button button border border-2 border-red-400\">\n            All day menu\n          </button>\n        </div>\n        <div class=\"all-day-section-lunchmessage\" data-aos=\"fade-up\" data-aos-duration=\"1250\">\n          <div class=\"all-day-section-lunchmessage1\">\n            <span class=\"all-day-section-text05\">\n              <span class=\"all-day-section-text06\">\n                Our\n                <span v-html=\"rawgdxl\"></span>\n              </span>\n              <span class=\"all-day-section-text07\">all-day</span>\n              <span class=\"all-day-section-text08\">\n                menu is a testament to unwavering commitment, showcasing a\n                <span v-html=\"rawd2qa\"></span>\n              </span>\n              <span class=\"all-day-section-text09\">fusion</span>\n              <span class=\"all-day-section-text10\">\n                of global\n                <span v-html=\"rawpngl\"></span>\n              </span>\n              <span class=\"all-day-section-text11\">artisanal</span>\n              <span>craftsmanship.</span>\n            </span>\n          </div>\n        </div>\n        <img\n          alt=\"Rectangle82811\"\n          src=\"https://images.pexels.com/photos/6851931/pexels-photo-6851931.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2\"\n          class=\"all-day-section-rectangle8 aos-item\"\n          data-aos=\"flip-right\" data-aos-duration=\"1750\"\n        />\n        <div class=\"all-day-section-lunchbigtext\" data-aos=\"zoom-in-down\" data-aos-duration=\"1150\">\n          <div class=\"all-day-section-lunchbigtext1\">\n            <div class=\"all-day-section-lunchbigtext_timeless\">\n              <span class=\"all-day-section-text13\"> Timeless </span>\n            </div>\n            <div class=\"all-day-section-lunchbigtext_indulgence\">\n              <span class=\"all-day-section-text13\"> Indulgence </span>\n            </div>\n            <div class=\"all-day-section-lunchbigtext_alldaylong\">\n              <span class=\"all-day-section-text13\"> All day long </span>\n            </div>\n          </div>\n          <!--\n          <img\n            alt=\"timeicon1649\"\n            src=\"/external/timeicon1649-pzeq-300h.png\"\n            class=\"all-day-section-timeicon1\"\n          />\n-->\n          <UIcon name=\"i-bx-time-five\" \n            class=\"absolute z-20 left-[35rem] top-[7.5rem] w-[7rem] h-[7rem] text-red-100 text-opacity-30\"\n            data-aos=\"zoom-in-down\" data-aos-duration=\"1750\" dynamic />\n          <!--\n          <img\n            alt=\"hotbowlicon\"\n            src=\"/external/hot bowl icon.png\"\n            class=\"all-day-hotbowlicon1\"\n          />\n-->\n      </div>\n        <!--\n        <UIcon name=\"i-bx-bowl-hot\"  class=\"absolute left-[-35rem] top-[27.75rem] w-[40rem] h-[40rem] text-red-100 text-opacity-30\" data-aos=\"fade-down\" data-aos-duration=\"1150\" dynamic />\n-->\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  name: 'ALLDAYSECTION',\n  props: {\n    rootClassName: String,\n  },\n\n  methods: { \n    gotoAllDayMenu() {\n      this.$router.push('/menus/lunch');\n    }\n  },\n\n  data() {\n    return {\n      rawgdxl: ' ',\n      rawd2qa: ' ',\n      rawpngl: ' ',\n    }\n  },\n}\n</script>\n\n<style scoped>\n.all-day-section-container {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  position: relative;\n  align-items: flex-start;\n  flex-direction: column;\n}\n.all-day-section-lunchslide {\n  width: 100%;\n  height: 1024px;\n  display: flex;\n  overflow: hidden;\n  position: relative;\n  align-items: flex-start;\n  flex-shrink: 0;\n  background-image: linear-gradient(180deg, rgba(161, 153, 139, 1) 0%, rgba(148, 139, 161, 0.9635416865348816) 100%, rgba(233, 199, 149, 0) 100%);\n}\n.all-day-section-container1 {\n  top: 146px;\n  left: 0px;\n  right: 0px;\n  width: 1270.9999885559082px;\n  height: 781.9999847412109px;\n  margin: auto;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n}\n.all-day-section-ellipse2 {\n  left: 622.9999885559082px;\n  width: 382px;\n  bottom: 0px;\n  height: 337px;\n  position: absolute;\n}\n.all-day-section-lunchbutton {\n  top: 37rem;\n  left: 20.875rem;\n  width: 283px;\n  bottom: 101px;\n  height: 67px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.all-day-section-reservebutton {\n  top: -760.727294921875px;\n  left: -336.5px;\n  width: 283px;\n  height: 67px;\n  display: none;\n  position: absolute;\n}\n.all-day-section-text {\n  top: 7.90911865234375px;\n  left: 34.090911865234375px;\n  color: rgba(93, 80, 80, 1);\n  width: 257px;\n  height: auto;\n  margin: auto;\n  display: none;\n  position: absolute;\n  font-size: 36px;\n  font-style: Regular;\n  text-align: left;\n  font-family: K2D;\n  font-weight: 400;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n.all-day-section-button {\n  color: rgb(72,64,77);\n  width: 323px;\n  height: 67px;\n  font-size: 32px;\n  transition: 0.3s;\n  font-family: \"K2D\";\n  border-color: #665656;\n  border-width: 3px;\n  border-radius: 16px;\n  background-color: #9a919e;\n}\n.all-day-section-button:hover {\n  background-color: #b9aebe;\n}\n.all-day-section-lunchmessage {\n  top: 22.9rem;\n  left: 13.2rem;\n  width: 25.3rem;\n  height: 12.1rem;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n  background-color: rgba(189, 173, 173, 0.44999998807907104);\n}\n.all-day-section-lunchmessage1 {\n  top: 1.375rem;\n  left: 1.7rem;\n  width: 34.125rem;\n  height: 14.875rem;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.all-day-section-text05 {\n  color: rgb(72,64,77);\n  width: 22rem;\n  height: auto;\n  position: absolute;\n  font-size: 24px;\n  text-align: left;\n  font-family: K2D;\n  font-weight: 500;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n.all-day-section-text06 {\n  font-weight: 500;\n}\n.all-day-section-text07 {\n  font-weight: 700;\n}\n.all-day-section-text08 {\n  font-weight: 500;\n}\n.all-day-section-text09 {\n  font-weight: 700;\n}\n.all-day-section-text10 {\n  font-weight: 500;\n}\n.all-day-section-text11 {\n  font-weight: 700;\n}\n.all-day-section-rectangle8 {\n  top: 5rem;\n  left: 45rem;\n  width: 28.9rem;\n  height: 36.25rem;\n  position: absolute;\n}\n.all-day-section-lunchbigtext {\n  gap: 10px;\n  top: 0px;\n  left: 0px;\n  width: 724px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n}\n.all-day-section-lunchbigtext1 {\n  top: 126px;\n  left: 38px;\n  width: 734px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.all-day-section-lunchbigtext2 {\n  top: 0px;\n  left: 1rem;\n  width: 734px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.all-day-section-text13 {\n  color: rgb(72,64,77);\n  width: 734px;\n  height: auto;\n  position: absolute;\n  font-size: 64px;\n  font-style: Regular;\n  text-align: center;\n  font-family: Libre Baskerville;\n  font-weight: 400;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n.all-day-section-timeicon1 {\n  top: 2.4rem;\n  left: 31rem;\n  width: 10rem;\n  height: 10rem;\n  position: absolute;\n}\n\n.all-day-hotbowlicon1 {\n  top: 20rem;\n  left: -45rem;\n  position: absolute;\n  filter: opacity(30%);\n  width: 800px;\n  height: 800px;\n  visibility: hidden\n}\n.all-day-section-lunchbigtext_timeless {\n  top: 2rem;\n  left: -13rem;\n  width: 734px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.all-day-section-lunchbigtext_indulgence {\n  top: 2rem;\n  left: 4.3rem;\n  width: 734px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n\n.all-day-section-lunchbigtext_alldaylong {\n  top: 6rem;\n  left: 3.4rem;\n  width: 734px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n@media (max-width:479px) {\n\n.all-day-section-lunchbigtext1 {\n  top: 38rem;\n  left: 1.75rem;\n}\n\n.all-day-hotbowlicon1 {\n  top: 12rem;\n  left: -49rem;\n  position: absolute;\n  filter: opacity(40%);\n  width: 50rem;\n  height: 50rem;\n}\n\n.all-day-section-lunchslide {\n  top: 0rem;\n  width: 100%;\n  height: 1299px;\n  display: flex;\n  overflow: hidden;\n  position: relative;\n  align-items: flex-start;\n  flex-shrink: 0;\n  background-image: linear-gradient(180deg, rgba(161, 153, 139, 1) 0%, rgba(148, 139, 161, 0.9635416865348816) 100%, rgba(233, 199, 149, 0) 100%);\n}\n.all-day-section-rectangle8 {\n  top: -9rem;\n  right: 0px;\n  width: 478px;\n  height: 81vh;\n  left: 0rem;\n  z-index: 0;\n}\n.all-day-section-lunchbutton {\n  left: 2.8rem;\n  width: 28.2rem;\n  bottom: 13rem;\n  height: 67px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n  z-index: 10;\n  top: 60.5rem\n}\n\n.all-day-section-button {\n    width: 85%;\n    font-size: 20px;\n  }\n.all-day-section-lunchmessage {\n  top: 44rem;\n  left: 1.75rem;\n  width: 560px;\n  height: 235px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n  background-color: rgba(189, 173, 173, 0)\n}\n.all-day-section-text05 {\n  width: 385px;\n  height: auto;\n  position: absolute;\n  font-size: 1.25rem;\n  text-align: left;\n  font-family: K2D;\n  font-weight: 500;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n.all-day-section-text13 {\n  width: 734px;\n  height: auto;\n  position: absolute;\n  font-size: 2.85rem;\n  font-style: Regular;\n  text-align: center;\n  font-family: Libre Baskerville;\n  font-weight: 400;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n.all-day-section-lunchbigtext_timeless {\n  top: -1rem;\n  left: -18.5rem;\n  width: 734px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.all-day-section-lunchbigtext_indulgence {\n  top: -1rem;\n  left: -6.5rem;\n  width: 734px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n\n.all-day-section-lunchbigtext_alldaylong {\n  top: 2rem;\n  left: -4.5rem;\n  width: 734px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.all-day-section-timeicon1 {\n  top: -7rem;\n  left: 4.5rem;\n  width: 300px;\n  height: 300px;\n  position: absolute;\n}\n\n}\n</style>\n",
+      "start": 1717261247934,
+      "end": 1717261248444,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1717261248444,
+      "end": 1717261248444,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1717261248444,
+      "end": 1717261248444,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1717261248444,
+      "end": 1717261248444,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1717261248444,
+      "end": 1717261248444,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1717261248444,
+      "end": 1717261248444,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1717261248444,
+      "end": 1717261248444,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1717261248444,
+      "end": 1717261248444,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: 'ALLDAYSECTION',\n  props: {\n    rootClassName: String,\n  },\n\n  methods: { \n    gotoAllDayMenu() {\n      this.$router.push('/menus/lunch');\n    }\n  },\n\n  data() {\n    return {\n      rawgdxl: ' ',\n      rawd2qa: ' ',\n      rawpngl: ' ',\n    }\n  },\n}\n\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeClass as _normalizeClass, createStaticVNode as _createStaticVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-ee34b9f1\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"all-day-section-lunchslide\" }\nconst _hoisted_2 = { class: \"all-day-section-container1\" }\nconst _hoisted_3 = { class: \"all-day-section-lunchbutton\" }\nconst _hoisted_4 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", { class: \"all-day-section-text\" }, [\n  /*#__PURE__*/_createElementVNode(\"span\", null, [\n    /*#__PURE__*/_createElementVNode(\"span\", null, \"All-day menu\"),\n    /*#__PURE__*/_createElementVNode(\"br\"),\n    /*#__PURE__*/_createElementVNode(\"span\")\n  ])\n], -1))\nconst _hoisted_5 = {\n  class: \"all-day-section-lunchmessage\",\n  \"data-aos\": \"fade-up\",\n  \"data-aos-duration\": \"1250\"\n}\nconst _hoisted_6 = { class: \"all-day-section-lunchmessage1\" }\nconst _hoisted_7 = { class: \"all-day-section-text05\" }\nconst _hoisted_8 = { class: \"all-day-section-text06\" }\nconst _hoisted_9 = [\"innerHTML\"]\nconst _hoisted_10 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", { class: \"all-day-section-text07\" }, \"all-day\", -1))\nconst _hoisted_11 = { class: \"all-day-section-text08\" }\nconst _hoisted_12 = [\"innerHTML\"]\nconst _hoisted_13 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", { class: \"all-day-section-text09\" }, \"fusion\", -1))\nconst _hoisted_14 = { class: \"all-day-section-text10\" }\nconst _hoisted_15 = [\"innerHTML\"]\nconst _hoisted_16 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", { class: \"all-day-section-text11\" }, \"artisanal\", -1))\nconst _hoisted_17 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", null, \"craftsmanship.\", -1))\nconst _hoisted_18 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  alt: \"Rectangle82811\",\n  src: \"https://images.pexels.com/photos/6851931/pexels-photo-6851931.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2\",\n  class: \"all-day-section-rectangle8 aos-item\",\n  \"data-aos\": \"flip-right\",\n  \"data-aos-duration\": \"1750\"\n}, null, -1))\nconst _hoisted_19 = {\n  class: \"all-day-section-lunchbigtext\",\n  \"data-aos\": \"zoom-in-down\",\n  \"data-aos-duration\": \"1150\"\n}\nconst _hoisted_20 = /*#__PURE__*/_createStaticVNode(\"<div class=\\\"all-day-section-lunchbigtext1\\\" data-v-ee34b9f1><div class=\\\"all-day-section-lunchbigtext_timeless\\\" data-v-ee34b9f1><span class=\\\"all-day-section-text13\\\" data-v-ee34b9f1> Timeless </span></div><div class=\\\"all-day-section-lunchbigtext_indulgence\\\" data-v-ee34b9f1><span class=\\\"all-day-section-text13\\\" data-v-ee34b9f1> Indulgence </span></div><div class=\\\"all-day-section-lunchbigtext_alldaylong\\\" data-v-ee34b9f1><span class=\\\"all-day-section-text13\\\" data-v-ee34b9f1> All day long </span></div></div>\", 1)\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_UIcon = _resolveComponent(\"UIcon\")\n\n  return (_openBlock(), _createElementBlock(\"div\", {\n    class: _normalizeClass([\"all-day-section-container\", $props.rootClassName])\n  }, [\n    _createElementVNode(\"div\", _hoisted_1, [\n      _createElementVNode(\"div\", _hoisted_2, [\n        _createElementVNode(\"div\", _hoisted_3, [\n          _hoisted_4,\n          _createElementVNode(\"button\", {\n            onClick: _cache[0] || (_cache[0] = (...args) => ($options.gotoAllDayMenu && $options.gotoAllDayMenu(...args))),\n            type: \"button\",\n            class: \"all-day-section-button button border border-2 border-red-400\"\n          }, \" All day menu \")\n        ]),\n        _createElementVNode(\"div\", _hoisted_5, [\n          _createElementVNode(\"div\", _hoisted_6, [\n            _createElementVNode(\"span\", _hoisted_7, [\n              _createElementVNode(\"span\", _hoisted_8, [\n                _createTextVNode(\" Our \"),\n                _createElementVNode(\"span\", { innerHTML: $data.rawgdxl }, null, 8, _hoisted_9)\n              ]),\n              _hoisted_10,\n              _createElementVNode(\"span\", _hoisted_11, [\n                _createTextVNode(\" menu is a testament to unwavering commitment, showcasing a \"),\n                _createElementVNode(\"span\", { innerHTML: $data.rawd2qa }, null, 8, _hoisted_12)\n              ]),\n              _hoisted_13,\n              _createElementVNode(\"span\", _hoisted_14, [\n                _createTextVNode(\" of global \"),\n                _createElementVNode(\"span\", { innerHTML: $data.rawpngl }, null, 8, _hoisted_15)\n              ]),\n              _hoisted_16,\n              _hoisted_17\n            ])\n          ])\n        ]),\n        _hoisted_18,\n        _createElementVNode(\"div\", _hoisted_19, [\n          _hoisted_20,\n          _createVNode(_component_UIcon, {\n            name: \"i-bx-time-five\",\n            class: \"absolute z-20 left-[35rem] top-[7.5rem] w-[7rem] h-[7rem] text-red-100 text-opacity-30\",\n            \"data-aos\": \"zoom-in-down\",\n            \"data-aos-duration\": \"1750\",\n            dynamic: \"\"\n          })\n        ])\n      ])\n    ])\n  ], 2))\n}\n\nimport \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/LandingPage/section/allday.vue?vue&type=style&index=0&scoped=ee34b9f1&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-ee34b9f1\"]])",
+      "start": 1717261248444,
+      "end": 1717261248446,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1717261248446,
+      "end": 1717261248446,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261248446,
+      "end": 1717261248446,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1717261248447,
+      "end": 1717261248447,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1717261248447,
+      "end": 1717261248447,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1717261248447,
+      "end": 1717261248447,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261248447,
+      "end": 1717261248447,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1717261248447,
+      "end": 1717261248447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1717261248447,
+      "end": 1717261248447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1717261248447,
+      "end": 1717261248447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1717261248447,
+      "end": 1717261248447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1717261248447,
+      "end": 1717261248447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1717261248447,
+      "end": 1717261248447,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1717261248447,
+      "end": 1717261248447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1717261248447,
+      "end": 1717261248447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1717261248447,
+      "end": 1717261248447,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1717261248447,
+      "end": 1717261248447,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1717261248447,
+      "end": 1717261248449,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1717261248449,
+      "end": 1717261248449,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1717261248449,
+      "end": 1717261248449,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1717261248449,
+      "end": 1717261248449,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1717261248449,
+      "end": 1717261248449,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/node_modules/@nuxt/ui/dist/runtime/components/elements/Icon.vue\";\n\nconst _sfc_main = {\n  name: 'ALLDAYSECTION',\n  props: {\n    rootClassName: String,\n  },\n\n  methods: { \n    gotoAllDayMenu() {\n      this.$router.push('/menus/lunch');\n    }\n  },\n\n  data() {\n    return {\n      rawgdxl: ' ',\n      rawd2qa: ' ',\n      rawpngl: ' ',\n    }\n  },\n}\n\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeClass as _normalizeClass, createStaticVNode as _createStaticVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-ee34b9f1\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"all-day-section-lunchslide\" }\nconst _hoisted_2 = { class: \"all-day-section-container1\" }\nconst _hoisted_3 = { class: \"all-day-section-lunchbutton\" }\nconst _hoisted_4 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", { class: \"all-day-section-text\" }, [\n  /*#__PURE__*/_createElementVNode(\"span\", null, [\n    /*#__PURE__*/_createElementVNode(\"span\", null, \"All-day menu\"),\n    /*#__PURE__*/_createElementVNode(\"br\"),\n    /*#__PURE__*/_createElementVNode(\"span\")\n  ])\n], -1))\nconst _hoisted_5 = {\n  class: \"all-day-section-lunchmessage\",\n  \"data-aos\": \"fade-up\",\n  \"data-aos-duration\": \"1250\"\n}\nconst _hoisted_6 = { class: \"all-day-section-lunchmessage1\" }\nconst _hoisted_7 = { class: \"all-day-section-text05\" }\nconst _hoisted_8 = { class: \"all-day-section-text06\" }\nconst _hoisted_9 = [\"innerHTML\"]\nconst _hoisted_10 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", { class: \"all-day-section-text07\" }, \"all-day\", -1))\nconst _hoisted_11 = { class: \"all-day-section-text08\" }\nconst _hoisted_12 = [\"innerHTML\"]\nconst _hoisted_13 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", { class: \"all-day-section-text09\" }, \"fusion\", -1))\nconst _hoisted_14 = { class: \"all-day-section-text10\" }\nconst _hoisted_15 = [\"innerHTML\"]\nconst _hoisted_16 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", { class: \"all-day-section-text11\" }, \"artisanal\", -1))\nconst _hoisted_17 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", null, \"craftsmanship.\", -1))\nconst _hoisted_18 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  alt: \"Rectangle82811\",\n  src: \"https://images.pexels.com/photos/6851931/pexels-photo-6851931.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2\",\n  class: \"all-day-section-rectangle8 aos-item\",\n  \"data-aos\": \"flip-right\",\n  \"data-aos-duration\": \"1750\"\n}, null, -1))\nconst _hoisted_19 = {\n  class: \"all-day-section-lunchbigtext\",\n  \"data-aos\": \"zoom-in-down\",\n  \"data-aos-duration\": \"1150\"\n}\nconst _hoisted_20 = /*#__PURE__*/_createStaticVNode(\"<div class=\\\"all-day-section-lunchbigtext1\\\" data-v-ee34b9f1><div class=\\\"all-day-section-lunchbigtext_timeless\\\" data-v-ee34b9f1><span class=\\\"all-day-section-text13\\\" data-v-ee34b9f1> Timeless </span></div><div class=\\\"all-day-section-lunchbigtext_indulgence\\\" data-v-ee34b9f1><span class=\\\"all-day-section-text13\\\" data-v-ee34b9f1> Indulgence </span></div><div class=\\\"all-day-section-lunchbigtext_alldaylong\\\" data-v-ee34b9f1><span class=\\\"all-day-section-text13\\\" data-v-ee34b9f1> All day long </span></div></div>\", 1)\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_UIcon = __nuxt_component_0\n\n  return (_openBlock(), _createElementBlock(\"div\", {\n    class: _normalizeClass([\"all-day-section-container\", $props.rootClassName])\n  }, [\n    _createElementVNode(\"div\", _hoisted_1, [\n      _createElementVNode(\"div\", _hoisted_2, [\n        _createElementVNode(\"div\", _hoisted_3, [\n          _hoisted_4,\n          _createElementVNode(\"button\", {\n            onClick: _cache[0] || (_cache[0] = (...args) => ($options.gotoAllDayMenu && $options.gotoAllDayMenu(...args))),\n            type: \"button\",\n            class: \"all-day-section-button button border border-2 border-red-400\"\n          }, \" All day menu \")\n        ]),\n        _createElementVNode(\"div\", _hoisted_5, [\n          _createElementVNode(\"div\", _hoisted_6, [\n            _createElementVNode(\"span\", _hoisted_7, [\n              _createElementVNode(\"span\", _hoisted_8, [\n                _createTextVNode(\" Our \"),\n                _createElementVNode(\"span\", { innerHTML: $data.rawgdxl }, null, 8, _hoisted_9)\n              ]),\n              _hoisted_10,\n              _createElementVNode(\"span\", _hoisted_11, [\n                _createTextVNode(\" menu is a testament to unwavering commitment, showcasing a \"),\n                _createElementVNode(\"span\", { innerHTML: $data.rawd2qa }, null, 8, _hoisted_12)\n              ]),\n              _hoisted_13,\n              _createElementVNode(\"span\", _hoisted_14, [\n                _createTextVNode(\" of global \"),\n                _createElementVNode(\"span\", { innerHTML: $data.rawpngl }, null, 8, _hoisted_15)\n              ]),\n              _hoisted_16,\n              _hoisted_17\n            ])\n          ])\n        ]),\n        _hoisted_18,\n        _createElementVNode(\"div\", _hoisted_19, [\n          _hoisted_20,\n          _createVNode(_component_UIcon, {\n            name: \"i-bx-time-five\",\n            class: \"absolute z-20 left-[35rem] top-[7.5rem] w-[7rem] h-[7rem] text-red-100 text-opacity-30\",\n            \"data-aos\": \"zoom-in-down\",\n            \"data-aos-duration\": \"1750\",\n            dynamic: \"\"\n          })\n        ])\n      ])\n    ])\n  ], 2))\n}\n\nimport \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/LandingPage/section/allday.vue?vue&type=style&index=0&scoped=ee34b9f1&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-ee34b9f1\"]])",
+      "start": 1717261248449,
+      "end": 1717261248449,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1717261248449,
+      "end": 1717261248449,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1717261248449,
+      "end": 1717261248450,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1717261248450,
+      "end": 1717261248450,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "resolvedId": "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/dashboard/ChartCard.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup>\n\ndefineProps({\n  icon: String,\n  value: Number,\n  type: String\n})\n\n</script>\n\n\n\n<template>\n\n<UCard class=\"mx-3 text-center\">\n  <p class=\"font-bold text-xl text-green-400\">\n    <UIcon :name=\"icon\" class=\"bg-green-400\"/>\n        {{value}}</p>\n  <p>Completed {{ type }}</p>\n  <DashboardChartComponent class=\"mt-3\"/>\n</UCard>\n\n</template>\n\n\n\n",
+      "start": 1717261249252,
+      "end": 1717261250473,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1717261250473,
+      "end": 1717261250473,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1717261250473,
+      "end": 1717261250473,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1717261250473,
+      "end": 1717261250473,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1717261250473,
+      "end": 1717261250473,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1717261250473,
+      "end": 1717261250473,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1717261250473,
+      "end": 1717261250473,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1717261250473,
+      "end": 1717261250473,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { resolveComponent as _resolveComponent, createVNode as _createVNode, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"font-bold text-xl text-green-400\" }\n\n\nconst _sfc_main = {\n  __name: 'ChartCard',\n  props: {\n  icon: String,\n  value: Number,\n  type: String\n},\n  setup(__props) {\n\n\n\n\n\nreturn (_ctx, _cache) => {\n  const _component_UIcon = _resolveComponent(\"UIcon\")\n  const _component_DashboardChartComponent = _resolveComponent(\"DashboardChartComponent\")\n  const _component_UCard = _resolveComponent(\"UCard\")\n\n  return (_openBlock(), _createBlock(_component_UCard, { class: \"mx-3 text-center\" }, {\n    default: _withCtx(() => [\n      _createElementVNode(\"p\", _hoisted_1, [\n        _createVNode(_component_UIcon, {\n          name: __props.icon,\n          class: \"bg-green-400\"\n        }, null, 8, [\"name\"]),\n        _createTextVNode(\" \" + _toDisplayString(__props.value), 1)\n      ]),\n      _createElementVNode(\"p\", null, \"Completed \" + _toDisplayString(__props.type), 1),\n      _createVNode(_component_DashboardChartComponent, { class: \"mt-3\" })\n    ]),\n    _: 1\n  }))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1717261250473,
+      "end": 1717261250474,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1717261250474,
+      "end": 1717261250474,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261250474,
+      "end": 1717261250474,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1717261250474,
+      "end": 1717261250474,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1717261250474,
+      "end": 1717261250474,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1717261250474,
+      "end": 1717261250474,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261250474,
+      "end": 1717261250474,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1717261250474,
+      "end": 1717261250474,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1717261250474,
+      "end": 1717261250474,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1717261250474,
+      "end": 1717261250474,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1717261250474,
+      "end": 1717261250474,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1717261250475,
+      "end": 1717261250475,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1717261250475,
+      "end": 1717261250475,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1717261250475,
+      "end": 1717261250475,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1717261250475,
+      "end": 1717261250475,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1717261250475,
+      "end": 1717261250475,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1717261250475,
+      "end": 1717261250475,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1717261250475,
+      "end": 1717261250475,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1717261250475,
+      "end": 1717261250475,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1717261250476,
+      "end": 1717261250476,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1717261250476,
+      "end": 1717261250476,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1717261250476,
+      "end": 1717261250476,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/node_modules/@nuxt/ui/dist/runtime/components/elements/Icon.vue\";\nimport { default as __nuxt_component_1 } from \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/dashboard/ChartComponent.vue\";\nimport { default as __nuxt_component_2 } from \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/node_modules/@nuxt/ui/dist/runtime/components/layout/Card.vue\";\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, createElementVNode as _createElementVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"font-bold text-xl text-green-400\" }\n\n\nconst _sfc_main = {\n  __name: 'ChartCard',\n  props: {\n  icon: String,\n  value: Number,\n  type: String\n},\n  setup(__props) {\n\n\n\n\n\nreturn (_ctx, _cache) => {\n  const _component_UIcon = __nuxt_component_0\n  const _component_DashboardChartComponent = __nuxt_component_1\n  const _component_UCard = __nuxt_component_2\n\n  return (_openBlock(), _createBlock(_component_UCard, { class: \"mx-3 text-center\" }, {\n    default: _withCtx(() => [\n      _createElementVNode(\"p\", _hoisted_1, [\n        _createVNode(_component_UIcon, {\n          name: __props.icon,\n          class: \"bg-green-400\"\n        }, null, 8, [\"name\"]),\n        _createTextVNode(\" \" + _toDisplayString(__props.value), 1)\n      ]),\n      _createElementVNode(\"p\", null, \"Completed \" + _toDisplayString(__props.type), 1),\n      _createVNode(_component_DashboardChartComponent, { class: \"mt-3\" })\n    ]),\n    _: 1\n  }))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1717261250476,
+      "end": 1717261250476,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1717261250476,
+      "end": 1717261250476,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1717261250476,
+      "end": 1717261250476,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1717261250476,
+      "end": 1717261250476,
+      "order": "normal"
+    }
+  ]
+}

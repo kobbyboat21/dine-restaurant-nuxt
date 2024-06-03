@@ -1,0 +1,215 @@
+{
+  "resolvedId": "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/dashboard/menu/StatusCard.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup>\n\ndefineProps({\n  icon: String,\n  type1: String,\n  type2: String,\n  meal: String\n})\n\nconst cards = [{\n  label: 'Today'\n}, {    \n  label: 'This Week'\n  }\n]\n</script>\n\n\n\n<template>\n\n<UCard class=\"mx-3 text-center\">\n  <UTabs :items=\"cards\" :default-index=\"0\" class=\"w-full\">\n    <template #item=\"{item}\">\n      <div v-if=\"item.label === 'Today'\">\n        <p class=\"font-bold text-l text-green-400\">{{ type1 }}</p>\n          <p> Most Ordered {{meal}} Meal </p>\n      </div>\n      <div v-if=\"item.label === 'This Week'\">\n        <p class=\"font-bold text-l text-green-400\">{{ type2 }}</p>\n          <p> Most Ordered {{meal}} Meal </p>\n      </div>\n    </template>\n  </UTabs>\n\n</UCard>\n\n</template>\n\n\n\n",
+      "start": 1717261249494,
+      "end": 1717261250494,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1717261250494,
+      "end": 1717261250494,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1717261250494,
+      "end": 1717261250494,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1717261250494,
+      "end": 1717261250494,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1717261250494,
+      "end": 1717261250494,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1717261250494,
+      "end": 1717261250494,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1717261250495,
+      "end": 1717261250495,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1717261250495,
+      "end": 1717261250495,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { key: 0 }\nconst _hoisted_2 = { class: \"font-bold text-l text-green-400\" }\nconst _hoisted_3 = { key: 1 }\nconst _hoisted_4 = { class: \"font-bold text-l text-green-400\" }\n\n\nconst _sfc_main = {\n  __name: 'StatusCard',\n  props: {\n  icon: String,\n  type1: String,\n  type2: String,\n  meal: String\n},\n  setup(__props) {\n\n\n\n\nconst cards = [{\n  label: 'Today'\n}, {    \n  label: 'This Week'\n  }\n]\n\nreturn (_ctx, _cache) => {\n  const _component_UTabs = _resolveComponent(\"UTabs\")\n  const _component_UCard = _resolveComponent(\"UCard\")\n\n  return (_openBlock(), _createBlock(_component_UCard, { class: \"mx-3 text-center\" }, {\n    default: _withCtx(() => [\n      _createVNode(_component_UTabs, {\n        items: cards,\n        \"default-index\": 0,\n        class: \"w-full\"\n      }, {\n        item: _withCtx(({item}) => [\n          (item.label === 'Today')\n            ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n                _createElementVNode(\"p\", _hoisted_2, _toDisplayString(__props.type1), 1),\n                _createElementVNode(\"p\", null, \" Most Ordered \" + _toDisplayString(__props.meal) + \" Meal \", 1)\n              ]))\n            : _createCommentVNode(\"\", true),\n          (item.label === 'This Week')\n            ? (_openBlock(), _createElementBlock(\"div\", _hoisted_3, [\n                _createElementVNode(\"p\", _hoisted_4, _toDisplayString(__props.type2), 1),\n                _createElementVNode(\"p\", null, \" Most Ordered \" + _toDisplayString(__props.meal) + \" Meal \", 1)\n              ]))\n            : _createCommentVNode(\"\", true)\n        ]),\n        _: 1\n      })\n    ]),\n    _: 1\n  }))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1717261250495,
+      "end": 1717261250497,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1717261250497,
+      "end": 1717261250497,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261250497,
+      "end": 1717261250497,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1717261250497,
+      "end": 1717261250497,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1717261250497,
+      "end": 1717261250497,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1717261250497,
+      "end": 1717261250497,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261250497,
+      "end": 1717261250497,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1717261250497,
+      "end": 1717261250497,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1717261250497,
+      "end": 1717261250497,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1717261250497,
+      "end": 1717261250497,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1717261250497,
+      "end": 1717261250497,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1717261250497,
+      "end": 1717261250497,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1717261250497,
+      "end": 1717261250497,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1717261250497,
+      "end": 1717261250497,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1717261250498,
+      "end": 1717261250498,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1717261250498,
+      "end": 1717261250498,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1717261250498,
+      "end": 1717261250498,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1717261250498,
+      "end": 1717261250498,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1717261250498,
+      "end": 1717261250498,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1717261250498,
+      "end": 1717261250498,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1717261250498,
+      "end": 1717261250498,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1717261250498,
+      "end": 1717261250498,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/node_modules/@nuxt/ui/dist/runtime/components/navigation/Tabs.vue\";\nimport { default as __nuxt_component_1 } from \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/node_modules/@nuxt/ui/dist/runtime/components/layout/Card.vue\";\nimport { toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { key: 0 }\nconst _hoisted_2 = { class: \"font-bold text-l text-green-400\" }\nconst _hoisted_3 = { key: 1 }\nconst _hoisted_4 = { class: \"font-bold text-l text-green-400\" }\n\n\nconst _sfc_main = {\n  __name: 'StatusCard',\n  props: {\n  icon: String,\n  type1: String,\n  type2: String,\n  meal: String\n},\n  setup(__props) {\n\n\n\n\nconst cards = [{\n  label: 'Today'\n}, {    \n  label: 'This Week'\n  }\n]\n\nreturn (_ctx, _cache) => {\n  const _component_UTabs = __nuxt_component_0\n  const _component_UCard = __nuxt_component_1\n\n  return (_openBlock(), _createBlock(_component_UCard, { class: \"mx-3 text-center\" }, {\n    default: _withCtx(() => [\n      _createVNode(_component_UTabs, {\n        items: cards,\n        \"default-index\": 0,\n        class: \"w-full\"\n      }, {\n        item: _withCtx(({item}) => [\n          (item.label === 'Today')\n            ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n                _createElementVNode(\"p\", _hoisted_2, _toDisplayString(__props.type1), 1),\n                _createElementVNode(\"p\", null, \" Most Ordered \" + _toDisplayString(__props.meal) + \" Meal \", 1)\n              ]))\n            : _createCommentVNode(\"\", true),\n          (item.label === 'This Week')\n            ? (_openBlock(), _createElementBlock(\"div\", _hoisted_3, [\n                _createElementVNode(\"p\", _hoisted_4, _toDisplayString(__props.type2), 1),\n                _createElementVNode(\"p\", null, \" Most Ordered \" + _toDisplayString(__props.meal) + \" Meal \", 1)\n              ]))\n            : _createCommentVNode(\"\", true)\n        ]),\n        _: 1\n      })\n    ]),\n    _: 1\n  }))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1717261250498,
+      "end": 1717261250499,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1717261250499,
+      "end": 1717261250499,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1717261250499,
+      "end": 1717261250499,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1717261250499,
+      "end": 1717261250499,
+      "order": "normal"
+    }
+  ]
+}

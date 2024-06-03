@@ -1,0 +1,221 @@
+{
+  "resolvedId": "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/LandingPage/section/dinner.vue?vue&type=style&index=0&scoped=d2c43b8e&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.dinner-section-container {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  position: relative;\n  align-items: flex-start;\n  flex-direction: column;\n}\n.dinner-section-dinnerslide {\n  width: 100%;\n  height: 1024px;\n  display: flex;\n  overflow: hidden;\n  position: relative;\n  align-items: flex-start;\n  flex-shrink: 0;\n  background-image: linear-gradient(180deg, rgba(149, 139, 161, 1) 0%, rgba(166, 180, 200, 0.5699999928474426) 100%);\n}\n.dinner-section-container1 {\n  left: 0px;\n  right: 0px;\n  width: 1369.9999877810478px;\n  bottom: -16px;\n  height: 879.9999847412109px;\n  margin: auto;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  justify-content: center;\n}\n.dinner-section-dinnerpic {\n  top: 0px;\n  left: 133.00000303983688px;\n  width: 478px;\n  height: 638px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.dinner-section-rectangle8 {\n  top: 5rem;\n  left: 2.75rem;\n  width: 28.9rem;\n  height: 36.25rem;\n  position: absolute;\n}\n.dinner-section-dinnerbutton {\n  top: 36rem;\n  left: 52.44rem;\n  width: 327px;\n  bottom: 209px;\n  height: 67px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.dinner-section-dinnercalltoaction {\n  top: 0px;\n  left: 0px;\n  width: 327px;\n  height: 67px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.dinner-section-reservebutton {\n  top: 0px;\n  left: 0px;\n  width: 255px;\n  height: 67px;\n  display: none;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n  border-color: #665656;\n  border-width: 3px;\n  border-radius: 16px;\n}\n.dinner-section-reservebutton1 {\n  top: 0px;\n  left: 0px;\n  width: 255px;\n  height: 67px;\n  display: none;\n  position: absolute;\n  border-color: #665656;\n  border-width: 3px;\n  border-radius: Radius4;\n}\n.dinner-section-text {\n  top: 8px;\n  left: 34px;\n  color: rgb(93, 80, 80);\n  width: 204px;\n  height: auto;\n  margin: auto;\n  position: absolute;\n  font-size: 32px;\n  font-style: Regular;\n  text-align: left;\n  font-family: \"K2D\";\n  font-weight: 400;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n.dinner-section-button {\n  color: rgb(53,55,66);\n  width: 327px;\n  height: 67px;\n  font-size: 32px;\n  transition: 0.3s;\n  font-family: \"K2D\";\n  border-color: #665656;\n  border-width: 3px;\n  border-radius: 16px;\n  background-color: #c1c5d2;\n}\n.dinner-section-button:hover {\n  background-color: #d6dae8;\n}\n.dinner-section-dinnermessage {\n  top: 22.5rem;\n  left: 45.6rem;\n  width: 27.25rem;\n  height: 10.875rem;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n  background-color: rgba(189, 173, 173, 0.44999998807907104);\n}\n.dinner-section-text1 {\n  top: 1.0625rem;\n  left: 0.625rem;\n  color: rgb(53,55,66);\n  width: 25rem;\n  height: auto;\n  position: absolute;\n  font-size: 24px;\n  text-align: right;\n  font-family: K2D;\n  font-weight: 500;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n.dinner-section-dinnerbigtext {\n  top: 3.4375rem;\n  left: 27.6rem;\n  width: 737px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.dinner-section-text3 {\n  left: 0px;\n  color: rgb(53,55,66);\n  right: 0px;\n  width: 737px;\n  height: auto;\n  margin: auto;\n  position: absolute;\n  font-size: 64px;\n  font-style: Regular;\n  text-align: right;\n  font-family: Libre Baskerville;\n  font-weight: 400;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n.dinner-section-riceicon1 {\n  top: 13rem;\n  left: 81.2rem;\n  width: 50rem;\n  height: 50rem;\n  position: absolute;\n  filter: opacity(30%)\n}\n.dinner-section-ellipse3 {\n  left: 0px;\n  width: 382px;\n  bottom: 0px;\n  height: 337px;\n  position: absolute;\n}\n\n.dinner-section-dinnerbigtext_evening {\n  top: 3.5rem;\n  left: -16.5rem;\n  position: absolute;\n}\n\n.dinner-section-dinnerbigtext_elegance {\n  top: 3.5rem;\n  left: -0.5rem;\n  position: absolute;\n}\n\n.dinner-section-dinnerbigtext_unveiled {\n  top: 8rem;\n  left: -0.5rem;\n  position: absolute;\n\n}\n@media (max-width:479px) {\n\n.dinner-section-dinnerslide{\n    top: 0rem;\n    height: 1299px\n  }\n.dinner-section-riceicon1 {\n  top: 32rem;\n  left: -5rem;\n  width: 360px;\n  height: 360px;\n  position: absolute;\n}\n.dinner-section-text1 {\n  top: -4.5rem;\n  left: 4.3rem;\n  width: 380px;\n  height: auto;\n  position: absolute;\n  font-size: 1.25rem;\n  text-align: left;\n  font-family: K2D;\n  font-weight: 500;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n.dinner-section-text3{\n  font-size: 2.85rem;\n  text-align: right;\n\n  }\n\n.dinner-section-dinnerbutton {\n  top: 0rem;\n  left: 0rem;  \n  width: 255px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.dinner-section-dinnerbigtext_evening {\n  top: 0.5rem;\n  left: -13.5rem;\n  position: absolute;\n}\n\n.dinner-section-dinnerbigtext_elegance {\n  top: 0.5rem;\n  left: -2rem;\n  position: absolute;\n}\n\n.dinner-section-dinnerbigtext_unveiled {\n  top: 3.25rem;\n  left: 2.5rem;\n  position: absolute;\n\n}\n\n.dinner-section-dinnerbigtext {\n  top: 28rem;\n  left: -20.5rem;\n  width: 737px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.dinner-section-dinnerpic {\n    left: 1rem;\n    top: -14rem;\n    height: 84vh;\n    width: 100vw;\n    position: absolute;\n}\n\n.dinner-section-button {\n    left: 4rem;\n    top: 55rem;\n    position: absolute;\n    z-index:1;\n    background-color: #c1c5d3;\n    width: 375px;\n    font-size: 20px;\n}\n\n.dinner-section-dinnermessage {\n    left: 0rem;\n    top: 42rem;\n    height: 23vh;\n    position: absolute;\n    background-color: rgba(189, 173, 173, 0);\n}\n\n.dinner-section-rectangle8 {\n    left: 0rem;\n    top: 0rem;\n    height: 84vh;\n    position: absolute;\n  }\n.dinner-section-container1 {\n  top: -10rem;\n  left: -1rem;\n  right: 0px;\n  width: 1369.9999877810478px;\n  bottom: -16px;\n  height: 100vh;\n  margin: auto;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  justify-content: center;\n}\n}\n",
+      "start": 1717261250091,
+      "end": 1717261250093
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1717261250107,
+      "end": 1717261250107,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1717261250124,
+      "end": 1717261250124,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1717261250127,
+      "end": 1717261250128,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".dinner-section-container{flex-direction:column;height:100%}.dinner-section-container,.dinner-section-dinnerslide{align-items:flex-start;display:flex;position:relative;width:100%}.dinner-section-dinnerslide{background-image:linear-gradient(180deg,#958ba1,rgba(166,180,200,.57));flex-shrink:0;height:1024px;overflow:hidden}.dinner-section-container1{bottom:-16px;height:879.9999847412109px;justify-content:center;left:0;margin:auto;right:0;width:1369.9999877810478px}.dinner-section-container1,.dinner-section-dinnerpic{align-items:flex-start;display:flex;position:absolute}.dinner-section-dinnerpic{flex-shrink:1;height:638px;left:133.00000303983688px;top:0;width:478px}.dinner-section-rectangle8{height:36.25rem;left:2.75rem;position:absolute;top:5rem;width:28.9rem}.dinner-section-dinnerbutton{bottom:209px;left:52.44rem;top:36rem}.dinner-section-dinnerbutton,.dinner-section-dinnercalltoaction{align-items:flex-start;display:flex;flex-shrink:1;height:67px;position:absolute;width:327px}.dinner-section-dinnercalltoaction{left:0;top:0}.dinner-section-reservebutton{align-items:flex-start;border-color:#665656;border-radius:16px;border-width:3px;flex-shrink:1}.dinner-section-reservebutton,.dinner-section-reservebutton1{display:none;height:67px;left:0;position:absolute;top:0;width:255px}.dinner-section-reservebutton1{border-color:#665656;border-radius:Radius4;border-width:3px}.dinner-section-text{color:#5d5050;font-family:K2D;font-size:32px;font-stretch:normal;font-style:Regular;font-weight:400;height:auto;left:34px;line-height:normal;margin:auto;position:absolute;text-align:left;text-decoration:none;top:8px;width:204px}.dinner-section-button{background-color:#c1c5d2;border-color:#665656;border-radius:16px;border-width:3px;color:#353742;font-family:K2D;font-size:32px;height:67px;transition:.3s;width:327px}.dinner-section-button:hover{background-color:#d6dae8}.dinner-section-dinnermessage{align-items:flex-start;background-color:hsla(0,11%,71%,.45);display:flex;flex-shrink:1;height:10.875rem;left:45.6rem;position:absolute;top:22.5rem;width:27.25rem}.dinner-section-text1{color:#353742;font-family:K2D;font-size:24px;font-stretch:normal;font-weight:500;height:auto;left:.625rem;line-height:normal;position:absolute;text-align:right;text-decoration:none;top:1.0625rem;width:25rem}.dinner-section-dinnerbigtext{align-items:flex-start;display:flex;flex-shrink:1;height:215px;left:27.6rem;position:absolute;top:3.4375rem;width:737px}.dinner-section-text3{color:#353742;font-family:Libre Baskerville;font-size:64px;font-stretch:normal;font-style:Regular;font-weight:400;height:auto;left:0;line-height:normal;margin:auto;position:absolute;right:0;text-align:right;text-decoration:none;width:737px}.dinner-section-riceicon1{filter:opacity(30%);height:50rem;left:81.2rem;position:absolute;top:13rem;width:50rem}.dinner-section-ellipse3{bottom:0;height:337px;left:0;position:absolute;width:382px}.dinner-section-dinnerbigtext_evening{left:-16.5rem;position:absolute;top:3.5rem}.dinner-section-dinnerbigtext_elegance{left:-.5rem;position:absolute;top:3.5rem}.dinner-section-dinnerbigtext_unveiled{left:-.5rem;position:absolute;top:8rem}@media (max-width:479px){.dinner-section-dinnerslide{height:1299px;top:0}.dinner-section-riceicon1{height:360px;left:-5rem;position:absolute;top:32rem;width:360px}.dinner-section-text1{font-family:K2D;font-size:1.25rem;font-stretch:normal;font-weight:500;height:auto;left:4.3rem;line-height:normal;position:absolute;text-align:left;text-decoration:none;top:-4.5rem;width:380px}.dinner-section-text3{font-size:2.85rem;text-align:right}.dinner-section-dinnerbutton{align-items:flex-start;display:flex;flex-shrink:1;left:0;position:absolute;top:0;width:255px}.dinner-section-dinnerbigtext_evening{left:-13.5rem;position:absolute;top:.5rem}.dinner-section-dinnerbigtext_elegance{left:-2rem;position:absolute;top:.5rem}.dinner-section-dinnerbigtext_unveiled{left:2.5rem;position:absolute;top:3.25rem}.dinner-section-dinnerbigtext{align-items:flex-start;display:flex;flex-shrink:1;height:215px;left:-20.5rem;position:absolute;top:28rem;width:737px}.dinner-section-dinnerpic{height:84vh;left:1rem;position:absolute;top:-14rem;width:100vw}.dinner-section-button{background-color:#c1c5d3;font-size:20px;left:4rem;position:absolute;top:55rem;width:375px;z-index:1}.dinner-section-dinnermessage{background-color:hsla(0,11%,71%,0);height:23vh;left:0;position:absolute;top:42rem}.dinner-section-rectangle8{height:84vh;left:0;position:absolute;top:0}.dinner-section-container1{align-items:flex-start;bottom:-16px;display:flex;height:100vh;justify-content:center;left:-1rem;margin:auto;position:absolute;right:0;top:-10rem;width:1369.9999877810478px}}",
+      "start": 1717261250128,
+      "end": 1717261250235,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1717261250235,
+      "end": 1717261250235,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1717261250236,
+      "end": 1717261250236,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1717261250236,
+      "end": 1717261250237,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".dinner-section-container[data-v-d2c43b8e]{flex-direction:column;height:100%}.dinner-section-container[data-v-d2c43b8e],.dinner-section-dinnerslide[data-v-d2c43b8e]{align-items:flex-start;display:flex;position:relative;width:100%}.dinner-section-dinnerslide[data-v-d2c43b8e]{background-image:linear-gradient(180deg,#958ba1,rgba(166,180,200,.57));flex-shrink:0;height:1024px;overflow:hidden}.dinner-section-container1[data-v-d2c43b8e]{bottom:-16px;height:879.9999847412109px;justify-content:center;left:0;margin:auto;right:0;width:1369.9999877810478px}.dinner-section-container1[data-v-d2c43b8e],.dinner-section-dinnerpic[data-v-d2c43b8e]{align-items:flex-start;display:flex;position:absolute}.dinner-section-dinnerpic[data-v-d2c43b8e]{flex-shrink:1;height:638px;left:133.00000303983688px;top:0;width:478px}.dinner-section-rectangle8[data-v-d2c43b8e]{height:36.25rem;left:2.75rem;position:absolute;top:5rem;width:28.9rem}.dinner-section-dinnerbutton[data-v-d2c43b8e]{bottom:209px;left:52.44rem;top:36rem}.dinner-section-dinnerbutton[data-v-d2c43b8e],.dinner-section-dinnercalltoaction[data-v-d2c43b8e]{align-items:flex-start;display:flex;flex-shrink:1;height:67px;position:absolute;width:327px}.dinner-section-dinnercalltoaction[data-v-d2c43b8e]{left:0;top:0}.dinner-section-reservebutton[data-v-d2c43b8e]{align-items:flex-start;border-color:#665656;border-radius:16px;border-width:3px;flex-shrink:1}.dinner-section-reservebutton[data-v-d2c43b8e],.dinner-section-reservebutton1[data-v-d2c43b8e]{display:none;height:67px;left:0;position:absolute;top:0;width:255px}.dinner-section-reservebutton1[data-v-d2c43b8e]{border-color:#665656;border-radius:Radius4;border-width:3px}.dinner-section-text[data-v-d2c43b8e]{color:#5d5050;font-family:K2D;font-size:32px;font-stretch:normal;font-style:Regular;font-weight:400;height:auto;left:34px;line-height:normal;margin:auto;position:absolute;text-align:left;text-decoration:none;top:8px;width:204px}.dinner-section-button[data-v-d2c43b8e]{background-color:#c1c5d2;border-color:#665656;border-radius:16px;border-width:3px;color:#353742;font-family:K2D;font-size:32px;height:67px;transition:.3s;width:327px}.dinner-section-button[data-v-d2c43b8e]:hover{background-color:#d6dae8}.dinner-section-dinnermessage[data-v-d2c43b8e]{align-items:flex-start;background-color:hsla(0,11%,71%,.45);display:flex;flex-shrink:1;height:10.875rem;left:45.6rem;position:absolute;top:22.5rem;width:27.25rem}.dinner-section-text1[data-v-d2c43b8e]{color:#353742;font-family:K2D;font-size:24px;font-stretch:normal;font-weight:500;height:auto;left:.625rem;line-height:normal;position:absolute;text-align:right;text-decoration:none;top:1.0625rem;width:25rem}.dinner-section-dinnerbigtext[data-v-d2c43b8e]{align-items:flex-start;display:flex;flex-shrink:1;height:215px;left:27.6rem;position:absolute;top:3.4375rem;width:737px}.dinner-section-text3[data-v-d2c43b8e]{color:#353742;font-family:Libre Baskerville;font-size:64px;font-stretch:normal;font-style:Regular;font-weight:400;height:auto;left:0;line-height:normal;margin:auto;position:absolute;right:0;text-align:right;text-decoration:none;width:737px}.dinner-section-riceicon1[data-v-d2c43b8e]{filter:opacity(30%);height:50rem;left:81.2rem;position:absolute;top:13rem;width:50rem}.dinner-section-ellipse3[data-v-d2c43b8e]{bottom:0;height:337px;left:0;position:absolute;width:382px}.dinner-section-dinnerbigtext_evening[data-v-d2c43b8e]{left:-16.5rem;position:absolute;top:3.5rem}.dinner-section-dinnerbigtext_elegance[data-v-d2c43b8e]{left:-.5rem;position:absolute;top:3.5rem}.dinner-section-dinnerbigtext_unveiled[data-v-d2c43b8e]{left:-.5rem;position:absolute;top:8rem}@media (max-width:479px){.dinner-section-dinnerslide[data-v-d2c43b8e]{height:1299px;top:0}.dinner-section-riceicon1[data-v-d2c43b8e]{height:360px;left:-5rem;position:absolute;top:32rem;width:360px}.dinner-section-text1[data-v-d2c43b8e]{font-family:K2D;font-size:1.25rem;font-stretch:normal;font-weight:500;height:auto;left:4.3rem;line-height:normal;position:absolute;text-align:left;text-decoration:none;top:-4.5rem;width:380px}.dinner-section-text3[data-v-d2c43b8e]{font-size:2.85rem;text-align:right}.dinner-section-dinnerbutton[data-v-d2c43b8e]{align-items:flex-start;display:flex;flex-shrink:1;left:0;position:absolute;top:0;width:255px}.dinner-section-dinnerbigtext_evening[data-v-d2c43b8e]{left:-13.5rem;position:absolute;top:.5rem}.dinner-section-dinnerbigtext_elegance[data-v-d2c43b8e]{left:-2rem;position:absolute;top:.5rem}.dinner-section-dinnerbigtext_unveiled[data-v-d2c43b8e]{left:2.5rem;position:absolute;top:3.25rem}.dinner-section-dinnerbigtext[data-v-d2c43b8e]{align-items:flex-start;display:flex;flex-shrink:1;height:215px;left:-20.5rem;position:absolute;top:28rem;width:737px}.dinner-section-dinnerpic[data-v-d2c43b8e]{height:84vh;left:1rem;position:absolute;top:-14rem;width:100vw}.dinner-section-button[data-v-d2c43b8e]{background-color:#c1c5d3;font-size:20px;left:4rem;position:absolute;top:55rem;width:375px;z-index:1}.dinner-section-dinnermessage[data-v-d2c43b8e]{background-color:hsla(0,11%,71%,0);height:23vh;left:0;position:absolute;top:42rem}.dinner-section-rectangle8[data-v-d2c43b8e]{height:84vh;left:0;position:absolute;top:0}.dinner-section-container1[data-v-d2c43b8e]{align-items:flex-start;bottom:-16px;display:flex;height:100vh;justify-content:center;left:-1rem;margin:auto;position:absolute;right:0;top:-10rem;width:1369.9999877810478px}}",
+      "start": 1717261250237,
+      "end": 1717261250253,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1717261250255,
+      "end": 1717261250255,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261250256,
+      "end": 1717261250257,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1717261250258,
+      "end": 1717261250258,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1717261250259,
+      "end": 1717261250259,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1717261250260,
+      "end": 1717261250261,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261250261,
+      "end": 1717261250261,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1717261250262,
+      "end": 1717261250262,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1717261250264,
+      "end": 1717261250264,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default ''",
+      "start": 1717261250266,
+      "end": 1717261250266,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1717261250268,
+      "end": 1717261250268,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1717261250269,
+      "end": 1717261250269,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1717261250270,
+      "end": 1717261250270,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1717261250271,
+      "end": 1717261250271,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1717261250274,
+      "end": 1717261250274,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1717261250275,
+      "end": 1717261250275,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1717261250276,
+      "end": 1717261250276,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1717261250278,
+      "end": 1717261250278,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1717261250280,
+      "end": 1717261250280,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1717261250281,
+      "end": 1717261250281,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1717261250283,
+      "end": 1717261250283,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1717261250284,
+      "end": 1717261250284,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1717261250285,
+      "end": 1717261250285,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1717261250286,
+      "end": 1717261250286,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1717261250287,
+      "end": 1717261250287,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1717261250287,
+      "end": 1717261250287,
+      "order": "normal"
+    }
+  ]
+}

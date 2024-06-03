@@ -1,0 +1,215 @@
+{
+  "resolvedId": "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/LandingPage/section/hero.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div class=\"hero-section-container\">\n    <div class=\"hero-section-bgimage\"></div>\n    <div class=\"hero-section-hero\">\n      <div class=\"hero-section-container1\">\n        <div class=\"hero-section-heropic\">\n          <img\n            alt=\"Rectangle82885\"\n            src=\"/external/rectangle82885-vs6-500w.png\"\n            class=\"hero-section-rectangle8 aos-item\"\n            data-aos=\"flip-left\" data-aos-delay=\"0\" data-aos-duration=\"1750\" \n          />\n        </div>\n        <UIcon name=\"i-bx-dish\" class=\"absolute left-[4rem] top-[40rem] w-[20rem] h-[20rem] md:left-[33rem] md:top-[26.75rem] md:w-[24rem] md:h-[40rem] text-red-100 text-opacity-30 \" data-aos=\"fade-down\" data-aos-duration=\"1150\" dynamic />\n\n        <div class=\"hero-section-reservebutton\">\n          <!--\n          data-aos=\"slide-left\" data-aos-duration=\"1150\"\n>-->\n          <button @click=\"gotoBook\" type=\"button\" class=\"hero-section-button button\">\n            Reserve a table\n          </button>\n        </div>\n        <div class=\"hero-section-menubutton\"\n         data-aos=\"fade-in\" data-aos-delay=\"300\" data-aos-duration=\"1750\"\n        >\n        </div>\n        <div class=\"hero-section-herobigtext\" data-aos=\"slide-up\" data-aos-duration=\"1150\">\n          <div class=\"hero-section-bigtext1\">\n            <span class=\"hero-section-text-word\">Savor</span>\n          </div>\n          <div class=\"hero-section-bigtext2\">\n            <span class=\"hero-section-text-word\">Elevated</span>\n          </div>\n          <div class=\"hero-section-bigtext3\">\n            <span class=\"hero-section-text-word\">Elegance</span>\n          </div>\n        </div>\n        <div class=\"hero-section-heromessasge\" data-aos=\"fade-up\" data-aos-duration=\"2150\">\n          <span class=\"hero-section-text2\">\n              <div class=\"hero-section-desc1\">\n              <span>Embark on a gastronomic journey with us.</span>\n              </div>\n              <div class=\"hero-section-desc2\">\n                <span>\n                  Reserve your table now and let the allure \n                </span>\n              </div>\n              <div class=\"hero-section-desc3\">\n                <span>\n                  of exquisite palettes and breathtaking \n                </span>\n              </div>\n              <div class=\"hero-section-desc4\">\n                <span>\n                  views redefine your dining experience.\n                </span>\n              </div>\n              <div class=\"hero-section-desc5 visible sm:invisible\">\n                <span>\n                  Indulge in a culinary journey unlike any \n                </span>\n              </div>\n              <div class=\"hero-section-desc6 visible sm:invisible\">\n                <span>\n                  other as you savor meticulously crafted\n                </span>\n              </div>\n              <div class=\"hero-section-desc7 visible sm:invisible\">\n                <span>\n                   dishes prepared.\n                </span>\n              </div>\n            </span>\n        </div>\n      </div>\n    </div>\n  </div>\n</template>\n\n<script>\n\nexport default {\n   methods: { \n    gotoBook() {\n      this.$router.push('/book');\n    }\n  },\n\n}\n</script>\n\n\n<style scoped>\n.hero-section-container {\n  top: 0px;\n  width: 100%;\n  height: 60rem;\n  display: flex;\n  position: relative;\n  flex-direction: column;\n}\n.hero-section-bgimage {\n  flex: 0 0 auto;\n  width: 100%;\n  filter: blur(3px);\n  height: 100%;\n  display: flex;\n  align-items: flex-start;\n  background-size: cover;\n  background-image: url('https://images.pexels.com/photos/3201922/pexels-photo-3201922.jpeg');\n}\n.hero-section-hero {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  z-index: 50;\n  position: absolute;\n  align-self: center;\n  align-items: flex-start;\n  flex-shrink: 0;\n  background-color: rgba(201, 201, 201, 0.76);\n}\n.hero-section-container1 {\n  z-index: 100;\n}\n.hero-section-heropic {\n  top: 8rem;\n  left: 74rem;\n  width: 479.4195556640625px;\n  height: 576.3148803710938px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.hero-section-rectangle8 {\n  top: 5rem;\n  left: -23rem;\n  width: 25.94rem;\n  height: 31.125rem;\n  position: absolute;\n  border-radius: 20px;\n}\n.hero-section-dishicon1 {\n  top: 35rem;\n  left: 50rem;\n  width: 25rem;\n  height: 25rem;\n  position: absolute;\n  filter: opacity(30%)\n}\n.hero-section-reservebutton {\n  left: 22rem;\n  width: 323px;\n  bottom: 275.2222023010254px;\n  height: 67px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n  border-radius: 16px;\n}\n.hero-section-button {\n  color: rgb(89,76,76);\n  width: 323px;\n  height: 67px;\n  font-size: 32px;\n  transition: 0.3s;\n  font-family: \"K2D\";\n  border-color: #665656;\n  border-width: 3px;\n  border-radius: 16px;\n  background-color: transparent;\n}\n.hero-section-button:hover {\n  background-color: #c7bfbf;\n}\n.hero-section-herobigtext {\n  top: 10rem;\n  left: 4rem;\n  width: 783px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n  font-family: LibreBaskerville; \n  color: rgba(89, 76, 76);\n  font-size: 5rem;\n  /*animation: text-bounce 2s linear forwards;\n  animation-timeline: scroll();*/\n}\n\n/*\n@keyframes text-bounce {\n      0%, \n            20%, \n            50%, \n            80%, \n            100% { \n                transform: translateY(0); \n            } \n  \n            40% { \n                transform: translateY(-300px); \n            } \n  \n            60% { \n                transform: translateY(-150px); \n            } \n        } \n*/\n\n.hero-section-text {\n  color: rgba(93, 80, 80, 1);\n  width: 783px;\n  height: auto;\n  position: absolute;\n  font-size: 6rem;\n  font-style: Regular;\n  text-align: left;\n  font-family: Libre Baskerville;\n  font-weight: 400;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n.hero-section-heromessasge {\n  top: 27rem;\n  left: 22rem;\n  width: 463px;\n  height: 164px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.hero-section-text2 {\n  color: rgb(89, 76, 76);\n  width: 463px;\n  height: auto;\n  position: absolute;\n  font-size: 1.5rem;\n  text-align: left;\n  font-family: K2D;\n  font-weight: 500;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n\n.hero-section-root-class-name {\n  margin-top: 0px;\n}\n.hero-section-root-class-name1 {\n  align-self: center;\n}\n\n.hero-section-bigtext1 {\n  position: absolute;\n  top: 2rem;\n  left: 17rem;\n}\n.hero-section-bigtext2 {\n  position: absolute;\n  top: 2rem;\n  left: 31rem;\n}\n.hero-section-bigtext3 {\n  position: absolute;\n  top: 6.5rem;\n  left: 17rem;\n}\n\n.hero-section-text-word {\n  font-family: Libre Baskerville\n}\n\n@media(max-width: 479px) {\n\n.hero-section-text-word {\n  font-family: Libre Baskerville\n}\n  .hero-section-menuicon1{\n    top: 24.3rem;\n    left: 16rem;\n    position: absolute;\n  }\n.hero-section-button1 {\n  color: #5d5050;\n  width: 323px;\n  height: 52px;\n  font-size: 26px;\n  transition: 0.3s;\n  font-family: \"Libre Baskerville\";\n  border-color: #6656565c;\n  border-width: 3px;\n  border-radius: 16px;\n  background-color: transparent;\n  text-align: left;\n}\n.hero-section-button{\n    height: 58px;\n    width: 80%;\n    font-size: 20px;\n    word-spacing: 0.25rem;\n  }\n.hero-section-reservebutton{\n    top: 33.5rem;\n    left: 3rem;\n    width: 102%\n  }\n.hero-section-text2 {\n    top: 2.5rem;\n    left: -2.6rem\n  }\n.hero-section-menubutton {\n  left: 7rem;\n  width: 12.4rem;\n  bottom: 275.2222023010254px;\n  height: 55px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n  border-radius: 16px;\n  top: 24rem\n}\n  .hero-section-dishicon1{\n    left: 12rem;\n    top: 41rem;\n  }\n\n.navbar-navbar{\n  width:100vw;\n  top: 0rem;\n  position: absolute;\n}\n\n.navbar-logo1{\n  left: 1rem;\n  }\n\n.navbar-menunavlink{\n    left: 20rem;\n    z-index: 60;\n    position: absolute;\n  }\n\n.navbar-booknavlink{\n    top: 0rem;\n    left: 1rem;\n    position: absolute;\n  }\n\n.hero-section-heropic {\n    position: absolute;\n    left: 0rem;\n    width: 3rem;\n    height: 100%;\n    opacity: 0.1;\n    filter: blur(4px);\n    border-radius: 1rem;\n    visibility: hidden;\n  }\n\n  .hero-section-herobigtext {\n    left:2rem;\n  }\n\n  .hero-section-text {\n    font-size: 1.5rem;\n  }\n/*}*/\n\n.hero-section-bigtext1 {\n  position: absolute;\n  font-size: 3rem;\n  top: -3.75rem;\n  left: 0rem;\n}\n\n.hero-section-bigtext2 {\n  position: absolute;\n  font-size: 3rem;\n  top: -3.75rem;\n  left: 8rem;\n}\n\n.hero-section-bigtext3 {\n  position: absolute;\n  font-size: 3rem;\n  top: -0.5rem;\n  left: 13rem;\n}\n.hero-section-heromessasge {\n  top: 27rem;\n  left: 6rem;\n  width: 463px;\n  height: 164px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n\n.hero-section-text2,\n.hero-section-desc1,\n/*.hero-section-desc2,*/\n.hero-section-desc3,\n.hero-section-desc4, \n.hero-section-desc5, \n.hero-section-desc6 \n.hero-section-desc7 \n  {\n  font-size:1.2rem;\n  left:-2.6rem;\n  line-height: normal;\n  top: -10.5rem;\n  font-family: \"Source Code Pro\", monospace;\n  }\n\n  .hero-section-desc2 {\n    margin: 0rem 0rem;\n    padding: 0rem 0rem;\n    top: -10.5rem;\n\n  }\n\n}\n</style>\n",
+      "start": 1717261247796,
+      "end": 1717261248411,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1717261248411,
+      "end": 1717261248411,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1717261248411,
+      "end": 1717261248411,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1717261248411,
+      "end": 1717261248411,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1717261248417,
+      "end": 1717261248417,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1717261248418,
+      "end": 1717261248418,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1717261248418,
+      "end": 1717261248418,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1717261248418,
+      "end": 1717261248418,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\n\nconst _sfc_main = {\n   methods: { \n    gotoBook() {\n      this.$router.push('/book');\n    }\n  },\n\n}\n\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, createStaticVNode as _createStaticVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\nimport _imports_0 from '/external/rectangle82885-vs6-500w.png'\n\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-e3eaa71b\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"hero-section-container\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"hero-section-bgimage\" }, null, -1))\nconst _hoisted_3 = { class: \"hero-section-hero\" }\nconst _hoisted_4 = { class: \"hero-section-container1\" }\nconst _hoisted_5 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"hero-section-heropic\" }, [\n  /*#__PURE__*/_createElementVNode(\"img\", {\n    alt: \"Rectangle82885\",\n    src: _imports_0,\n    class: \"hero-section-rectangle8 aos-item\",\n    \"data-aos\": \"flip-left\",\n    \"data-aos-delay\": \"0\",\n    \"data-aos-duration\": \"1750\"\n  })\n], -1))\nconst _hoisted_6 = { class: \"hero-section-reservebutton\" }\nconst _hoisted_7 = /*#__PURE__*/_createStaticVNode(\"<div class=\\\"hero-section-menubutton\\\" data-aos=\\\"fade-in\\\" data-aos-delay=\\\"300\\\" data-aos-duration=\\\"1750\\\" data-v-e3eaa71b></div><div class=\\\"hero-section-herobigtext\\\" data-aos=\\\"slide-up\\\" data-aos-duration=\\\"1150\\\" data-v-e3eaa71b><div class=\\\"hero-section-bigtext1\\\" data-v-e3eaa71b><span class=\\\"hero-section-text-word\\\" data-v-e3eaa71b>Savor</span></div><div class=\\\"hero-section-bigtext2\\\" data-v-e3eaa71b><span class=\\\"hero-section-text-word\\\" data-v-e3eaa71b>Elevated</span></div><div class=\\\"hero-section-bigtext3\\\" data-v-e3eaa71b><span class=\\\"hero-section-text-word\\\" data-v-e3eaa71b>Elegance</span></div></div><div class=\\\"hero-section-heromessasge\\\" data-aos=\\\"fade-up\\\" data-aos-duration=\\\"2150\\\" data-v-e3eaa71b><span class=\\\"hero-section-text2\\\" data-v-e3eaa71b><div class=\\\"hero-section-desc1\\\" data-v-e3eaa71b><span data-v-e3eaa71b>Embark on a gastronomic journey with us.</span></div><div class=\\\"hero-section-desc2\\\" data-v-e3eaa71b><span data-v-e3eaa71b> Reserve your table now and let the allure </span></div><div class=\\\"hero-section-desc3\\\" data-v-e3eaa71b><span data-v-e3eaa71b> of exquisite palettes and breathtaking </span></div><div class=\\\"hero-section-desc4\\\" data-v-e3eaa71b><span data-v-e3eaa71b> views redefine your dining experience. </span></div><div class=\\\"hero-section-desc5 visible sm:invisible\\\" data-v-e3eaa71b><span data-v-e3eaa71b> Indulge in a culinary journey unlike any </span></div><div class=\\\"hero-section-desc6 visible sm:invisible\\\" data-v-e3eaa71b><span data-v-e3eaa71b> other as you savor meticulously crafted </span></div><div class=\\\"hero-section-desc7 visible sm:invisible\\\" data-v-e3eaa71b><span data-v-e3eaa71b> dishes prepared. </span></div></span></div>\", 3)\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_UIcon = _resolveComponent(\"UIcon\")\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _hoisted_2,\n    _createElementVNode(\"div\", _hoisted_3, [\n      _createElementVNode(\"div\", _hoisted_4, [\n        _hoisted_5,\n        _createVNode(_component_UIcon, {\n          name: \"i-bx-dish\",\n          class: \"absolute left-[4rem] top-[40rem] w-[20rem] h-[20rem] md:left-[33rem] md:top-[26.75rem] md:w-[24rem] md:h-[40rem] text-red-100 text-opacity-30\",\n          \"data-aos\": \"fade-down\",\n          \"data-aos-duration\": \"1150\",\n          dynamic: \"\"\n        }),\n        _createElementVNode(\"div\", _hoisted_6, [\n          _createElementVNode(\"button\", {\n            onClick: _cache[0] || (_cache[0] = (...args) => ($options.gotoBook && $options.gotoBook(...args))),\n            type: \"button\",\n            class: \"hero-section-button button\"\n          }, \" Reserve a table \")\n        ]),\n        _hoisted_7\n      ])\n    ])\n  ]))\n}\n\nimport \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/LandingPage/section/hero.vue?vue&type=style&index=0&scoped=e3eaa71b&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-e3eaa71b\"]])",
+      "start": 1717261248418,
+      "end": 1717261248420,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1717261248420,
+      "end": 1717261248420,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261248420,
+      "end": 1717261248420,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1717261248420,
+      "end": 1717261248420,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1717261248421,
+      "end": 1717261248421,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1717261248421,
+      "end": 1717261248421,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261248421,
+      "end": 1717261248421,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1717261248421,
+      "end": 1717261248421,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1717261248421,
+      "end": 1717261248421,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1717261248421,
+      "end": 1717261248421,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1717261248421,
+      "end": 1717261248421,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1717261248421,
+      "end": 1717261248421,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1717261248421,
+      "end": 1717261248421,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1717261248421,
+      "end": 1717261248421,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1717261248421,
+      "end": 1717261248421,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1717261248421,
+      "end": 1717261248421,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1717261248421,
+      "end": 1717261248421,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1717261248421,
+      "end": 1717261248422,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1717261248422,
+      "end": 1717261248422,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1717261248422,
+      "end": 1717261248422,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1717261248422,
+      "end": 1717261248422,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1717261248422,
+      "end": 1717261248422,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/node_modules/@nuxt/ui/dist/runtime/components/elements/Icon.vue\";\n\n\nconst _sfc_main = {\n   methods: { \n    gotoBook() {\n      this.$router.push('/book');\n    }\n  },\n\n}\n\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, createStaticVNode as _createStaticVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\nimport _imports_0 from '/external/rectangle82885-vs6-500w.png'\n\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-e3eaa71b\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"hero-section-container\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"hero-section-bgimage\" }, null, -1))\nconst _hoisted_3 = { class: \"hero-section-hero\" }\nconst _hoisted_4 = { class: \"hero-section-container1\" }\nconst _hoisted_5 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"hero-section-heropic\" }, [\n  /*#__PURE__*/_createElementVNode(\"img\", {\n    alt: \"Rectangle82885\",\n    src: _imports_0,\n    class: \"hero-section-rectangle8 aos-item\",\n    \"data-aos\": \"flip-left\",\n    \"data-aos-delay\": \"0\",\n    \"data-aos-duration\": \"1750\"\n  })\n], -1))\nconst _hoisted_6 = { class: \"hero-section-reservebutton\" }\nconst _hoisted_7 = /*#__PURE__*/_createStaticVNode(\"<div class=\\\"hero-section-menubutton\\\" data-aos=\\\"fade-in\\\" data-aos-delay=\\\"300\\\" data-aos-duration=\\\"1750\\\" data-v-e3eaa71b></div><div class=\\\"hero-section-herobigtext\\\" data-aos=\\\"slide-up\\\" data-aos-duration=\\\"1150\\\" data-v-e3eaa71b><div class=\\\"hero-section-bigtext1\\\" data-v-e3eaa71b><span class=\\\"hero-section-text-word\\\" data-v-e3eaa71b>Savor</span></div><div class=\\\"hero-section-bigtext2\\\" data-v-e3eaa71b><span class=\\\"hero-section-text-word\\\" data-v-e3eaa71b>Elevated</span></div><div class=\\\"hero-section-bigtext3\\\" data-v-e3eaa71b><span class=\\\"hero-section-text-word\\\" data-v-e3eaa71b>Elegance</span></div></div><div class=\\\"hero-section-heromessasge\\\" data-aos=\\\"fade-up\\\" data-aos-duration=\\\"2150\\\" data-v-e3eaa71b><span class=\\\"hero-section-text2\\\" data-v-e3eaa71b><div class=\\\"hero-section-desc1\\\" data-v-e3eaa71b><span data-v-e3eaa71b>Embark on a gastronomic journey with us.</span></div><div class=\\\"hero-section-desc2\\\" data-v-e3eaa71b><span data-v-e3eaa71b> Reserve your table now and let the allure </span></div><div class=\\\"hero-section-desc3\\\" data-v-e3eaa71b><span data-v-e3eaa71b> of exquisite palettes and breathtaking </span></div><div class=\\\"hero-section-desc4\\\" data-v-e3eaa71b><span data-v-e3eaa71b> views redefine your dining experience. </span></div><div class=\\\"hero-section-desc5 visible sm:invisible\\\" data-v-e3eaa71b><span data-v-e3eaa71b> Indulge in a culinary journey unlike any </span></div><div class=\\\"hero-section-desc6 visible sm:invisible\\\" data-v-e3eaa71b><span data-v-e3eaa71b> other as you savor meticulously crafted </span></div><div class=\\\"hero-section-desc7 visible sm:invisible\\\" data-v-e3eaa71b><span data-v-e3eaa71b> dishes prepared. </span></div></span></div>\", 3)\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_UIcon = __nuxt_component_0\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _hoisted_2,\n    _createElementVNode(\"div\", _hoisted_3, [\n      _createElementVNode(\"div\", _hoisted_4, [\n        _hoisted_5,\n        _createVNode(_component_UIcon, {\n          name: \"i-bx-dish\",\n          class: \"absolute left-[4rem] top-[40rem] w-[20rem] h-[20rem] md:left-[33rem] md:top-[26.75rem] md:w-[24rem] md:h-[40rem] text-red-100 text-opacity-30\",\n          \"data-aos\": \"fade-down\",\n          \"data-aos-duration\": \"1150\",\n          dynamic: \"\"\n        }),\n        _createElementVNode(\"div\", _hoisted_6, [\n          _createElementVNode(\"button\", {\n            onClick: _cache[0] || (_cache[0] = (...args) => ($options.gotoBook && $options.gotoBook(...args))),\n            type: \"button\",\n            class: \"hero-section-button button\"\n          }, \" Reserve a table \")\n        ]),\n        _hoisted_7\n      ])\n    ])\n  ]))\n}\n\nimport \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/LandingPage/section/hero.vue?vue&type=style&index=0&scoped=e3eaa71b&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-e3eaa71b\"]])",
+      "start": 1717261248422,
+      "end": 1717261248422,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1717261248422,
+      "end": 1717261248422,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1717261248422,
+      "end": 1717261248422,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1717261248422,
+      "end": 1717261248422,
+      "order": "normal"
+    }
+  ]
+}

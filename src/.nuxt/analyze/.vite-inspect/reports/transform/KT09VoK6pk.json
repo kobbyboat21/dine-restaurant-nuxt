@@ -1,0 +1,214 @@
+{
+  "resolvedId": "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/LandingPage/stickynavbar.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script>\n\nexport default {\n  data() {\n    return {\n      limitPosition: 500,\n      scrolled: false,\n      lastPosition: 0\n    };\n  },\n  methods: {\n    handleScroll() {\n      if (typeof window !== 'undefined') {\n        if (this.lastPosition < window.scrollY && this.limitPosition < window.scrollY) {\n          this.scrolled = true;\n          // move up!\n        } \n        \n        if (this.lastPosition > window.scrollY) {\n          this.scrolled = false;\n          // move down\n        }\n        \n        this.lastPosition = window.scrollY;\n      }\n    }\n  },\n  created() {\n    if (typeof window !== 'undefined') {\n      window.addEventListener(\"scroll\", this.handleScroll);\n    }\n  },\n  destroyed() {\n    if (typeof window !== 'undefined') {\n      window.removeEventListener(\"scroll\", this.handleScroll);\n    }\n  }\n};\n\n</script>\n\n<template>\n\n<div id=\"app\">\n  <header :class=\"{'sticky': scrolled}\"  v-on=\"handleScroll\" class=\"headroom header\">Header</header> \n \n</div>\n\n</template>\n\n<style>\n\n* {\n  box-sizing: border-box;\n}\n\n#app div {\n  padding-top: 50vh;\n  border: 10px solid black;\n  width: 100%;\n  height: 100vh;\n}\n\n.boom {\n  background-color: red;\n}\n\nh2 {\n  display: inline-block;\n}\n\n/*  */\n.header {\n  width: 100%;\n  height: 50px;\n  background: red;\n  position: fixed;\n  z-index: 1000;\n}\n\n.headroom {\n    will-change: transform;\n    transition: transform 200ms linear;\n}\n.headroom--pinned {\n    transform: translateY(0%);\n}\n.headroom--unpinned {\n    transform: translateY(-100%);\n}\n</style>\n",
+      "start": 1717261247144,
+      "end": 1717261247354,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1717261247354,
+      "end": 1717261247354,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1717261247354,
+      "end": 1717261247354,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1717261247354,
+      "end": 1717261247354,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1717261247354,
+      "end": 1717261247354,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1717261247354,
+      "end": 1717261247354,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1717261247354,
+      "end": 1717261247354,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1717261247354,
+      "end": 1717261247354,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\n\nconst _sfc_main = {\n  data() {\n    return {\n      limitPosition: 500,\n      scrolled: false,\n      lastPosition: 0\n    };\n  },\n  methods: {\n    handleScroll() {\n      if (typeof window !== 'undefined') {\n        if (this.lastPosition < window.scrollY && this.limitPosition < window.scrollY) {\n          this.scrolled = true;\n          // move up!\n        } \n        \n        if (this.lastPosition > window.scrollY) {\n          this.scrolled = false;\n          // move down\n        }\n        \n        this.lastPosition = window.scrollY;\n      }\n    }\n  },\n  created() {\n    if (typeof window !== 'undefined') {\n      window.addEventListener(\"scroll\", this.handleScroll);\n    }\n  },\n  destroyed() {\n    if (typeof window !== 'undefined') {\n      window.removeEventListener(\"scroll\", this.handleScroll);\n    }\n  }\n};\n\n\nimport { toHandlers as _toHandlers, mergeProps as _mergeProps, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { id: \"app\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"header\", _mergeProps({\n      class: {'sticky': $data.scrolled}\n    }, _toHandlers($options.handleScroll, true), { class: \"headroom header\" }), \"Header\", 16)\n  ]))\n}\n\nimport \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/LandingPage/stickynavbar.vue?vue&type=style&index=0&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1717261247354,
+      "end": 1717261247356,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1717261247356,
+      "end": 1717261247356,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261247356,
+      "end": 1717261247356,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1717261247356,
+      "end": 1717261247356,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1717261247356,
+      "end": 1717261247356,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1717261247356,
+      "end": 1717261247357,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261247357,
+      "end": 1717261247357,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1717261247357,
+      "end": 1717261247357,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1717261247357,
+      "end": 1717261247357,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1717261247357,
+      "end": 1717261247357,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1717261247357,
+      "end": 1717261247357,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1717261247357,
+      "end": 1717261247357,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1717261247357,
+      "end": 1717261247357,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1717261247357,
+      "end": 1717261247357,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1717261247357,
+      "end": 1717261247357,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1717261247357,
+      "end": 1717261247357,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1717261247357,
+      "end": 1717261247357,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1717261247357,
+      "end": 1717261247357,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1717261247358,
+      "end": 1717261247358,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1717261247358,
+      "end": 1717261247358,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1717261247358,
+      "end": 1717261247358,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1717261247358,
+      "end": 1717261247358,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1717261247358,
+      "end": 1717261247358,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1717261247358,
+      "end": 1717261247358,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1717261247358,
+      "end": 1717261247358,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1717261247358,
+      "end": 1717261247358,
+      "order": "normal"
+    }
+  ]
+}

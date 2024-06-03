@@ -1,0 +1,214 @@
+{
+  "resolvedId": "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/LandingPage/ContactCards.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n\n<div v-if=\"$viewport.isLessThan('tablet')\" class=\"contact-section-cards\">\n        <div class=\"contact-section-findus\">  \n          <span class=\"contact-section-text\">\n            <span>\n              <span>123 Cullinary Street</span>\n              <br />\n              <span>London</span>\n              <br />\n              <span>E21 3GH</span>\n              <br />\n              <span></span>\n              <br />\n              <span>\n                Available on\n                <span v-html=\"rawnyvq\"></span>\n              </span>\n              <br />\n              <span>Uber Eats and Deliveroo</span>\n              <br />\n              <span></span>\n              <br />\n              <span>Email Us</span>\n              <br />\n              <span>\n                dine@dine.com\n                <span v-html=\"raw7aoe\"></span>\n              </span>\n            </span>\n          </span>\n          <span class=\"contact-section-text19\"><span>Find Us</span></span>\n        </div>\n        <div class=\"contact-section-openingtimes\">\n          <span class=\"contact-section-text21\">\n            <span>\n              <span>Monday - Thursday</span>\n              <br />\n              <span>12pm - 11pm</span>\n              <br />\n              <span></span>\n              <br />\n              <span>Friday</span>\n              <br />\n              <span>12pm - 10pm</span>\n              <br />\n              <span></span>\n              <br />\n              <span>Saturday</span>\n              <br />\n              <span>12pm - 8pm</span>\n              <br />\n              <span></span>\n              <br />\n              <span>Sunday</span>\n              <br />\n              <span>12pm - 6pm</span>\n              <br />\n              <span></span>\n              <br />\n              <span></span>\n            </span>\n          </span>\n          <span class=\"contact-section-text48\"><span>Opening Times</span></span>\n        </div>\n        <div class=\"contact-section-kitchentimes\">\n          <span class=\"contact-section-text50\"><span>Kitchen Times</span></span>\n          <span class=\"contact-section-text52\">\n            <span>\n              <span>Monday - Thursday</span>\n              <br />\n              <span>12pm - 9pm</span>\n              <br />\n              <span></span>\n              <br />\n              <span>Friday</span>\n              <br />\n              <span>12pm - 8pm</span>\n              <br />\n              <span></span>\n              <br />\n              <span>Saturday</span>\n              <br />\n              <span>12pm - 8pm</span>\n              <br />\n              <span></span>\n              <br />\n              <span>Sunday</span>\n              <br />\n              <span>12pm - 6pm</span>\n              <br />\n              <span></span>\n              <br />\n              <span></span>\n            </span>\n          </span>\n        </div>\n      </div>\n<div v-else class=\"contact-section-cards\">\n        <div class=\"contact-section-findus\" data-aos=\"fade-left\" data-aos-duration=\"1750\">  \n          <span class=\"contact-section-text\">\n            <span>\n              <span>123 Cullinary Street</span>\n              <br />\n              <span>London</span>\n              <br />\n              <span>E21 3GH</span>\n              <br />\n              <span></span>\n              <br />\n              <span>\n                Available on\n                <span v-html=\"rawnyvq\"></span>\n              </span>\n              <br />\n              <span>Uber Eats and Deliveroo</span>\n              <br />\n              <span></span>\n              <br />\n              <span>Email Us</span>\n              <br />\n              <span>\n                dine@dine.com\n                <span v-html=\"raw7aoe\"></span>\n              </span>\n            </span>\n          </span>\n          <span class=\"contact-section-text19\"><span>Find Us</span></span>\n        </div>\n        <div class=\"contact-section-openingtimes\" data-aos=\"fade-down\" data-aos-duration=\"1750\">\n          <span class=\"contact-section-text21\">\n            <span>\n              <span>Monday - Thursday</span>\n              <br />\n              <span>12pm - 11pm</span>\n              <br />\n              <span></span>\n              <br />\n              <span>Friday</span>\n              <br />\n              <span>12pm - 10pm</span>\n              <br />\n              <span></span>\n              <br />\n              <span>Saturday</span>\n              <br />\n              <span>12pm - 8pm</span>\n              <br />\n              <span></span>\n              <br />\n              <span>Sunday</span>\n              <br />\n              <span>12pm - 6pm</span>\n              <br />\n              <span></span>\n              <br />\n              <span></span>\n            </span>\n          </span>\n          <span class=\"contact-section-text48\"><span>Opening Times</span></span>\n        </div>\n        <div class=\"contact-section-kitchentimes\" data-aos=\"fade-right\" data-aos-duration=\"1750\">\n          <span class=\"contact-section-text50\"><span>Kitchen Times</span></span>\n          <span class=\"contact-section-text52\">\n            <span>\n              <span>Monday - Thursday</span>\n              <br />\n              <span>12pm - 9pm</span>\n              <br />\n              <span></span>\n              <br />\n              <span>Friday</span>\n              <br />\n              <span>12pm - 8pm</span>\n              <br />\n              <span></span>\n              <br />\n              <span>Saturday</span>\n              <br />\n              <span>12pm - 8pm</span>\n              <br />\n              <span></span>\n              <br />\n              <span>Sunday</span>\n              <br />\n              <span>12pm - 6pm</span>\n              <br />\n              <span></span>\n              <br />\n              <span></span>\n            </span>\n          </span>\n        </div>\n      </div>\n\n\n</template>\n\n\n<script>\n\nexport default {\n  data() {\n    return {\n      rawnyvq: ' ',\n      raw7aoe: ' ',\n    }\n  },\n}\n\n</script>\n\n<style scoped>\n.contact-section-container {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  position: relative;\n  align-items: flex-start;\n  flex-direction: column;\n}\n.contact-section-bgimage {\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 1024px;\n  display: flex;\n  overflow: hidden;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 0;\n  background-size: cover;\n  background-image: url('https://images.pexels.com/photos/3201919/pexels-photo-3201919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');\n}\n.contact-section-contactslide {\n  width: 100%;\n  height: 1024px;\n  display: flex;\n  overflow: hidden;\n  position: relative;\n  align-self: flex-start;\n  align-items: flex-start;\n  flex-shrink: 0;\n  flex-direction: row;\n  justify-content: flex-start;\n  background-color: rgba(217, 217, 217, 0.77);\n}\n.contact-section-logo {\n  top: 39px;\n  left: 0px;\n  right: 0px;\n  width: 208px;\n  height: 208px;\n  margin: auto;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.contact-section-logo1 {\n  top: 0px;\n  left: 0px;\n  right: 0px;\n  width: 208px;\n  height: 208px;\n  margin: auto;\n  position: absolute;\n}\n.contact-section-cards {\n  top: 292px;\n  left: 0px;\n  right: 0px;\n  width: 1221px;\n  height: 619px;\n  margin: auto;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.contact-section-findus {\n  top: 0px;\n  left: 0px;\n  width: 349px;\n  height: 609px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n  border-radius: 16px;\n  background-color: rgba(189, 173, 173, 0.75);\n}\n.contact-section-text {\n  top: 139px;\n  left: 19px;\n  color: rgba(101, 85, 85, 1);\n  width: 322px;\n  height: auto;\n  position: absolute;\n  font-size: 32px;\n  text-align: right;\n  font-family: K2D;\n  font-weight: 500;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n.contact-section-text19 {\n  top: 10px;\n  color: rgba(93, 80, 80, 1);\n  width: 336px;\n  height: auto;\n  position: absolute;\n  font-size: 32px;\n  font-style: Regular;\n  text-align: right;\n  font-family: Libre Baskerville;\n  font-weight: 400;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n.contact-section-openingtimes {\n  top: 2px;\n  left: 437px;\n  width: 350px;\n  height: 609px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n  border-radius: 16px;\n  background-color: rgba(189, 173, 173, 0.75);\n}\n.contact-section-text21 {\n  top: 129px;\n  left: 14px;\n  color: rgba(101, 85, 85, 1);\n  width: 322px;\n  height: auto;\n  position: absolute;\n  font-size: 32px;\n  text-align: right;\n  font-family: K2D;\n  font-weight: 500;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n.contact-section-text48 {\n  top: 8px;\n  left: 0px;\n  color: rgba(93, 80, 80, 1);\n  width: 336px;\n  height: auto;\n  position: absolute;\n  font-size: 32px;\n  font-style: Regular;\n  text-align: right;\n  font-family: Libre Baskerville;\n  font-weight: 400;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n.contact-section-kitchentimes {\n  top: 0px;\n  left: 863px;\n  width: 358px;\n  height: 609px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n  border-radius: 16px;\n  background-color: rgba(189, 173, 173, 0.75);\n}\n.contact-section-text50 {\n  top: 10px;\n  color: rgba(93, 80, 80, 1);\n  width: 336px;\n  height: auto;\n  position: absolute;\n  font-size: 32px;\n  font-style: Regular;\n  text-align: right;\n  font-family: Libre Baskerville;\n  font-weight: 400;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n.contact-section-text52 {\n  top: 139px;\n  left: 14px;\n  color: rgba(101, 85, 85, 1);\n  width: 322px;\n  height: auto;\n  position: absolute;\n  font-size: 32px;\n  text-align: right;\n  font-family: K2D;\n  font-weight: 500;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n\n@media (max-width:479px) {\n.contact-section-bgimage {\n    height: 100vh;\n}\n \n.contact-section-container {\n    height: 100vh;\n}\n\n.contact-section-logo1 {\n  top: -11px;\n  left: 0px;\n  right: 0px;\n  width: 90px;\n  height: 90px;\n  margin: auto;\n  position: absolute;\n}\n\n.contact-section-findus {\n  top: -8rem;\n  left: 3rem;\n}\n\n.contact-section-openingtimes {\n  top: 32rem;\n  left: 3rem;\n}\n\n.contact-section-kitchentimes {\n  top: 72rem;\n  left: 3rem;\n}\n\n.contact-section-bgimage {\n  background-image: url('https://images.pexels.com/photos/3201919/pexels-photo-3201919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') repeat-y;\n  top: 0rem;\n}\n\n.contact-section-contactslide {\n  height: 100vh;\n  overflow-y: scroll;\n  top: 0rem;\n}\n\n}\n</style>\n",
+      "start": 1717261250268,
+      "end": 1717261250580,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1717261250580,
+      "end": 1717261250580,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1717261250580,
+      "end": 1717261250580,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1717261250580,
+      "end": 1717261250580,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1717261250580,
+      "end": 1717261250580,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1717261250580,
+      "end": 1717261250580,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1717261250580,
+      "end": 1717261250580,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1717261250580,
+      "end": 1717261250580,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\n\nconst _sfc_main = {\n  data() {\n    return {\n      rawnyvq: ' ',\n      raw7aoe: ' ',\n    }\n  },\n}\n\n\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, createStaticVNode as _createStaticVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-93035b3b\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = {\n  key: 0,\n  class: \"contact-section-cards\"\n}\nconst _hoisted_2 = { class: \"contact-section-findus\" }\nconst _hoisted_3 = { class: \"contact-section-text\" }\nconst _hoisted_4 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", null, \"123 Cullinary Street\", -1))\nconst _hoisted_5 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"br\", null, null, -1))\nconst _hoisted_6 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", null, \"London\", -1))\nconst _hoisted_7 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"br\", null, null, -1))\nconst _hoisted_8 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", null, \"E21 3GH\", -1))\nconst _hoisted_9 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"br\", null, null, -1))\nconst _hoisted_10 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", null, null, -1))\nconst _hoisted_11 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"br\", null, null, -1))\nconst _hoisted_12 = [\"innerHTML\"]\nconst _hoisted_13 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"br\", null, null, -1))\nconst _hoisted_14 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", null, \"Uber Eats and Deliveroo\", -1))\nconst _hoisted_15 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"br\", null, null, -1))\nconst _hoisted_16 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", null, null, -1))\nconst _hoisted_17 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"br\", null, null, -1))\nconst _hoisted_18 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", null, \"Email Us\", -1))\nconst _hoisted_19 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"br\", null, null, -1))\nconst _hoisted_20 = [\"innerHTML\"]\nconst _hoisted_21 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", { class: \"contact-section-text19\" }, [\n  /*#__PURE__*/_createElementVNode(\"span\", null, \"Find Us\")\n], -1))\nconst _hoisted_22 = /*#__PURE__*/_createStaticVNode(\"<div class=\\\"contact-section-openingtimes\\\" data-v-93035b3b><span class=\\\"contact-section-text21\\\" data-v-93035b3b><span data-v-93035b3b><span data-v-93035b3b>Monday - Thursday</span><br data-v-93035b3b><span data-v-93035b3b>12pm - 11pm</span><br data-v-93035b3b><span data-v-93035b3b></span><br data-v-93035b3b><span data-v-93035b3b>Friday</span><br data-v-93035b3b><span data-v-93035b3b>12pm - 10pm</span><br data-v-93035b3b><span data-v-93035b3b></span><br data-v-93035b3b><span data-v-93035b3b>Saturday</span><br data-v-93035b3b><span data-v-93035b3b>12pm - 8pm</span><br data-v-93035b3b><span data-v-93035b3b></span><br data-v-93035b3b><span data-v-93035b3b>Sunday</span><br data-v-93035b3b><span data-v-93035b3b>12pm - 6pm</span><br data-v-93035b3b><span data-v-93035b3b></span><br data-v-93035b3b><span data-v-93035b3b></span></span></span><span class=\\\"contact-section-text48\\\" data-v-93035b3b><span data-v-93035b3b>Opening Times</span></span></div><div class=\\\"contact-section-kitchentimes\\\" data-v-93035b3b><span class=\\\"contact-section-text50\\\" data-v-93035b3b><span data-v-93035b3b>Kitchen Times</span></span><span class=\\\"contact-section-text52\\\" data-v-93035b3b><span data-v-93035b3b><span data-v-93035b3b>Monday - Thursday</span><br data-v-93035b3b><span data-v-93035b3b>12pm - 9pm</span><br data-v-93035b3b><span data-v-93035b3b></span><br data-v-93035b3b><span data-v-93035b3b>Friday</span><br data-v-93035b3b><span data-v-93035b3b>12pm - 8pm</span><br data-v-93035b3b><span data-v-93035b3b></span><br data-v-93035b3b><span data-v-93035b3b>Saturday</span><br data-v-93035b3b><span data-v-93035b3b>12pm - 8pm</span><br data-v-93035b3b><span data-v-93035b3b></span><br data-v-93035b3b><span data-v-93035b3b>Sunday</span><br data-v-93035b3b><span data-v-93035b3b>12pm - 6pm</span><br data-v-93035b3b><span data-v-93035b3b></span><br data-v-93035b3b><span data-v-93035b3b></span></span></span></div>\", 2)\nconst _hoisted_24 = {\n  key: 1,\n  class: \"contact-section-cards\"\n}\nconst _hoisted_25 = {\n  class: \"contact-section-findus\",\n  \"data-aos\": \"fade-left\",\n  \"data-aos-duration\": \"1750\"\n}\nconst _hoisted_26 = { class: \"contact-section-text\" }\nconst _hoisted_27 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", null, \"123 Cullinary Street\", -1))\nconst _hoisted_28 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"br\", null, null, -1))\nconst _hoisted_29 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", null, \"London\", -1))\nconst _hoisted_30 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"br\", null, null, -1))\nconst _hoisted_31 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", null, \"E21 3GH\", -1))\nconst _hoisted_32 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"br\", null, null, -1))\nconst _hoisted_33 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", null, null, -1))\nconst _hoisted_34 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"br\", null, null, -1))\nconst _hoisted_35 = [\"innerHTML\"]\nconst _hoisted_36 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"br\", null, null, -1))\nconst _hoisted_37 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", null, \"Uber Eats and Deliveroo\", -1))\nconst _hoisted_38 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"br\", null, null, -1))\nconst _hoisted_39 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", null, null, -1))\nconst _hoisted_40 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"br\", null, null, -1))\nconst _hoisted_41 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", null, \"Email Us\", -1))\nconst _hoisted_42 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"br\", null, null, -1))\nconst _hoisted_43 = [\"innerHTML\"]\nconst _hoisted_44 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"span\", { class: \"contact-section-text19\" }, [\n  /*#__PURE__*/_createElementVNode(\"span\", null, \"Find Us\")\n], -1))\nconst _hoisted_45 = /*#__PURE__*/_createStaticVNode(\"<div class=\\\"contact-section-openingtimes\\\" data-aos=\\\"fade-down\\\" data-aos-duration=\\\"1750\\\" data-v-93035b3b><span class=\\\"contact-section-text21\\\" data-v-93035b3b><span data-v-93035b3b><span data-v-93035b3b>Monday - Thursday</span><br data-v-93035b3b><span data-v-93035b3b>12pm - 11pm</span><br data-v-93035b3b><span data-v-93035b3b></span><br data-v-93035b3b><span data-v-93035b3b>Friday</span><br data-v-93035b3b><span data-v-93035b3b>12pm - 10pm</span><br data-v-93035b3b><span data-v-93035b3b></span><br data-v-93035b3b><span data-v-93035b3b>Saturday</span><br data-v-93035b3b><span data-v-93035b3b>12pm - 8pm</span><br data-v-93035b3b><span data-v-93035b3b></span><br data-v-93035b3b><span data-v-93035b3b>Sunday</span><br data-v-93035b3b><span data-v-93035b3b>12pm - 6pm</span><br data-v-93035b3b><span data-v-93035b3b></span><br data-v-93035b3b><span data-v-93035b3b></span></span></span><span class=\\\"contact-section-text48\\\" data-v-93035b3b><span data-v-93035b3b>Opening Times</span></span></div><div class=\\\"contact-section-kitchentimes\\\" data-aos=\\\"fade-right\\\" data-aos-duration=\\\"1750\\\" data-v-93035b3b><span class=\\\"contact-section-text50\\\" data-v-93035b3b><span data-v-93035b3b>Kitchen Times</span></span><span class=\\\"contact-section-text52\\\" data-v-93035b3b><span data-v-93035b3b><span data-v-93035b3b>Monday - Thursday</span><br data-v-93035b3b><span data-v-93035b3b>12pm - 9pm</span><br data-v-93035b3b><span data-v-93035b3b></span><br data-v-93035b3b><span data-v-93035b3b>Friday</span><br data-v-93035b3b><span data-v-93035b3b>12pm - 8pm</span><br data-v-93035b3b><span data-v-93035b3b></span><br data-v-93035b3b><span data-v-93035b3b>Saturday</span><br data-v-93035b3b><span data-v-93035b3b>12pm - 8pm</span><br data-v-93035b3b><span data-v-93035b3b></span><br data-v-93035b3b><span data-v-93035b3b>Sunday</span><br data-v-93035b3b><span data-v-93035b3b>12pm - 6pm</span><br data-v-93035b3b><span data-v-93035b3b></span><br data-v-93035b3b><span data-v-93035b3b></span></span></span></div>\", 2)\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  return (_ctx.$viewport.isLessThan('tablet'))\n    ? (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _createElementVNode(\"span\", _hoisted_3, [\n            _createElementVNode(\"span\", null, [\n              _hoisted_4,\n              _hoisted_5,\n              _hoisted_6,\n              _hoisted_7,\n              _hoisted_8,\n              _hoisted_9,\n              _hoisted_10,\n              _hoisted_11,\n              _createElementVNode(\"span\", null, [\n                _createTextVNode(\" Available on \"),\n                _createElementVNode(\"span\", { innerHTML: $data.rawnyvq }, null, 8, _hoisted_12)\n              ]),\n              _hoisted_13,\n              _hoisted_14,\n              _hoisted_15,\n              _hoisted_16,\n              _hoisted_17,\n              _hoisted_18,\n              _hoisted_19,\n              _createElementVNode(\"span\", null, [\n                _createTextVNode(\" dine@dine.com \"),\n                _createElementVNode(\"span\", { innerHTML: $data.raw7aoe }, null, 8, _hoisted_20)\n              ])\n            ])\n          ]),\n          _hoisted_21\n        ]),\n        _hoisted_22\n      ]))\n    : (_openBlock(), _createElementBlock(\"div\", _hoisted_24, [\n        _createElementVNode(\"div\", _hoisted_25, [\n          _createElementVNode(\"span\", _hoisted_26, [\n            _createElementVNode(\"span\", null, [\n              _hoisted_27,\n              _hoisted_28,\n              _hoisted_29,\n              _hoisted_30,\n              _hoisted_31,\n              _hoisted_32,\n              _hoisted_33,\n              _hoisted_34,\n              _createElementVNode(\"span\", null, [\n                _createTextVNode(\" Available on \"),\n                _createElementVNode(\"span\", { innerHTML: $data.rawnyvq }, null, 8, _hoisted_35)\n              ]),\n              _hoisted_36,\n              _hoisted_37,\n              _hoisted_38,\n              _hoisted_39,\n              _hoisted_40,\n              _hoisted_41,\n              _hoisted_42,\n              _createElementVNode(\"span\", null, [\n                _createTextVNode(\" dine@dine.com \"),\n                _createElementVNode(\"span\", { innerHTML: $data.raw7aoe }, null, 8, _hoisted_43)\n              ])\n            ])\n          ]),\n          _hoisted_44\n        ]),\n        _hoisted_45\n      ]))\n}\n\nimport \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/LandingPage/ContactCards.vue?vue&type=style&index=0&scoped=93035b3b&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-93035b3b\"]])",
+      "start": 1717261250580,
+      "end": 1717261250583,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1717261250583,
+      "end": 1717261250583,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261250583,
+      "end": 1717261250583,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1717261250583,
+      "end": 1717261250583,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1717261250584,
+      "end": 1717261250584,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1717261250584,
+      "end": 1717261250584,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261250584,
+      "end": 1717261250584,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1717261250584,
+      "end": 1717261250584,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1717261250584,
+      "end": 1717261250584,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1717261250584,
+      "end": 1717261250584,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1717261250584,
+      "end": 1717261250584,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1717261250584,
+      "end": 1717261250584,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1717261250584,
+      "end": 1717261250584,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1717261250584,
+      "end": 1717261250584,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1717261250584,
+      "end": 1717261250584,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1717261250584,
+      "end": 1717261250584,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1717261250584,
+      "end": 1717261250584,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1717261250584,
+      "end": 1717261250586,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1717261250586,
+      "end": 1717261250586,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1717261250586,
+      "end": 1717261250586,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1717261250586,
+      "end": 1717261250586,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1717261250586,
+      "end": 1717261250586,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1717261250586,
+      "end": 1717261250586,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1717261250586,
+      "end": 1717261250586,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1717261250586,
+      "end": 1717261250587,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1717261250587,
+      "end": 1717261250587,
+      "order": "normal"
+    }
+  ]
+}

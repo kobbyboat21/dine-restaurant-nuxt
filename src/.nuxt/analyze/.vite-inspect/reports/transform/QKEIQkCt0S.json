@@ -1,0 +1,222 @@
+{
+  "resolvedId": "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/stores/lunch_menu.ts",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { defineStore } from \"pinia\";\n\nexport const useLunchStore = defineStore('lunchStore', {\n\n state: () => ({\n\t\t// List of all meals\n\t\tlunch_meals: [] \n\t}),\n  actions: {\n \n  async getLunch() {\n    let data = await $fetch(\"/api/menus/lunch\") // meals gotten from the database\n      //\n  // 2 -- Use Javascript For - In Loop on data array to set lunch_meals to contain data's contents\n    this.lunch_meals = data\n    return data\n  },\n\n  async createLunchMeal(meal) {\n    // Get Auto-increment ID\n    let id = this.lunch_meals.length + 1\n    // Assign ID to meal\n    meal.id = id\n    // POST Request\n    await $fetch( \"/api/menus/lunch/create\" ,  {\n        // $fetch sends request to api which sends it to database to add the new lunch meal\n      method: \"POST\", //\"POST\" is an http method used to send data, in this case, to the API\n      body: meal\n    }\n    )\n    this.lunch_meals.push(meal)\n    console.log(\"Creating lunch meal for the following meal:\")\n    console.log(meal)\n  },\n\n  async editLunch(meal) {\n    let found = this.lunch_meals.find(p => p.id === meal.id)\n    if (found) {\n      console.log('edit' + found.name)\n      found.name = meal.name\n      found.price = meal.price\n      found.description = meal.description\n      found.ingredients = meal.ingredients\n      found.section = meal.section\n      let id = found._id\n\n      let edit_endpoint = `/api/menus/lunch/${id}`\n\n      await $fetch(edit_endpoint, {\n          method: \"PUT\", // \"PUT\" as well is an http method that sends data to be replaced/ updated\n          body: found\n        }\n        )\n    }\n\n      \n  },\n\n  async deleteLunch(meal) {\n    let foundIndex = this.lunch_meals.findIndex(p => p.id === meal.id)\n    let found = this.lunch_meals.find(p => p.id === meal.id)\n    console.log('delete' + meal.name)\n    if (foundIndex !== -1) this.lunch_meals.splice(foundIndex, 1)\n\n    let id = found._id\n\n    let delete_endpoint = `/api/menus/lunch/${id}`\n      \n    await $fetch(delete_endpoint, {\n      method: \"DELETE\",\n      })\n\n  },\n\n}\n}\n) /* \n\n\n  /* const lunch_meals = ref([{\n    id: 1,\n    name: 'Grilled Chicken Quinoa Bowl',\n    price: '$18',\n    description: 'Grilled chicken breast served over a bed of tri-color quinoa, roasted vegetables, and baby spinach. Topped with a zesty lemon-tahini dressing and garnished with toasted pine nuts.',\n    image: 'https://cdn-aboak.nitrocdn.com/QJsLnWfsWAiuukSIMowyVEHtotvSQZoR/assets/images/optimized/rev-cbe4481/www.slenderkitchen.com/sites/default/files/styles/featured_750/public/recipe_images/chicken-quinoa-bowl.jpg',\n    ingredients: 'Grilled chicken breast, Tri-color quinoa, Roasted vegetables, Baby spinach, Lemon-tahini dressing, Toasted pine nuts',\n    section: 'Lunch'\n  }, {\n    id: 2,\n    name: 'Seared Ahi Tuna Salad',\n    price: '$21',\n    description: 'Sliced seared ahi tuna on a bed of mixed greens, cherry tomatoes, cucumber, and avocado. Drizzled with a soy-ginger vinaigrette and sprinkled with sesame seeds.',\n    image: 'https://fitfoodiefinds.com/wp-content/uploads/2019/07/poke-bowl-14.jpg',\n    ingredients: 'Ahi tuna, Mixed greens, Cherry tomatoes, Cucumber, Avocado, Soy-ginger vinaigrette, Sesame seeds',\n    section: 'Lunch'\n  }, {\n    id: 3,\n    name: 'Mushroom and Truffle Risotto',\n    price: '$18',\n    description: 'Creamy risotto with a medley of wild mushrooms, finished with truffle oil and Parmesan cheese. Garnished with fresh chives and served with a side of garlic bread.',\n    image: 'https://www.lakeshorelady.com/wp-content/uploads/2021/02/mushroom-risotto-8.jpg',\n    ingredients: 'Arborio rice, Wild mushrooms, Truffle oil, Parmesan cheese, Chives, Garlic bread',\n    section: 'Lunch'\n  }])*/\n",
+      "start": 1717261248179,
+      "end": 1717261248497,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1717261248497,
+      "end": 1717261248497,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1717261248497,
+      "end": 1717261248497,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1717261248497,
+      "end": 1717261248498,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1717261248498,
+      "end": 1717261248498,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineStore } from \"pinia\";\nexport const useLunchStore = defineStore(\n  \"lunchStore\",\n  {\n    state: () => ({\n      // List of all meals\n      lunch_meals: []\n    }),\n    actions: {\n      async getLunch() {\n        let data = await $fetch(\"/api/menus/lunch\");\n        this.lunch_meals = data;\n        return data;\n      },\n      async createLunchMeal(meal) {\n        let id = this.lunch_meals.length + 1;\n        meal.id = id;\n        await $fetch(\n          \"/api/menus/lunch/create\",\n          {\n            // $fetch sends request to api which sends it to database to add the new lunch meal\n            method: \"POST\",\n            //\"POST\" is an http method used to send data, in this case, to the API\n            body: meal\n          }\n        );\n        this.lunch_meals.push(meal);\n        console.log(\"Creating lunch meal for the following meal:\");\n        console.log(meal);\n      },\n      async editLunch(meal) {\n        let found = this.lunch_meals.find((p) => p.id === meal.id);\n        if (found) {\n          console.log(\"edit\" + found.name);\n          found.name = meal.name;\n          found.price = meal.price;\n          found.description = meal.description;\n          found.ingredients = meal.ingredients;\n          found.section = meal.section;\n          let id = found._id;\n          let edit_endpoint = `/api/menus/lunch/${id}`;\n          await $fetch(\n            edit_endpoint,\n            {\n              method: \"PUT\",\n              // \"PUT\" as well is an http method that sends data to be replaced/ updated\n              body: found\n            }\n          );\n        }\n      },\n      async deleteLunch(meal) {\n        let foundIndex = this.lunch_meals.findIndex((p) => p.id === meal.id);\n        let found = this.lunch_meals.find((p) => p.id === meal.id);\n        console.log(\"delete\" + meal.name);\n        if (foundIndex !== -1)\n          this.lunch_meals.splice(foundIndex, 1);\n        let id = found._id;\n        let delete_endpoint = `/api/menus/lunch/${id}`;\n        await $fetch(delete_endpoint, {\n          method: \"DELETE\"\n        });\n      }\n    }\n  }\n);\n",
+      "start": 1717261248498,
+      "end": 1717261248541,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/stores/lunch_menu.ts"
+        ],
+        "sourcesContent": [
+          "import { defineStore } from \"pinia\";\n\nexport const useLunchStore = defineStore('lunchStore', {\n\n state: () => ({\n\t\t// List of all meals\n\t\tlunch_meals: [] \n\t}),\n  actions: {\n \n  async getLunch() {\n    let data = await $fetch(\"/api/menus/lunch\") // meals gotten from the database\n      //\n  // 2 -- Use Javascript For - In Loop on data array to set lunch_meals to contain data's contents\n    this.lunch_meals = data\n    return data\n  },\n\n  async createLunchMeal(meal) {\n    // Get Auto-increment ID\n    let id = this.lunch_meals.length + 1\n    // Assign ID to meal\n    meal.id = id\n    // POST Request\n    await $fetch( \"/api/menus/lunch/create\" ,  {\n        // $fetch sends request to api which sends it to database to add the new lunch meal\n      method: \"POST\", //\"POST\" is an http method used to send data, in this case, to the API\n      body: meal\n    }\n    )\n    this.lunch_meals.push(meal)\n    console.log(\"Creating lunch meal for the following meal:\")\n    console.log(meal)\n  },\n\n  async editLunch(meal) {\n    let found = this.lunch_meals.find(p => p.id === meal.id)\n    if (found) {\n      console.log('edit' + found.name)\n      found.name = meal.name\n      found.price = meal.price\n      found.description = meal.description\n      found.ingredients = meal.ingredients\n      found.section = meal.section\n      let id = found._id\n\n      let edit_endpoint = `/api/menus/lunch/${id}`\n\n      await $fetch(edit_endpoint, {\n          method: \"PUT\", // \"PUT\" as well is an http method that sends data to be replaced/ updated\n          body: found\n        }\n        )\n    }\n\n      \n  },\n\n  async deleteLunch(meal) {\n    let foundIndex = this.lunch_meals.findIndex(p => p.id === meal.id)\n    let found = this.lunch_meals.find(p => p.id === meal.id)\n    console.log('delete' + meal.name)\n    if (foundIndex !== -1) this.lunch_meals.splice(foundIndex, 1)\n\n    let id = found._id\n\n    let delete_endpoint = `/api/menus/lunch/${id}`\n      \n    await $fetch(delete_endpoint, {\n      method: \"DELETE\",\n      })\n\n  },\n\n}\n}\n) /* \n\n\n  /* const lunch_meals = ref([{\n    id: 1,\n    name: 'Grilled Chicken Quinoa Bowl',\n    price: '$18',\n    description: 'Grilled chicken breast served over a bed of tri-color quinoa, roasted vegetables, and baby spinach. Topped with a zesty lemon-tahini dressing and garnished with toasted pine nuts.',\n    image: 'https://cdn-aboak.nitrocdn.com/QJsLnWfsWAiuukSIMowyVEHtotvSQZoR/assets/images/optimized/rev-cbe4481/www.slenderkitchen.com/sites/default/files/styles/featured_750/public/recipe_images/chicken-quinoa-bowl.jpg',\n    ingredients: 'Grilled chicken breast, Tri-color quinoa, Roasted vegetables, Baby spinach, Lemon-tahini dressing, Toasted pine nuts',\n    section: 'Lunch'\n  }, {\n    id: 2,\n    name: 'Seared Ahi Tuna Salad',\n    price: '$21',\n    description: 'Sliced seared ahi tuna on a bed of mixed greens, cherry tomatoes, cucumber, and avocado. Drizzled with a soy-ginger vinaigrette and sprinkled with sesame seeds.',\n    image: 'https://fitfoodiefinds.com/wp-content/uploads/2019/07/poke-bowl-14.jpg',\n    ingredients: 'Ahi tuna, Mixed greens, Cherry tomatoes, Cucumber, Avocado, Soy-ginger vinaigrette, Sesame seeds',\n    section: 'Lunch'\n  }, {\n    id: 3,\n    name: 'Mushroom and Truffle Risotto',\n    price: '$18',\n    description: 'Creamy risotto with a medley of wild mushrooms, finished with truffle oil and Parmesan cheese. Garnished with fresh chives and served with a side of garlic bread.',\n    image: 'https://www.lakeshorelady.com/wp-content/uploads/2021/02/mushroom-risotto-8.jpg',\n    ingredients: 'Arborio rice, Wild mushrooms, Truffle oil, Parmesan cheese, Chives, Garlic bread',\n    section: 'Lunch'\n  }])*/\n"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB;AAErB,aAAM,gBAAgB;AAAA,EAAY;AAAA,EAAc;AAAA,IAEtD,OAAO,OAAO;AAAA;AAAA,MAEb,aAAa,CAAC;AAAA,IACf;AAAA,IACC,SAAS;AAAA,MAET,MAAM,WAAW;AACf,YAAI,OAAO,MAAM,OAAO,kBAAkB;AAG1C,aAAK,cAAc;AACnB,eAAO;AAAA,MACT;AAAA,MAEA,MAAM,gBAAgB,MAAM;AAE1B,YAAI,KAAK,KAAK,YAAY,SAAS;AAEnC,aAAK,KAAK;AAEV,cAAM;AAAA,UAAQ;AAAA,UAA6B;AAAA;AAAA,YAEzC,QAAQ;AAAA;AAAA,YACR,MAAM;AAAA,UACR;AAAA,QACA;AACA,aAAK,YAAY,KAAK,IAAI;AAC1B,gBAAQ,IAAI,6CAA6C;AACzD,gBAAQ,IAAI,IAAI;AAAA,MAClB;AAAA,MAEA,MAAM,UAAU,MAAM;AACpB,YAAI,QAAQ,KAAK,YAAY,KAAK,OAAK,EAAE,OAAO,KAAK,EAAE;AACvD,YAAI,OAAO;AACT,kBAAQ,IAAI,SAAS,MAAM,IAAI;AAC/B,gBAAM,OAAO,KAAK;AAClB,gBAAM,QAAQ,KAAK;AACnB,gBAAM,cAAc,KAAK;AACzB,gBAAM,cAAc,KAAK;AACzB,gBAAM,UAAU,KAAK;AACrB,cAAI,KAAK,MAAM;AAEf,cAAI,gBAAgB,oBAAoB,EAAE;AAE1C,gBAAM;AAAA,YAAO;AAAA,YAAe;AAAA,cACxB,QAAQ;AAAA;AAAA,cACR,MAAM;AAAA,YACR;AAAA,UACA;AAAA,QACJ;AAAA,MAGF;AAAA,MAEA,MAAM,YAAY,MAAM;AACtB,YAAI,aAAa,KAAK,YAAY,UAAU,OAAK,EAAE,OAAO,KAAK,EAAE;AACjE,YAAI,QAAQ,KAAK,YAAY,KAAK,OAAK,EAAE,OAAO,KAAK,EAAE;AACvD,gBAAQ,IAAI,WAAW,KAAK,IAAI;AAChC,YAAI,eAAe;AAAI,eAAK,YAAY,OAAO,YAAY,CAAC;AAE5D,YAAI,KAAK,MAAM;AAEf,YAAI,kBAAkB,oBAAoB,EAAE;AAE5C,cAAM,OAAO,iBAAiB;AAAA,UAC5B,QAAQ;AAAA,QACR,CAAC;AAAA,MAEL;AAAA,IAEF;AAAA,EACA;AACA;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1717261248541,
+      "end": 1717261248541,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1717261248541,
+      "end": 1717261248541,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1717261248541,
+      "end": 1717261248541,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1717261248541,
+      "end": 1717261248541,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261248542,
+      "end": 1717261248542,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1717261248542,
+      "end": 1717261248542,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1717261248542,
+      "end": 1717261248542,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1717261248542,
+      "end": 1717261248542,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261248542,
+      "end": 1717261248542,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1717261248543,
+      "end": 1717261248543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1717261248543,
+      "end": 1717261248543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1717261248543,
+      "end": 1717261248543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1717261248543,
+      "end": 1717261248543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1717261248543,
+      "end": 1717261248543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1717261248543,
+      "end": 1717261248543,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1717261248543,
+      "end": 1717261248543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1717261248543,
+      "end": 1717261248543,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1717261248543,
+      "end": 1717261248543,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1717261248543,
+      "end": 1717261248543,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1717261248544,
+      "end": 1717261248548,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1717261248548,
+      "end": 1717261248548,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1717261248549,
+      "end": 1717261248549,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1717261248549,
+      "end": 1717261248549,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1717261248549,
+      "end": 1717261248549,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1717261248549,
+      "end": 1717261248549,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1717261248549,
+      "end": 1717261248549,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1717261248549,
+      "end": 1717261248550,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1717261248550,
+      "end": 1717261248550,
+      "order": "normal"
+    }
+  ]
+}
