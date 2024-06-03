@@ -1,1 +1,0 @@
-export { default } from "file:///media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

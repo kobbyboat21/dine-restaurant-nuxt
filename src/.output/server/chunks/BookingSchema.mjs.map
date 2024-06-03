@@ -1,1 +1,0 @@
-{"version":3,"file":"BookingSchema.mjs","sources":["../../../server/models/bookings/BookingSchema.ts"],"sourcesContent":null,"names":[],"mappings":";;AAEA,MAAM,aAAA,GAAgB,IAAI,MAAO,CAAA;AAAA,EAC/B,EAAI,EAAA,MAAA;AAAA,EACJ,IAAM,EAAA,MAAA;AAAA,EACN,OAAS,EAAA,MAAA;AAAA,EACT,QAAU,EAAA,MAAA;AAAA,EACV,QAAU,EAAA,MAAA;AAEZ,CAAC,CAAA,CAAA;AACD,aAAe,KAAA,CAAM,QAAQ,aAAa,CAAA;;;;"}

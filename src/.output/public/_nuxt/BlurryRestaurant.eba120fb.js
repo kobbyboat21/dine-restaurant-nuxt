@@ -1,1 +1,0 @@
-import{_ as e,o,c as t}from"./entry.61323198.js";const s={},c={class:"blur-xl absolute top-0 left-0 w-full h-screen bg-[url('https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center opacity-20"};function r(n,_){return o(),t("div",c)}const l=e(s,[["render",r]]);export{l as _};
