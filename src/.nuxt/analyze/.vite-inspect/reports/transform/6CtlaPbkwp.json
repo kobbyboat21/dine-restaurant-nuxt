@@ -1,0 +1,221 @@
+{
+  "resolvedId": "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/LandingPage/section/allday.vue?vue&type=style&index=0&scoped=ee34b9f1&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.all-day-section-container {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  position: relative;\n  align-items: flex-start;\n  flex-direction: column;\n}\n.all-day-section-lunchslide {\n  width: 100%;\n  height: 1024px;\n  display: flex;\n  overflow: hidden;\n  position: relative;\n  align-items: flex-start;\n  flex-shrink: 0;\n  background-image: linear-gradient(180deg, rgba(161, 153, 139, 1) 0%, rgba(148, 139, 161, 0.9635416865348816) 100%, rgba(233, 199, 149, 0) 100%);\n}\n.all-day-section-container1 {\n  top: 146px;\n  left: 0px;\n  right: 0px;\n  width: 1270.9999885559082px;\n  height: 781.9999847412109px;\n  margin: auto;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n}\n.all-day-section-ellipse2 {\n  left: 622.9999885559082px;\n  width: 382px;\n  bottom: 0px;\n  height: 337px;\n  position: absolute;\n}\n.all-day-section-lunchbutton {\n  top: 37rem;\n  left: 20.875rem;\n  width: 283px;\n  bottom: 101px;\n  height: 67px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.all-day-section-reservebutton {\n  top: -760.727294921875px;\n  left: -336.5px;\n  width: 283px;\n  height: 67px;\n  display: none;\n  position: absolute;\n}\n.all-day-section-text {\n  top: 7.90911865234375px;\n  left: 34.090911865234375px;\n  color: rgba(93, 80, 80, 1);\n  width: 257px;\n  height: auto;\n  margin: auto;\n  display: none;\n  position: absolute;\n  font-size: 36px;\n  font-style: Regular;\n  text-align: left;\n  font-family: K2D;\n  font-weight: 400;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n.all-day-section-button {\n  color: rgb(72,64,77);\n  width: 323px;\n  height: 67px;\n  font-size: 32px;\n  transition: 0.3s;\n  font-family: \"K2D\";\n  border-color: #665656;\n  border-width: 3px;\n  border-radius: 16px;\n  background-color: #9a919e;\n}\n.all-day-section-button:hover {\n  background-color: #b9aebe;\n}\n.all-day-section-lunchmessage {\n  top: 22.9rem;\n  left: 13.2rem;\n  width: 25.3rem;\n  height: 12.1rem;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n  background-color: rgba(189, 173, 173, 0.44999998807907104);\n}\n.all-day-section-lunchmessage1 {\n  top: 1.375rem;\n  left: 1.7rem;\n  width: 34.125rem;\n  height: 14.875rem;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.all-day-section-text05 {\n  color: rgb(72,64,77);\n  width: 22rem;\n  height: auto;\n  position: absolute;\n  font-size: 24px;\n  text-align: left;\n  font-family: K2D;\n  font-weight: 500;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n.all-day-section-text06 {\n  font-weight: 500;\n}\n.all-day-section-text07 {\n  font-weight: 700;\n}\n.all-day-section-text08 {\n  font-weight: 500;\n}\n.all-day-section-text09 {\n  font-weight: 700;\n}\n.all-day-section-text10 {\n  font-weight: 500;\n}\n.all-day-section-text11 {\n  font-weight: 700;\n}\n.all-day-section-rectangle8 {\n  top: 5rem;\n  left: 45rem;\n  width: 28.9rem;\n  height: 36.25rem;\n  position: absolute;\n}\n.all-day-section-lunchbigtext {\n  gap: 10px;\n  top: 0px;\n  left: 0px;\n  width: 724px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n}\n.all-day-section-lunchbigtext1 {\n  top: 126px;\n  left: 38px;\n  width: 734px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.all-day-section-lunchbigtext2 {\n  top: 0px;\n  left: 1rem;\n  width: 734px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.all-day-section-text13 {\n  color: rgb(72,64,77);\n  width: 734px;\n  height: auto;\n  position: absolute;\n  font-size: 64px;\n  font-style: Regular;\n  text-align: center;\n  font-family: Libre Baskerville;\n  font-weight: 400;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n.all-day-section-timeicon1 {\n  top: 2.4rem;\n  left: 31rem;\n  width: 10rem;\n  height: 10rem;\n  position: absolute;\n}\n\n.all-day-hotbowlicon1 {\n  top: 20rem;\n  left: -45rem;\n  position: absolute;\n  filter: opacity(30%);\n  width: 800px;\n  height: 800px;\n  visibility: hidden\n}\n.all-day-section-lunchbigtext_timeless {\n  top: 2rem;\n  left: -13rem;\n  width: 734px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.all-day-section-lunchbigtext_indulgence {\n  top: 2rem;\n  left: 4.3rem;\n  width: 734px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n\n.all-day-section-lunchbigtext_alldaylong {\n  top: 6rem;\n  left: 3.4rem;\n  width: 734px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n@media (max-width:479px) {\n\n.all-day-section-lunchbigtext1 {\n  top: 38rem;\n  left: 1.75rem;\n}\n\n.all-day-hotbowlicon1 {\n  top: 12rem;\n  left: -49rem;\n  position: absolute;\n  filter: opacity(40%);\n  width: 50rem;\n  height: 50rem;\n}\n\n.all-day-section-lunchslide {\n  top: 0rem;\n  width: 100%;\n  height: 1299px;\n  display: flex;\n  overflow: hidden;\n  position: relative;\n  align-items: flex-start;\n  flex-shrink: 0;\n  background-image: linear-gradient(180deg, rgba(161, 153, 139, 1) 0%, rgba(148, 139, 161, 0.9635416865348816) 100%, rgba(233, 199, 149, 0) 100%);\n}\n.all-day-section-rectangle8 {\n  top: -9rem;\n  right: 0px;\n  width: 478px;\n  height: 81vh;\n  left: 0rem;\n  z-index: 0;\n}\n.all-day-section-lunchbutton {\n  left: 2.8rem;\n  width: 28.2rem;\n  bottom: 13rem;\n  height: 67px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n  z-index: 10;\n  top: 60.5rem\n}\n\n.all-day-section-button {\n    width: 85%;\n    font-size: 20px;\n  }\n.all-day-section-lunchmessage {\n  top: 44rem;\n  left: 1.75rem;\n  width: 560px;\n  height: 235px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n  background-color: rgba(189, 173, 173, 0)\n}\n.all-day-section-text05 {\n  width: 385px;\n  height: auto;\n  position: absolute;\n  font-size: 1.25rem;\n  text-align: left;\n  font-family: K2D;\n  font-weight: 500;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n.all-day-section-text13 {\n  width: 734px;\n  height: auto;\n  position: absolute;\n  font-size: 2.85rem;\n  font-style: Regular;\n  text-align: center;\n  font-family: Libre Baskerville;\n  font-weight: 400;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n.all-day-section-lunchbigtext_timeless {\n  top: -1rem;\n  left: -18.5rem;\n  width: 734px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.all-day-section-lunchbigtext_indulgence {\n  top: -1rem;\n  left: -6.5rem;\n  width: 734px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n\n.all-day-section-lunchbigtext_alldaylong {\n  top: 2rem;\n  left: -4.5rem;\n  width: 734px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.all-day-section-timeicon1 {\n  top: -7rem;\n  left: 4.5rem;\n  width: 300px;\n  height: 300px;\n  position: absolute;\n}\n\n}\n",
+      "start": 1717261249850,
+      "end": 1717261249851
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1717261249853,
+      "end": 1717261249855,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1717261249863,
+      "end": 1717261249864,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1717261249987,
+      "end": 1717261249987,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".all-day-section-container{flex-direction:column;height:100%}.all-day-section-container,.all-day-section-lunchslide{align-items:flex-start;display:flex;position:relative;width:100%}.all-day-section-lunchslide{background-image:linear-gradient(180deg,#a1998b,rgba(148,139,161,.964) 100%,hsla(36,66%,75%,0) 0);flex-shrink:0;height:1024px;overflow:hidden}.all-day-section-container1{align-items:flex-start;display:flex;height:781.9999847412109px;left:0;margin:auto;position:absolute;right:0;top:146px;width:1270.9999885559082px}.all-day-section-ellipse2{bottom:0;height:337px;left:622.9999885559082px;position:absolute;width:382px}.all-day-section-lunchbutton{align-items:flex-start;bottom:101px;display:flex;flex-shrink:1;height:67px;left:20.875rem;position:absolute;top:37rem;width:283px}.all-day-section-reservebutton{display:none;height:67px;left:-336.5px;position:absolute;top:-760.727294921875px;width:283px}.all-day-section-text{color:#5d5050;display:none;font-family:K2D;font-size:36px;font-stretch:normal;font-style:Regular;font-weight:400;height:auto;left:34.090911865234375px;line-height:normal;margin:auto;position:absolute;text-align:left;text-decoration:none;top:7.90911865234375px;width:257px}.all-day-section-button{background-color:#9a919e;border-color:#665656;border-radius:16px;border-width:3px;color:#48404d;font-family:K2D;font-size:32px;height:67px;transition:.3s;width:323px}.all-day-section-button:hover{background-color:#b9aebe}.all-day-section-lunchmessage{background-color:hsla(0,11%,71%,.45);height:12.1rem;left:13.2rem;top:22.9rem;width:25.3rem}.all-day-section-lunchmessage,.all-day-section-lunchmessage1{align-items:flex-start;display:flex;flex-shrink:1;position:absolute}.all-day-section-lunchmessage1{height:14.875rem;left:1.7rem;top:1.375rem;width:34.125rem}.all-day-section-text05{color:#48404d;font-family:K2D;font-size:24px;font-stretch:normal;font-weight:500;height:auto;line-height:normal;position:absolute;text-align:left;text-decoration:none;width:22rem}.all-day-section-text06{font-weight:500}.all-day-section-text07{font-weight:700}.all-day-section-text08{font-weight:500}.all-day-section-text09{font-weight:700}.all-day-section-text10{font-weight:500}.all-day-section-text11{font-weight:700}.all-day-section-rectangle8{height:36.25rem;left:45rem;position:absolute;top:5rem;width:28.9rem}.all-day-section-lunchbigtext{gap:10px;left:0;top:0;width:724px}.all-day-section-lunchbigtext,.all-day-section-lunchbigtext1{align-items:flex-start;display:flex;height:215px;position:absolute}.all-day-section-lunchbigtext1{flex-shrink:1;left:38px;top:126px;width:734px}.all-day-section-lunchbigtext2{align-items:flex-start;display:flex;flex-shrink:1;height:215px;left:1rem;position:absolute;top:0;width:734px}.all-day-section-text13{color:#48404d;font-family:Libre Baskerville;font-size:64px;font-stretch:normal;font-style:Regular;font-weight:400;height:auto;line-height:normal;position:absolute;text-align:center;text-decoration:none;width:734px}.all-day-section-timeicon1{height:10rem;left:31rem;position:absolute;top:2.4rem;width:10rem}.all-day-hotbowlicon1{filter:opacity(30%);height:800px;left:-45rem;position:absolute;top:20rem;visibility:hidden;width:800px}.all-day-section-lunchbigtext_timeless{left:-13rem}.all-day-section-lunchbigtext_indulgence,.all-day-section-lunchbigtext_timeless{align-items:flex-start;display:flex;flex-shrink:1;height:215px;position:absolute;top:2rem;width:734px}.all-day-section-lunchbigtext_indulgence{left:4.3rem}.all-day-section-lunchbigtext_alldaylong{align-items:flex-start;display:flex;flex-shrink:1;height:215px;left:3.4rem;position:absolute;top:6rem;width:734px}@media (max-width:479px){.all-day-section-lunchbigtext1{left:1.75rem;top:38rem}.all-day-hotbowlicon1{filter:opacity(40%);height:50rem;left:-49rem;position:absolute;top:12rem;width:50rem}.all-day-section-lunchslide{align-items:flex-start;background-image:linear-gradient(180deg,#a1998b,rgba(148,139,161,.964) 100%,hsla(36,66%,75%,0) 0);display:flex;flex-shrink:0;height:1299px;overflow:hidden;position:relative;top:0;width:100%}.all-day-section-rectangle8{height:81vh;left:0;right:0;top:-9rem;width:478px;z-index:0}.all-day-section-lunchbutton{align-items:flex-start;bottom:13rem;display:flex;flex-shrink:1;height:67px;left:2.8rem;position:absolute;top:60.5rem;width:28.2rem;z-index:10}.all-day-section-button{font-size:20px;width:85%}.all-day-section-lunchmessage{align-items:flex-start;background-color:hsla(0,11%,71%,0);display:flex;flex-shrink:1;height:235px;left:1.75rem;position:absolute;top:44rem;width:560px}.all-day-section-text05{font-family:K2D;font-size:1.25rem;font-weight:500;text-align:left;width:385px}.all-day-section-text05,.all-day-section-text13{font-stretch:normal;height:auto;line-height:normal;position:absolute;text-decoration:none}.all-day-section-text13{font-family:Libre Baskerville;font-size:2.85rem;font-style:Regular;font-weight:400;text-align:center;width:734px}.all-day-section-lunchbigtext_timeless{left:-18.5rem}.all-day-section-lunchbigtext_indulgence,.all-day-section-lunchbigtext_timeless{align-items:flex-start;display:flex;flex-shrink:1;height:215px;position:absolute;top:-1rem;width:734px}.all-day-section-lunchbigtext_indulgence{left:-6.5rem}.all-day-section-lunchbigtext_alldaylong{align-items:flex-start;display:flex;flex-shrink:1;height:215px;left:-4.5rem;position:absolute;top:2rem;width:734px}.all-day-section-timeicon1{height:300px;left:4.5rem;position:absolute;top:-7rem;width:300px}}",
+      "start": 1717261249987,
+      "end": 1717261250127,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1717261250128,
+      "end": 1717261250128,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1717261250189,
+      "end": 1717261250192,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1717261250196,
+      "end": 1717261250196,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".all-day-section-container[data-v-ee34b9f1]{flex-direction:column;height:100%}.all-day-section-container[data-v-ee34b9f1],.all-day-section-lunchslide[data-v-ee34b9f1]{align-items:flex-start;display:flex;position:relative;width:100%}.all-day-section-lunchslide[data-v-ee34b9f1]{background-image:linear-gradient(180deg,#a1998b,rgba(148,139,161,.964) 100%,hsla(36,66%,75%,0) 0);flex-shrink:0;height:1024px;overflow:hidden}.all-day-section-container1[data-v-ee34b9f1]{align-items:flex-start;display:flex;height:781.9999847412109px;left:0;margin:auto;position:absolute;right:0;top:146px;width:1270.9999885559082px}.all-day-section-ellipse2[data-v-ee34b9f1]{bottom:0;height:337px;left:622.9999885559082px;position:absolute;width:382px}.all-day-section-lunchbutton[data-v-ee34b9f1]{align-items:flex-start;bottom:101px;display:flex;flex-shrink:1;height:67px;left:20.875rem;position:absolute;top:37rem;width:283px}.all-day-section-reservebutton[data-v-ee34b9f1]{display:none;height:67px;left:-336.5px;position:absolute;top:-760.727294921875px;width:283px}.all-day-section-text[data-v-ee34b9f1]{color:#5d5050;display:none;font-family:K2D;font-size:36px;font-stretch:normal;font-style:Regular;font-weight:400;height:auto;left:34.090911865234375px;line-height:normal;margin:auto;position:absolute;text-align:left;text-decoration:none;top:7.90911865234375px;width:257px}.all-day-section-button[data-v-ee34b9f1]{background-color:#9a919e;border-color:#665656;border-radius:16px;border-width:3px;color:#48404d;font-family:K2D;font-size:32px;height:67px;transition:.3s;width:323px}.all-day-section-button[data-v-ee34b9f1]:hover{background-color:#b9aebe}.all-day-section-lunchmessage[data-v-ee34b9f1]{background-color:hsla(0,11%,71%,.45);height:12.1rem;left:13.2rem;top:22.9rem;width:25.3rem}.all-day-section-lunchmessage[data-v-ee34b9f1],.all-day-section-lunchmessage1[data-v-ee34b9f1]{align-items:flex-start;display:flex;flex-shrink:1;position:absolute}.all-day-section-lunchmessage1[data-v-ee34b9f1]{height:14.875rem;left:1.7rem;top:1.375rem;width:34.125rem}.all-day-section-text05[data-v-ee34b9f1]{color:#48404d;font-family:K2D;font-size:24px;font-stretch:normal;font-weight:500;height:auto;line-height:normal;position:absolute;text-align:left;text-decoration:none;width:22rem}.all-day-section-text06[data-v-ee34b9f1]{font-weight:500}.all-day-section-text07[data-v-ee34b9f1]{font-weight:700}.all-day-section-text08[data-v-ee34b9f1]{font-weight:500}.all-day-section-text09[data-v-ee34b9f1]{font-weight:700}.all-day-section-text10[data-v-ee34b9f1]{font-weight:500}.all-day-section-text11[data-v-ee34b9f1]{font-weight:700}.all-day-section-rectangle8[data-v-ee34b9f1]{height:36.25rem;left:45rem;position:absolute;top:5rem;width:28.9rem}.all-day-section-lunchbigtext[data-v-ee34b9f1]{gap:10px;left:0;top:0;width:724px}.all-day-section-lunchbigtext[data-v-ee34b9f1],.all-day-section-lunchbigtext1[data-v-ee34b9f1]{align-items:flex-start;display:flex;height:215px;position:absolute}.all-day-section-lunchbigtext1[data-v-ee34b9f1]{flex-shrink:1;left:38px;top:126px;width:734px}.all-day-section-lunchbigtext2[data-v-ee34b9f1]{align-items:flex-start;display:flex;flex-shrink:1;height:215px;left:1rem;position:absolute;top:0;width:734px}.all-day-section-text13[data-v-ee34b9f1]{color:#48404d;font-family:Libre Baskerville;font-size:64px;font-stretch:normal;font-style:Regular;font-weight:400;height:auto;line-height:normal;position:absolute;text-align:center;text-decoration:none;width:734px}.all-day-section-timeicon1[data-v-ee34b9f1]{height:10rem;left:31rem;position:absolute;top:2.4rem;width:10rem}.all-day-hotbowlicon1[data-v-ee34b9f1]{filter:opacity(30%);height:800px;left:-45rem;position:absolute;top:20rem;visibility:hidden;width:800px}.all-day-section-lunchbigtext_timeless[data-v-ee34b9f1]{left:-13rem}.all-day-section-lunchbigtext_indulgence[data-v-ee34b9f1],.all-day-section-lunchbigtext_timeless[data-v-ee34b9f1]{align-items:flex-start;display:flex;flex-shrink:1;height:215px;position:absolute;top:2rem;width:734px}.all-day-section-lunchbigtext_indulgence[data-v-ee34b9f1]{left:4.3rem}.all-day-section-lunchbigtext_alldaylong[data-v-ee34b9f1]{align-items:flex-start;display:flex;flex-shrink:1;height:215px;left:3.4rem;position:absolute;top:6rem;width:734px}@media (max-width:479px){.all-day-section-lunchbigtext1[data-v-ee34b9f1]{left:1.75rem;top:38rem}.all-day-hotbowlicon1[data-v-ee34b9f1]{filter:opacity(40%);height:50rem;left:-49rem;position:absolute;top:12rem;width:50rem}.all-day-section-lunchslide[data-v-ee34b9f1]{align-items:flex-start;background-image:linear-gradient(180deg,#a1998b,rgba(148,139,161,.964) 100%,hsla(36,66%,75%,0) 0);display:flex;flex-shrink:0;height:1299px;overflow:hidden;position:relative;top:0;width:100%}.all-day-section-rectangle8[data-v-ee34b9f1]{height:81vh;left:0;right:0;top:-9rem;width:478px;z-index:0}.all-day-section-lunchbutton[data-v-ee34b9f1]{align-items:flex-start;bottom:13rem;display:flex;flex-shrink:1;height:67px;left:2.8rem;position:absolute;top:60.5rem;width:28.2rem;z-index:10}.all-day-section-button[data-v-ee34b9f1]{font-size:20px;width:85%}.all-day-section-lunchmessage[data-v-ee34b9f1]{align-items:flex-start;background-color:hsla(0,11%,71%,0);display:flex;flex-shrink:1;height:235px;left:1.75rem;position:absolute;top:44rem;width:560px}.all-day-section-text05[data-v-ee34b9f1]{font-family:K2D;font-size:1.25rem;font-weight:500;text-align:left;width:385px}.all-day-section-text05[data-v-ee34b9f1],.all-day-section-text13[data-v-ee34b9f1]{font-stretch:normal;height:auto;line-height:normal;position:absolute;text-decoration:none}.all-day-section-text13[data-v-ee34b9f1]{font-family:Libre Baskerville;font-size:2.85rem;font-style:Regular;font-weight:400;text-align:center;width:734px}.all-day-section-lunchbigtext_timeless[data-v-ee34b9f1]{left:-18.5rem}.all-day-section-lunchbigtext_indulgence[data-v-ee34b9f1],.all-day-section-lunchbigtext_timeless[data-v-ee34b9f1]{align-items:flex-start;display:flex;flex-shrink:1;height:215px;position:absolute;top:-1rem;width:734px}.all-day-section-lunchbigtext_indulgence[data-v-ee34b9f1]{left:-6.5rem}.all-day-section-lunchbigtext_alldaylong[data-v-ee34b9f1]{align-items:flex-start;display:flex;flex-shrink:1;height:215px;left:-4.5rem;position:absolute;top:2rem;width:734px}.all-day-section-timeicon1[data-v-ee34b9f1]{height:300px;left:4.5rem;position:absolute;top:-7rem;width:300px}}",
+      "start": 1717261250198,
+      "end": 1717261250211,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1717261250230,
+      "end": 1717261250230,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261250235,
+      "end": 1717261250235,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1717261250235,
+      "end": 1717261250236,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1717261250236,
+      "end": 1717261250236,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1717261250236,
+      "end": 1717261250237,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261250252,
+      "end": 1717261250253,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1717261250254,
+      "end": 1717261250254,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1717261250256,
+      "end": 1717261250256,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default ''",
+      "start": 1717261250257,
+      "end": 1717261250257,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1717261250259,
+      "end": 1717261250259,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1717261250260,
+      "end": 1717261250260,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1717261250261,
+      "end": 1717261250261,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1717261250262,
+      "end": 1717261250262,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1717261250263,
+      "end": 1717261250263,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1717261250266,
+      "end": 1717261250266,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1717261250267,
+      "end": 1717261250267,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1717261250268,
+      "end": 1717261250269,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1717261250270,
+      "end": 1717261250270,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1717261250271,
+      "end": 1717261250271,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1717261250273,
+      "end": 1717261250274,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1717261250274,
+      "end": 1717261250275,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1717261250275,
+      "end": 1717261250276,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1717261250277,
+      "end": 1717261250278,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1717261250279,
+      "end": 1717261250279,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1717261250281,
+      "end": 1717261250281,
+      "order": "normal"
+    }
+  ]
+}

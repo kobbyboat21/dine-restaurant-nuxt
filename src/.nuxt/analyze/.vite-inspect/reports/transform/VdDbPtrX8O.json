@@ -1,0 +1,214 @@
+{
+  "resolvedId": "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/DatePicker.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup lang=\"ts\">\nimport { DatePicker as VCalendarDatePicker } from 'v-calendar'\nimport type { DatePickerDate, DatePickerRangeObject } from 'v-calendar/dist/types/src/use/datePicker'\nimport 'v-calendar/dist/style.css'\n\nconst props = defineProps({\n  modelValue: {\n    type: [Date, Object] as PropType<DatePickerDate | DatePickerRangeObject | null>,\n    default: null\n  }\n})\n\nconst emit = defineEmits(['update:model-value', 'close'])\n\nconst date = computed({\n  get: () => props.modelValue,\n  set: (value) => {\n    emit('update:model-value', value)\n    emit('close')\n  }\n})\n\nconst attrs = {\n  transparent: true,\n  borderless: true,\n  color: 'primary',\n  'is-dark': { selector: 'html', darkClass: 'dark' },\n  'first-day-of-week': 2,\n}\n\n</script>\n\n<template>\n  <VCalendarDatePicker v-if=\"date && (typeof date === 'object')\" v-model=\"date\" :columns=\"2\" v-bind=\"{ ...attrs, ...$attrs }\" />\n  <VCalendarDatePicker v-else v-model=\"date\" v-bind=\"{ ...attrs, ...$attrs }\" />\n</template>\n\n<style>\n:root {\n  --vc-gray-50: rgb(var(--color-gray-50));\n  --vc-gray-100: rgb(var(--color-gray-100));\n  --vc-gray-200: rgb(var(--color-gray-200));\n  --vc-gray-300: rgb(var(--color-gray-300));\n  --vc-gray-400: rgb(var(--color-gray-400));\n  --vc-gray-500: rgb(var(--color-gray-500));\n  --vc-gray-600: rgb(var(--color-gray-600));\n  --vc-gray-700: rgb(var(--color-gray-700));\n  --vc-gray-800: rgb(var(--color-gray-800));\n  --vc-gray-900: rgb(var(--color-gray-900));\n}\n\n.vc-primary {\n  --vc-accent-50: rgb(var(--color-primary-50));\n  --vc-accent-100: rgb(var(--color-primary-100));\n  --vc-accent-200: rgb(var(--color-primary-200));\n  --vc-accent-300: rgb(var(--color-primary-300));\n  --vc-accent-400: rgb(var(--color-primary-400));\n  --vc-accent-500: rgb(var(--color-primary-500));\n  --vc-accent-600: rgb(var(--color-primary-600));\n  --vc-accent-700: rgb(var(--color-primary-700));\n  --vc-accent-800: rgb(var(--color-primary-800));\n  --vc-accent-900: rgb(var(--color-primary-900));\n}\n</style>\n\n",
+      "start": 1717261247531,
+      "end": 1717261247930,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1717261247930,
+      "end": 1717261247930,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1717261247930,
+      "end": 1717261247930,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1717261247930,
+      "end": 1717261247931,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1717261247931,
+      "end": 1717261247931,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1717261247931,
+      "end": 1717261247931,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1717261247931,
+      "end": 1717261247931,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1717261247931,
+      "end": 1717261247931,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import _sfc_main from \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/DatePicker.vue?vue&type=script&setup=true&lang.ts\";\nexport * from \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/DatePicker.vue?vue&type=script&setup=true&lang.ts\";\nimport \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/DatePicker.vue?vue&type=style&index=0&lang.css\";\nexport default _sfc_main;\n",
+      "start": 1717261247931,
+      "end": 1717261248750,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1717261248750,
+      "end": 1717261248750,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261248750,
+      "end": 1717261248750,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1717261248750,
+      "end": 1717261248750,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1717261248750,
+      "end": 1717261248750,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1717261248750,
+      "end": 1717261248750,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261248750,
+      "end": 1717261248750,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1717261248750,
+      "end": 1717261248750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1717261248750,
+      "end": 1717261248750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1717261248750,
+      "end": 1717261248750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1717261248750,
+      "end": 1717261248750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1717261248750,
+      "end": 1717261248750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1717261248750,
+      "end": 1717261248750,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1717261248750,
+      "end": 1717261248750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1717261248750,
+      "end": 1717261248750,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1717261248750,
+      "end": 1717261248750,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1717261248750,
+      "end": 1717261248750,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1717261248750,
+      "end": 1717261248750,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1717261248750,
+      "end": 1717261248750,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1717261248750,
+      "end": 1717261248750,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1717261248750,
+      "end": 1717261248750,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1717261248750,
+      "end": 1717261248750,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1717261248751,
+      "end": 1717261248751,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1717261248751,
+      "end": 1717261248751,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1717261248751,
+      "end": 1717261248751,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1717261248751,
+      "end": 1717261248751,
+      "order": "normal"
+    }
+  ]
+}

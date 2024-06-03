@@ -1,0 +1,221 @@
+{
+  "resolvedId": "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/LandingPage/section/breakfast.vue?vue&type=style&index=0&scoped=9ddf8eba&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.breakfast-section-container {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  position: relative;\n  align-items: flex-start;\n  flex-direction: column;\n}\n.breakfast-section-breakfastslide {\n  width: 100%;\n  height: 1062px;\n  display: flex;\n  overflow: hidden;\n  position: relative;\n  align-self: center;\n  align-items: flex-start;\n  flex-shrink: 0;\n  background-image: linear-gradient(180deg, rgba(161, 139, 141, 1) 0%, rgba(161, 154, 139, 1) 100%);\n}\n.breakfast-section-container1 {\n  top: 13rem;\n  left: 0px;\n  right: 0px;\n  width: 1243.999984741211px;\n  height: 638px;\n  margin: auto;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n}\n.breakfast-section-breakfastmessage {\n  top: 244.00001525878906px;\n  right: 29px;\n  width: 560px;\n  height: 371px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.breakfast-section-breakfastbutton {\n  top: 16.25rem;\n  left: 10rem;\n  width: 20.18rem;\n  height: 5.583rem;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.breakfast-section-button {\n  color: rgb(74, 70, 65);\n  width: 323px;\n  height: 67px;\n  font-size: 32px;\n  transition: 0.3s;\n  font-family: \"K2D\";\n  border-color: #665656;\n  border-width: 3px;\n  border-radius: 16px;\n  background-color: #a1948c;\n}\n.breakfast-section-button:hover {\n  background-color: #cebeb3;\n}\n.breakfast-section-breakfastmessage1 {\n  top: 2rem;\n  left: 3.375rem;\n  width: 27rem;\n  height: 11rem;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n  border-radius: var(--dl-radius-radius-radius4);\n  background-color: rgba(189, 173, 173, 0.44999998807907104);\n}\n.breakfast-section-text {\n  top: 1.4375rem;\n  left: -0.5625rem;\n  color: rgba(74, 70, 65);\n  width: 25.875rem;\n  height: auto;\n  position: absolute;\n  font-size: 24px;\n\n  text-align: right;\n  font-family: K2D;\n  font-weight: 500;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n.breakfast-section-text01 {\n  font-weight: 500;\n}\n.breakfast-section-text02 {\n  font-weight: 700;\n}\n.breakfast-section-text03 {\n  font-weight: 500;\n}\n.breakfast-section-text04 {\n  font-weight: 700;\n}\n.breakfast-section-text05 {\n  font-weight: 500;\n}\n.breakfast-section-text06 {\n  font-weight: 700;\n}\n.breakfast-section-breakfastpic {\n  top: 0rem;\n  left: 5.8rem;\n  width:  28.9rem;\n  height: 24rem;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.breakfast-section-rectangle18 {\n  top: 2.31rem;\n  left: 0px;\n  width: 28.9rem;\n  height: 36.25rem;\n  position: absolute;\n\n}\n.breakfast-section-baguetteicon1 {\n  top: -2.75rem;\n  left: 27rem;\n  width: 400px;\n  height: 400px;\n  position: absolute;\n  transform: rotate(30deg);\n  visibility: hidden;\n}\n.breakfast-section-bigtext {\n  top: 2.56rem;\n  left: 27.95rem;\n  width: 45.875rem;\n  height: 13.4375rem;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.breakfast-section-bigtext1 {\n  top: 0rem;\n  left: -17.5rem;\n  width: 734px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n\n.breakfast-section-bigtext2 {\n  top: 0rem;\n  left: -2rem;\n  width: 734px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n\n.breakfast-section-bigtext3 {\n  top: 4.5rem;\n  left: -2rem;\n  width: 734px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n.breakfast-section-text08 {\n  color: rgb(74, 70, 65);\n  width: 734px;\n  height: auto;\n  position: absolute;\n  font-size: 64px;\n  font-style: Regular;\n  text-align: right;\n  font-family: Libre Baskerville;\n  font-weight: 400;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n\n@media (max-width:479px) {\n  \n.breakfast-section-sunicon1 {\n    top: 42rem;\n    left: 14rem;\n    bottom: 0rem;\n    right: 0rem;\n    width: 90vw;\n    height: 50vh;\n    position: absolute;\n    filter: opacity(40%)\n}\n.breakfast-section-rectangle18 {\n  object-fit: cover;\n  height: 83vh;\n  width: 100vw;\n  top: -0.7rem;\n  left: 2.2rem\n}\n.breakfast-section-breakfastmessage1 {\n  top: 2rem;\n  left: 0rem;\n  width: 529px;\n  height: 235px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n  border-radius: var(--dl-radius-radius-radius4);\n  background-color: rgba(189, 173, 173, 0);\n}\n\n.breakfast-section-text {\n  top: 3rem;\n  left: 5.8rem;\n  color: rgba(74, 70, 65);\n  width: 364px;\n  height: auto;\n  position: absolute;\n  font-size: 1.2rem;\n  text-align: justify;\n  font-family: K2D;\n  font-weight: 500;\n  line-height: normal;\n  font-stretch: normal;\n  text-decoration: none;\n}\n.breakfast-section-breakfastmessage {\n  top: 49rem;\n  left: -2rem;\n}\n\n.breakfast-section-breakfastbutton {\n  top: 22.5rem;\n  left: 4.9rem;\n  width: 28.2rem\n}\n\n.breakfast-section-button {\n  top: 0rem;\n  left: 2rem;\n  z-index: 1;\n  width: 85%;\n  font-size: 20px;\n}\n\n.breakfast-section-bigtext {\n  top: 40rem;\n  left: -1rem;\n}\n\n.breakfast-section-text08 {\n  font-size: 2.85rem;\n  text-align: left;\n}\n\n.breakfast-section-bigtext1 {\n  top: 5rem;\n  left: 3rem;\n  width: 734px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n\n.breakfast-section-bigtext2 {\n  top: 5rem;\n  left: 14rem;\n  width: 734px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n\n\n.breakfast-section-bigtext3 {\n  top: 8rem;\n  left: 11rem;\n  width: 734px;\n  height: 215px;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n\n.breakfast-section-baguetteicon1 {\n\n    top: 2rem;\n    left: -2rem;\n    bottom: 0rem;\n    right: 0rem;\n    width: 80vw;\n    height: 40vh;\n    position: absolute;\n    transform: rotate(30deg);\n}\n\n.breakfast-section-breakfastpic {\n  top: -0.5rem;\n  left:-2.3rem;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  z-index: 0;\n  object-fit: cover;\n  height: 100vh;\n}\n\n.breakfast-section-container1 {\n  top: 0rem;\n  object-fit: cover;\n  height: 100vh;\n  }\n\n.breakfast-section-breakfastslide{\n    height: 1311px;\n  }\n}\n",
+      "start": 1717261249770,
+      "end": 1717261249770
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1717261249774,
+      "end": 1717261249775,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1717261249777,
+      "end": 1717261249777,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1717261249779,
+      "end": 1717261249779,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".breakfast-section-container{flex-direction:column;height:100%}.breakfast-section-breakfastslide,.breakfast-section-container{align-items:flex-start;display:flex;position:relative;width:100%}.breakfast-section-breakfastslide{align-self:center;background-image:linear-gradient(180deg,#a18b8d,#a19a8b);flex-shrink:0;height:1062px;overflow:hidden}.breakfast-section-container1{align-items:flex-start;display:flex;height:638px;left:0;margin:auto;position:absolute;right:0;top:13rem;width:1243.999984741211px}.breakfast-section-breakfastmessage{align-items:flex-start;display:flex;flex-shrink:1;height:371px;position:absolute;right:29px;top:244.00001525878906px;width:560px}.breakfast-section-breakfastbutton{align-items:flex-start;display:flex;flex-shrink:1;height:5.583rem;left:10rem;position:absolute;top:16.25rem;width:20.18rem}.breakfast-section-button{background-color:#a1948c;border-color:#665656;border-radius:16px;border-width:3px;color:#4a4641;font-family:K2D;font-size:32px;height:67px;transition:.3s;width:323px}.breakfast-section-button:hover{background-color:#cebeb3}.breakfast-section-breakfastmessage1{align-items:flex-start;background-color:hsla(0,11%,71%,.45);border-radius:var(--dl-radius-radius-radius4);display:flex;flex-shrink:1;height:11rem;left:3.375rem;position:absolute;top:2rem;width:27rem}.breakfast-section-text{color:#4a4641;font-family:K2D;font-size:24px;font-stretch:normal;font-weight:500;height:auto;left:-.5625rem;line-height:normal;position:absolute;text-align:right;text-decoration:none;top:1.4375rem;width:25.875rem}.breakfast-section-text01{font-weight:500}.breakfast-section-text02{font-weight:700}.breakfast-section-text03{font-weight:500}.breakfast-section-text04{font-weight:700}.breakfast-section-text05{font-weight:500}.breakfast-section-text06{font-weight:700}.breakfast-section-breakfastpic{align-items:flex-start;display:flex;flex-shrink:1;height:24rem;left:5.8rem;position:absolute;top:0;width:28.9rem}.breakfast-section-rectangle18{height:36.25rem;left:0;position:absolute;top:2.31rem;width:28.9rem}.breakfast-section-baguetteicon1{height:400px;left:27rem;position:absolute;top:-2.75rem;transform:rotate(30deg);visibility:hidden;width:400px}.breakfast-section-bigtext{height:13.4375rem;left:27.95rem;top:2.56rem;width:45.875rem}.breakfast-section-bigtext,.breakfast-section-bigtext1{align-items:flex-start;display:flex;flex-shrink:1;position:absolute}.breakfast-section-bigtext1{height:215px;left:-17.5rem;top:0;width:734px}.breakfast-section-bigtext2{top:0}.breakfast-section-bigtext2,.breakfast-section-bigtext3{align-items:flex-start;display:flex;flex-shrink:1;height:215px;left:-2rem;position:absolute;width:734px}.breakfast-section-bigtext3{top:4.5rem}.breakfast-section-text08{color:#4a4641;font-family:Libre Baskerville;font-size:64px;font-stretch:normal;font-style:Regular;font-weight:400;height:auto;line-height:normal;position:absolute;text-align:right;text-decoration:none;width:734px}@media (max-width:479px){.breakfast-section-sunicon1{bottom:0;filter:opacity(40%);height:50vh;left:14rem;position:absolute;right:0;top:42rem;width:90vw}.breakfast-section-rectangle18{height:83vh;left:2.2rem;-o-object-fit:cover;object-fit:cover;top:-.7rem;width:100vw}.breakfast-section-breakfastmessage1{align-items:flex-start;background-color:hsla(0,11%,71%,0);border-radius:var(--dl-radius-radius-radius4);display:flex;flex-shrink:1;height:235px;left:0;position:absolute;top:2rem;width:529px}.breakfast-section-text{color:#4a4641;font-family:K2D;font-size:1.2rem;font-stretch:normal;font-weight:500;height:auto;left:5.8rem;line-height:normal;position:absolute;text-align:justify;text-decoration:none;top:3rem;width:364px}.breakfast-section-breakfastmessage{left:-2rem;top:49rem}.breakfast-section-breakfastbutton{left:4.9rem;top:22.5rem;width:28.2rem}.breakfast-section-button{font-size:20px;left:2rem;top:0;width:85%;z-index:1}.breakfast-section-bigtext{left:-1rem;top:40rem}.breakfast-section-text08{font-size:2.85rem;text-align:left}.breakfast-section-bigtext1{left:3rem}.breakfast-section-bigtext1,.breakfast-section-bigtext2{align-items:flex-start;display:flex;flex-shrink:1;height:215px;position:absolute;top:5rem;width:734px}.breakfast-section-bigtext2{left:14rem}.breakfast-section-bigtext3{align-items:flex-start;display:flex;flex-shrink:1;height:215px;left:11rem;position:absolute;top:8rem;width:734px}.breakfast-section-baguetteicon1{bottom:0;height:40vh;left:-2rem;position:absolute;right:0;top:2rem;transform:rotate(30deg);width:80vw}.breakfast-section-breakfastpic{align-items:flex-start;display:flex;height:100vh;left:-2.3rem;-o-object-fit:cover;object-fit:cover;position:absolute;top:-.5rem;z-index:0}.breakfast-section-container1{height:100vh;-o-object-fit:cover;object-fit:cover;top:0}.breakfast-section-breakfastslide{height:1311px}}",
+      "start": 1717261249779,
+      "end": 1717261249987,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1717261249987,
+      "end": 1717261249987,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1717261250078,
+      "end": 1717261250082,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1717261250089,
+      "end": 1717261250090,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".breakfast-section-container[data-v-9ddf8eba]{flex-direction:column;height:100%}.breakfast-section-breakfastslide[data-v-9ddf8eba],.breakfast-section-container[data-v-9ddf8eba]{align-items:flex-start;display:flex;position:relative;width:100%}.breakfast-section-breakfastslide[data-v-9ddf8eba]{align-self:center;background-image:linear-gradient(180deg,#a18b8d,#a19a8b);flex-shrink:0;height:1062px;overflow:hidden}.breakfast-section-container1[data-v-9ddf8eba]{align-items:flex-start;display:flex;height:638px;left:0;margin:auto;position:absolute;right:0;top:13rem;width:1243.999984741211px}.breakfast-section-breakfastmessage[data-v-9ddf8eba]{align-items:flex-start;display:flex;flex-shrink:1;height:371px;position:absolute;right:29px;top:244.00001525878906px;width:560px}.breakfast-section-breakfastbutton[data-v-9ddf8eba]{align-items:flex-start;display:flex;flex-shrink:1;height:5.583rem;left:10rem;position:absolute;top:16.25rem;width:20.18rem}.breakfast-section-button[data-v-9ddf8eba]{background-color:#a1948c;border-color:#665656;border-radius:16px;border-width:3px;color:#4a4641;font-family:K2D;font-size:32px;height:67px;transition:.3s;width:323px}.breakfast-section-button[data-v-9ddf8eba]:hover{background-color:#cebeb3}.breakfast-section-breakfastmessage1[data-v-9ddf8eba]{align-items:flex-start;background-color:hsla(0,11%,71%,.45);border-radius:var(--dl-radius-radius-radius4);display:flex;flex-shrink:1;height:11rem;left:3.375rem;position:absolute;top:2rem;width:27rem}.breakfast-section-text[data-v-9ddf8eba]{color:#4a4641;font-family:K2D;font-size:24px;font-stretch:normal;font-weight:500;height:auto;left:-.5625rem;line-height:normal;position:absolute;text-align:right;text-decoration:none;top:1.4375rem;width:25.875rem}.breakfast-section-text01[data-v-9ddf8eba]{font-weight:500}.breakfast-section-text02[data-v-9ddf8eba]{font-weight:700}.breakfast-section-text03[data-v-9ddf8eba]{font-weight:500}.breakfast-section-text04[data-v-9ddf8eba]{font-weight:700}.breakfast-section-text05[data-v-9ddf8eba]{font-weight:500}.breakfast-section-text06[data-v-9ddf8eba]{font-weight:700}.breakfast-section-breakfastpic[data-v-9ddf8eba]{align-items:flex-start;display:flex;flex-shrink:1;height:24rem;left:5.8rem;position:absolute;top:0;width:28.9rem}.breakfast-section-rectangle18[data-v-9ddf8eba]{height:36.25rem;left:0;position:absolute;top:2.31rem;width:28.9rem}.breakfast-section-baguetteicon1[data-v-9ddf8eba]{height:400px;left:27rem;position:absolute;top:-2.75rem;transform:rotate(30deg);visibility:hidden;width:400px}.breakfast-section-bigtext[data-v-9ddf8eba]{height:13.4375rem;left:27.95rem;top:2.56rem;width:45.875rem}.breakfast-section-bigtext[data-v-9ddf8eba],.breakfast-section-bigtext1[data-v-9ddf8eba]{align-items:flex-start;display:flex;flex-shrink:1;position:absolute}.breakfast-section-bigtext1[data-v-9ddf8eba]{height:215px;left:-17.5rem;top:0;width:734px}.breakfast-section-bigtext2[data-v-9ddf8eba]{top:0}.breakfast-section-bigtext2[data-v-9ddf8eba],.breakfast-section-bigtext3[data-v-9ddf8eba]{align-items:flex-start;display:flex;flex-shrink:1;height:215px;left:-2rem;position:absolute;width:734px}.breakfast-section-bigtext3[data-v-9ddf8eba]{top:4.5rem}.breakfast-section-text08[data-v-9ddf8eba]{color:#4a4641;font-family:Libre Baskerville;font-size:64px;font-stretch:normal;font-style:Regular;font-weight:400;height:auto;line-height:normal;position:absolute;text-align:right;text-decoration:none;width:734px}@media (max-width:479px){.breakfast-section-sunicon1[data-v-9ddf8eba]{bottom:0;filter:opacity(40%);height:50vh;left:14rem;position:absolute;right:0;top:42rem;width:90vw}.breakfast-section-rectangle18[data-v-9ddf8eba]{height:83vh;left:2.2rem;-o-object-fit:cover;object-fit:cover;top:-.7rem;width:100vw}.breakfast-section-breakfastmessage1[data-v-9ddf8eba]{align-items:flex-start;background-color:hsla(0,11%,71%,0);border-radius:var(--dl-radius-radius-radius4);display:flex;flex-shrink:1;height:235px;left:0;position:absolute;top:2rem;width:529px}.breakfast-section-text[data-v-9ddf8eba]{color:#4a4641;font-family:K2D;font-size:1.2rem;font-stretch:normal;font-weight:500;height:auto;left:5.8rem;line-height:normal;position:absolute;text-align:justify;text-decoration:none;top:3rem;width:364px}.breakfast-section-breakfastmessage[data-v-9ddf8eba]{left:-2rem;top:49rem}.breakfast-section-breakfastbutton[data-v-9ddf8eba]{left:4.9rem;top:22.5rem;width:28.2rem}.breakfast-section-button[data-v-9ddf8eba]{font-size:20px;left:2rem;top:0;width:85%;z-index:1}.breakfast-section-bigtext[data-v-9ddf8eba]{left:-1rem;top:40rem}.breakfast-section-text08[data-v-9ddf8eba]{font-size:2.85rem;text-align:left}.breakfast-section-bigtext1[data-v-9ddf8eba]{left:3rem}.breakfast-section-bigtext1[data-v-9ddf8eba],.breakfast-section-bigtext2[data-v-9ddf8eba]{align-items:flex-start;display:flex;flex-shrink:1;height:215px;position:absolute;top:5rem;width:734px}.breakfast-section-bigtext2[data-v-9ddf8eba]{left:14rem}.breakfast-section-bigtext3[data-v-9ddf8eba]{align-items:flex-start;display:flex;flex-shrink:1;height:215px;left:11rem;position:absolute;top:8rem;width:734px}.breakfast-section-baguetteicon1[data-v-9ddf8eba]{bottom:0;height:40vh;left:-2rem;position:absolute;right:0;top:2rem;transform:rotate(30deg);width:80vw}.breakfast-section-breakfastpic[data-v-9ddf8eba]{align-items:flex-start;display:flex;height:100vh;left:-2.3rem;-o-object-fit:cover;object-fit:cover;position:absolute;top:-.5rem;z-index:0}.breakfast-section-container1[data-v-9ddf8eba]{height:100vh;-o-object-fit:cover;object-fit:cover;top:0}.breakfast-section-breakfastslide[data-v-9ddf8eba]{height:1311px}}",
+      "start": 1717261250096,
+      "end": 1717261250107,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1717261250124,
+      "end": 1717261250124,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261250127,
+      "end": 1717261250128,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1717261250128,
+      "end": 1717261250128,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1717261250192,
+      "end": 1717261250193,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1717261250196,
+      "end": 1717261250196,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261250209,
+      "end": 1717261250210,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1717261250221,
+      "end": 1717261250228,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1717261250235,
+      "end": 1717261250235,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default ''",
+      "start": 1717261250235,
+      "end": 1717261250235,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1717261250236,
+      "end": 1717261250236,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1717261250236,
+      "end": 1717261250236,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1717261250237,
+      "end": 1717261250237,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1717261250253,
+      "end": 1717261250254,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1717261250255,
+      "end": 1717261250255,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1717261250257,
+      "end": 1717261250257,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1717261250258,
+      "end": 1717261250259,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1717261250259,
+      "end": 1717261250260,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1717261250261,
+      "end": 1717261250261,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1717261250261,
+      "end": 1717261250261,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1717261250262,
+      "end": 1717261250262,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1717261250264,
+      "end": 1717261250266,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1717261250267,
+      "end": 1717261250267,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1717261250268,
+      "end": 1717261250268,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1717261250269,
+      "end": 1717261250269,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1717261250271,
+      "end": 1717261250271,
+      "order": "normal"
+    }
+  ]
+}

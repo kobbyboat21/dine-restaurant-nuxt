@@ -1,0 +1,210 @@
+{
+  "resolvedId": "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/node_modules/@tanstack/vue-virtual/build/lib/index.mjs",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "/**\n * vue-virtual\n *\n * Copyright (c) TanStack\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.md file in the root directory of this source tree.\n *\n * @license MIT\n */\nimport { extends as _extends } from './_virtual/_rollupPluginBabelHelpers.mjs';\nimport { observeElementRect, observeElementOffset, elementScroll, observeWindowRect, observeWindowOffset, windowScroll, Virtualizer } from '@tanstack/virtual-core';\nexport * from '@tanstack/virtual-core';\nimport { computed, unref, shallowRef, watch, triggerRef, onScopeDispose } from 'vue';\n\nfunction useVirtualizerBase(options) {\n  var virtualizer = new Virtualizer(unref(options));\n  var state = shallowRef(virtualizer);\n  var cleanup = virtualizer._didMount();\n  watch(function () {\n    return unref(options).getScrollElement();\n  }, function (el) {\n    if (el) {\n      virtualizer._willUpdate();\n    }\n  }, {\n    immediate: true\n  });\n  watch(function () {\n    return unref(options);\n  }, function (options) {\n    virtualizer.setOptions(_extends({}, options, {\n      onChange: function onChange(instance, sync) {\n        triggerRef(state);\n        options.onChange == null || options.onChange(instance, sync);\n      }\n    }));\n    virtualizer._willUpdate();\n    triggerRef(state);\n  }, {\n    immediate: true\n  });\n  onScopeDispose(cleanup);\n  return state;\n}\nfunction useVirtualizer(options) {\n  return useVirtualizerBase(computed(function () {\n    return _extends({\n      observeElementRect: observeElementRect,\n      observeElementOffset: observeElementOffset,\n      scrollToFn: elementScroll\n    }, unref(options));\n  }));\n}\nfunction useWindowVirtualizer(options) {\n  return useVirtualizerBase(computed(function () {\n    return _extends({\n      getScrollElement: function getScrollElement() {\n        return typeof document !== 'undefined' ? window : null;\n      },\n      observeElementRect: observeWindowRect,\n      observeElementOffset: observeWindowOffset,\n      scrollToFn: windowScroll,\n      initialOffset: typeof document !== 'undefined' ? window.scrollY : undefined\n    }, unref(options));\n  }));\n}\n\nexport { useVirtualizer, useWindowVirtualizer };\n//# sourceMappingURL=index.mjs.map\n",
+      "start": 1717261251836,
+      "end": 1717261251964,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1717261251964,
+      "end": 1717261251964,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1717261251964,
+      "end": 1717261251964,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1717261251964,
+      "end": 1717261251964,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1717261251964,
+      "end": 1717261251964,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1717261251964,
+      "end": 1717261251964,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1717261251964,
+      "end": 1717261251964,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1717261251964,
+      "end": 1717261251964,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1717261251964,
+      "end": 1717261251964,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1717261251964,
+      "end": 1717261251964,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261251964,
+      "end": 1717261251964,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1717261251964,
+      "end": 1717261251964,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1717261251964,
+      "end": 1717261251964,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1717261251964,
+      "end": 1717261251969,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261251969,
+      "end": 1717261251969,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1717261251969,
+      "end": 1717261251969,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1717261251969,
+      "end": 1717261251969,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1717261251969,
+      "end": 1717261251969,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1717261251969,
+      "end": 1717261251969,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1717261251969,
+      "end": 1717261251969,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1717261251969,
+      "end": 1717261251969,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1717261251969,
+      "end": 1717261251969,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1717261251969,
+      "end": 1717261251969,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1717261251969,
+      "end": 1717261251969,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1717261251969,
+      "end": 1717261251969,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1717261251969,
+      "end": 1717261251969,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1717261251969,
+      "end": 1717261251970,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1717261251970,
+      "end": 1717261251970,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1717261251970,
+      "end": 1717261251970,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1717261251970,
+      "end": 1717261251970,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1717261251970,
+      "end": 1717261251970,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1717261251970,
+      "end": 1717261251970,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1717261251970,
+      "end": 1717261251970,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1717261251970,
+      "end": 1717261251970,
+      "order": "normal"
+    }
+  ]
+}

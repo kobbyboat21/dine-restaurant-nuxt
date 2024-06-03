@@ -1,0 +1,215 @@
+{
+  "resolvedId": "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/dashboard/menu/ChartCard.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup>\n\ndefineProps({\n  type: String,\n  meal: String\n})\n\n</script>\n\n\n\n<template>\n\n<UCard class=\"mx-3 text-center\">\n  <p class=\"font-bold text-l text-green-400\">{{ type }}</p>\n    <p class=\"mt-2\"> Most Ordered {{meal}} Meal </p>\n    <p> This Year </p>\n  <DashboardUtilsChartsBar/>\n</UCard>\n\n</template>\n\n\n\n",
+      "start": 1717261249497,
+      "end": 1717261250503,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1717261250503,
+      "end": 1717261250503,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1717261250503,
+      "end": 1717261250503,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1717261250503,
+      "end": 1717261250503,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1717261250503,
+      "end": 1717261250503,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1717261250503,
+      "end": 1717261250503,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1717261250503,
+      "end": 1717261250503,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1717261250503,
+      "end": 1717261250503,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"font-bold text-l text-green-400\" }\nconst _hoisted_2 = { class: \"mt-2\" }\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"p\", null, \" This Year \", -1)\n\n\nconst _sfc_main = {\n  __name: 'ChartCard',\n  props: {\n  type: String,\n  meal: String\n},\n  setup(__props) {\n\n\n\n\n\nreturn (_ctx, _cache) => {\n  const _component_DashboardUtilsChartsBar = _resolveComponent(\"DashboardUtilsChartsBar\")\n  const _component_UCard = _resolveComponent(\"UCard\")\n\n  return (_openBlock(), _createBlock(_component_UCard, { class: \"mx-3 text-center\" }, {\n    default: _withCtx(() => [\n      _createElementVNode(\"p\", _hoisted_1, _toDisplayString(__props.type), 1),\n      _createElementVNode(\"p\", _hoisted_2, \" Most Ordered \" + _toDisplayString(__props.meal) + \" Meal \", 1),\n      _hoisted_3,\n      _createVNode(_component_DashboardUtilsChartsBar)\n    ]),\n    _: 1\n  }))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1717261250504,
+      "end": 1717261250505,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1717261250505,
+      "end": 1717261250505,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261250505,
+      "end": 1717261250505,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1717261250505,
+      "end": 1717261250505,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1717261250505,
+      "end": 1717261250505,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1717261250505,
+      "end": 1717261250505,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261250505,
+      "end": 1717261250505,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1717261250505,
+      "end": 1717261250505,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1717261250505,
+      "end": 1717261250505,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1717261250505,
+      "end": 1717261250505,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1717261250505,
+      "end": 1717261250505,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1717261250505,
+      "end": 1717261250505,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1717261250505,
+      "end": 1717261250505,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1717261250505,
+      "end": 1717261250505,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1717261250505,
+      "end": 1717261250505,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1717261250505,
+      "end": 1717261250505,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1717261250505,
+      "end": 1717261250505,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1717261250505,
+      "end": 1717261250506,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1717261250506,
+      "end": 1717261250506,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1717261250506,
+      "end": 1717261250506,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1717261250506,
+      "end": 1717261250506,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1717261250506,
+      "end": 1717261250506,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/dashboard/utils/charts/Bar.vue\";\nimport { default as __nuxt_component_1 } from \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/node_modules/@nuxt/ui/dist/runtime/components/layout/Card.vue\";\nimport { toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"font-bold text-l text-green-400\" }\nconst _hoisted_2 = { class: \"mt-2\" }\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"p\", null, \" This Year \", -1)\n\n\nconst _sfc_main = {\n  __name: 'ChartCard',\n  props: {\n  type: String,\n  meal: String\n},\n  setup(__props) {\n\n\n\n\n\nreturn (_ctx, _cache) => {\n  const _component_DashboardUtilsChartsBar = __nuxt_component_0\n  const _component_UCard = __nuxt_component_1\n\n  return (_openBlock(), _createBlock(_component_UCard, { class: \"mx-3 text-center\" }, {\n    default: _withCtx(() => [\n      _createElementVNode(\"p\", _hoisted_1, _toDisplayString(__props.type), 1),\n      _createElementVNode(\"p\", _hoisted_2, \" Most Ordered \" + _toDisplayString(__props.meal) + \" Meal \", 1),\n      _hoisted_3,\n      _createVNode(_component_DashboardUtilsChartsBar)\n    ]),\n    _: 1\n  }))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1717261250506,
+      "end": 1717261250507,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1717261250507,
+      "end": 1717261250507,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1717261250507,
+      "end": 1717261250507,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1717261250507,
+      "end": 1717261250507,
+      "order": "normal"
+    }
+  ]
+}

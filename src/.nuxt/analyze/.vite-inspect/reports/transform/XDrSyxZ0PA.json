@@ -1,0 +1,215 @@
+{
+  "resolvedId": "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/LandingPage/section/contact.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n  <div class=\"contact-section-container\" v-bind:class=\"rootClassName\">\n    <div class=\"contact-section-bgimage\"></div>\n    <div class=\"contact-section-contactslide\">\n      <!--\n      <div class=\"contact-section-logo\">\n        <img\n          alt=\"logo6823\"\n          src=\"/external/logo6823-t834-300h.png\"\n          class=\"contact-section-logo1\"\n          data-aos=\"zoom-in\" data-aos-duration=\"1250\"\n        />\n      </div>\n-->\n        <LandingPageContactCards/> \n    </div>\n  </div>\n</template>\n\n<script>\nexport default {\n  name: 'CONTACTSECTION',\n  props: {\n    rootClassName: String,\n  },\n  data() {\n    return {\n      rawnyvq: ' ',\n      raw7aoe: ' ',\n    }\n  },\n}\n</script>\n\n<style scoped>\n.contact-section-container {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  position: relative;\n  align-items: flex-start;\n  flex-direction: column;\n}\n.contact-section-bgimage {\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 1024px;\n  display: flex;\n  overflow: hidden;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 0;\n  background-size: cover;\n  background-image: url('https://images.pexels.com/photos/3201919/pexels-photo-3201919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');\n}\n.contact-section-contactslide {\n  width: 100%;\n  height: 1024px;\n  display: flex;\n  overflow: hidden;\n  position: relative;\n  align-self: flex-start;\n  align-items: flex-start;\n  flex-shrink: 0;\n  flex-direction: row;\n  justify-content: flex-start;\n  background-color: rgba(217, 217, 217, 0.77);\n}\n\n@media (max-width:479px) {\n.contact-section-bgimage {\n    height: 100vh;\n}\n \n.contact-section-container {\n    height: 100vh;\n}\n\n\n.contact-section-contactslide {\n  height: 100vh;\n  overflow-y: scroll;\n  top: 0rem;\n}\n\n}\n</style>\n",
+      "start": 1717261247965,
+      "end": 1717261248465,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1717261248465,
+      "end": 1717261248465,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1717261248465,
+      "end": 1717261248465,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1717261248465,
+      "end": 1717261248465,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1717261248465,
+      "end": 1717261248465,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1717261248465,
+      "end": 1717261248465,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1717261248465,
+      "end": 1717261248465,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1717261248465,
+      "end": 1717261248465,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nconst _sfc_main = {\n  name: 'CONTACTSECTION',\n  props: {\n    rootClassName: String,\n  },\n  data() {\n    return {\n      rawnyvq: ' ',\n      raw7aoe: ' ',\n    }\n  },\n}\n\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-d700727c\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"contact-section-bgimage\" }, null, -1))\nconst _hoisted_2 = { class: \"contact-section-contactslide\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_LandingPageContactCards = _resolveComponent(\"LandingPageContactCards\")\n\n  return (_openBlock(), _createElementBlock(\"div\", {\n    class: _normalizeClass([\"contact-section-container\", $props.rootClassName])\n  }, [\n    _hoisted_1,\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createVNode(_component_LandingPageContactCards)\n    ])\n  ], 2))\n}\n\nimport \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/LandingPage/section/contact.vue?vue&type=style&index=0&scoped=d700727c&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-d700727c\"]])",
+      "start": 1717261248465,
+      "end": 1717261248466,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1717261248466,
+      "end": 1717261248466,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261248466,
+      "end": 1717261248466,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1717261248466,
+      "end": 1717261248466,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1717261248466,
+      "end": 1717261248466,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1717261248466,
+      "end": 1717261248466,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261248467,
+      "end": 1717261248467,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1717261248467,
+      "end": 1717261248467,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1717261248467,
+      "end": 1717261248467,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1717261248467,
+      "end": 1717261248467,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1717261248467,
+      "end": 1717261248467,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1717261248467,
+      "end": 1717261248467,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1717261248467,
+      "end": 1717261248467,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1717261248467,
+      "end": 1717261248467,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1717261248467,
+      "end": 1717261248467,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1717261248467,
+      "end": 1717261248467,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1717261248467,
+      "end": 1717261248467,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1717261248467,
+      "end": 1717261248468,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1717261248468,
+      "end": 1717261248468,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1717261248468,
+      "end": 1717261248468,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1717261248468,
+      "end": 1717261248468,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1717261248468,
+      "end": 1717261248468,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/LandingPage/ContactCards.vue\";\n\nconst _sfc_main = {\n  name: 'CONTACTSECTION',\n  props: {\n    rootClassName: String,\n  },\n  data() {\n    return {\n      rawnyvq: ' ',\n      raw7aoe: ' ',\n    }\n  },\n}\n\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, createVNode as _createVNode, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-d700727c\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"contact-section-bgimage\" }, null, -1))\nconst _hoisted_2 = { class: \"contact-section-contactslide\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_LandingPageContactCards = __nuxt_component_0\n\n  return (_openBlock(), _createElementBlock(\"div\", {\n    class: _normalizeClass([\"contact-section-container\", $props.rootClassName])\n  }, [\n    _hoisted_1,\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createVNode(_component_LandingPageContactCards)\n    ])\n  ], 2))\n}\n\nimport \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/LandingPage/section/contact.vue?vue&type=style&index=0&scoped=d700727c&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-d700727c\"]])",
+      "start": 1717261248468,
+      "end": 1717261248468,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1717261248468,
+      "end": 1717261248468,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1717261248468,
+      "end": 1717261248468,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1717261248468,
+      "end": 1717261248468,
+      "order": "normal"
+    }
+  ]
+}

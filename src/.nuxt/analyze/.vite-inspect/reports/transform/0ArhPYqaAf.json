@@ -1,0 +1,222 @@
+{
+  "resolvedId": "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/stores/bookings.ts",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "import { defineStore } from \"pinia\";\n\nexport const useBookingStore = defineStore('bookingStore', {\n  state: () => ({\n\t\t// List of all bookings\n\t\tbookings: [] \n\t}),\n  actions: {\n \n  async getBookings() {\n    let data = await $fetch(\"/api/reservations/\") // bookings gotten from the database\n      //\n  // 2 -- Use Javascript For - In Loop on data array to set bookings to contain data's contents\n    this.bookings = data\n    return data\n  },\n\n  async createBooking(booking) {\n    // Get Auto-increment ID\n    let id = this.bookings.length + 1\n    // Assign ID to booking\n    booking.id = id\n    // POST Request\n    await $fetch( \"/api/reservations/create\" ,  {\n        // $fetch sends request to api which sends it to database to add the new breakfast booking\n      method: \"POST\", //\"POST\" is an http method used to send data, in this case, to the API\n      body: booking\n    }\n    )\n    this.bookings.push(booking)\n    console.log(\"Creating the following booking:\")\n    console.log(booking)\n  },\n\n  async editBooking(booking) {\n    let found = this.bookings.find(p => p.id === booking.id)\n    if (found) {\n      console.log('edit' + found.name)\n      found.name = booking.name\n      found.section = booking.section\n      found.capacity = booking.capacity\n      found.datetime = booking.datetime\n      let id = found._id\n\n      let edit_endpoint = `/api/reservations/${id}`\n\n      await $fetch(edit_endpoint, {\n          method: \"PUT\", // \"PUT\" as well is an http method that sends data to be replaced/ updated\n          body: found\n        }\n        )\n    }\n\n      \n  },\n\n  async deleteBooking(booking) {\n    let foundIndex = this.bookings.findIndex(p => p.id === booking.id)\n    let found = this.bookings.find(p => p.id === booking.id)\n    console.log('delete' + booking.name)\n    if (foundIndex !== -1) this.bookings.splice(foundIndex, 1)\n\n    let id = found._id\n\n    let delete_endpoint = `/api/reservations/${id}`\n      \n    await $fetch(delete_endpoint, {\n      method: \"DELETE\",\n      })\n\n  },\n\n}\n}\n) /* \nconst bookings = [{\n  id: 1,\n  name: 'Marcus Smart',\n  time: '10:00',\n  section: 'Front',\n  capacity: '4',\n}, {\n  \n  id: 2,\n  name: 'Elon Musk',\n  time: '9:30',\n  section: 'Main',\n  capacity: '2',\n  \n}, {\n  \n  id: 3,\n  name: 'Theresa May',\n  time: '11:00',\n  section: 'Back',\n  capacity: '4'\n}\n*/\n",
+      "start": 1717261247503,
+      "end": 1717261247795,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1717261247795,
+      "end": 1717261247795,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1717261247795,
+      "end": 1717261247795,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1717261247795,
+      "end": 1717261247795,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1717261247795,
+      "end": 1717261247795,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineStore } from \"pinia\";\nexport const useBookingStore = defineStore(\n  \"bookingStore\",\n  {\n    state: () => ({\n      // List of all bookings\n      bookings: []\n    }),\n    actions: {\n      async getBookings() {\n        let data = await $fetch(\"/api/reservations/\");\n        this.bookings = data;\n        return data;\n      },\n      async createBooking(booking) {\n        let id = this.bookings.length + 1;\n        booking.id = id;\n        await $fetch(\n          \"/api/reservations/create\",\n          {\n            // $fetch sends request to api which sends it to database to add the new breakfast booking\n            method: \"POST\",\n            //\"POST\" is an http method used to send data, in this case, to the API\n            body: booking\n          }\n        );\n        this.bookings.push(booking);\n        console.log(\"Creating the following booking:\");\n        console.log(booking);\n      },\n      async editBooking(booking) {\n        let found = this.bookings.find((p) => p.id === booking.id);\n        if (found) {\n          console.log(\"edit\" + found.name);\n          found.name = booking.name;\n          found.section = booking.section;\n          found.capacity = booking.capacity;\n          found.datetime = booking.datetime;\n          let id = found._id;\n          let edit_endpoint = `/api/reservations/${id}`;\n          await $fetch(\n            edit_endpoint,\n            {\n              method: \"PUT\",\n              // \"PUT\" as well is an http method that sends data to be replaced/ updated\n              body: found\n            }\n          );\n        }\n      },\n      async deleteBooking(booking) {\n        let foundIndex = this.bookings.findIndex((p) => p.id === booking.id);\n        let found = this.bookings.find((p) => p.id === booking.id);\n        console.log(\"delete\" + booking.name);\n        if (foundIndex !== -1)\n          this.bookings.splice(foundIndex, 1);\n        let id = found._id;\n        let delete_endpoint = `/api/reservations/${id}`;\n        await $fetch(delete_endpoint, {\n          method: \"DELETE\"\n        });\n      }\n    }\n  }\n);\n",
+      "start": 1717261247795,
+      "end": 1717261248386,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/stores/bookings.ts"
+        ],
+        "sourcesContent": [
+          "import { defineStore } from \"pinia\";\n\nexport const useBookingStore = defineStore('bookingStore', {\n  state: () => ({\n\t\t// List of all bookings\n\t\tbookings: [] \n\t}),\n  actions: {\n \n  async getBookings() {\n    let data = await $fetch(\"/api/reservations/\") // bookings gotten from the database\n      //\n  // 2 -- Use Javascript For - In Loop on data array to set bookings to contain data's contents\n    this.bookings = data\n    return data\n  },\n\n  async createBooking(booking) {\n    // Get Auto-increment ID\n    let id = this.bookings.length + 1\n    // Assign ID to booking\n    booking.id = id\n    // POST Request\n    await $fetch( \"/api/reservations/create\" ,  {\n        // $fetch sends request to api which sends it to database to add the new breakfast booking\n      method: \"POST\", //\"POST\" is an http method used to send data, in this case, to the API\n      body: booking\n    }\n    )\n    this.bookings.push(booking)\n    console.log(\"Creating the following booking:\")\n    console.log(booking)\n  },\n\n  async editBooking(booking) {\n    let found = this.bookings.find(p => p.id === booking.id)\n    if (found) {\n      console.log('edit' + found.name)\n      found.name = booking.name\n      found.section = booking.section\n      found.capacity = booking.capacity\n      found.datetime = booking.datetime\n      let id = found._id\n\n      let edit_endpoint = `/api/reservations/${id}`\n\n      await $fetch(edit_endpoint, {\n          method: \"PUT\", // \"PUT\" as well is an http method that sends data to be replaced/ updated\n          body: found\n        }\n        )\n    }\n\n      \n  },\n\n  async deleteBooking(booking) {\n    let foundIndex = this.bookings.findIndex(p => p.id === booking.id)\n    let found = this.bookings.find(p => p.id === booking.id)\n    console.log('delete' + booking.name)\n    if (foundIndex !== -1) this.bookings.splice(foundIndex, 1)\n\n    let id = found._id\n\n    let delete_endpoint = `/api/reservations/${id}`\n      \n    await $fetch(delete_endpoint, {\n      method: \"DELETE\",\n      })\n\n  },\n\n}\n}\n) /* \nconst bookings = [{\n  id: 1,\n  name: 'Marcus Smart',\n  time: '10:00',\n  section: 'Front',\n  capacity: '4',\n}, {\n  \n  id: 2,\n  name: 'Elon Musk',\n  time: '9:30',\n  section: 'Main',\n  capacity: '2',\n  \n}, {\n  \n  id: 3,\n  name: 'Theresa May',\n  time: '11:00',\n  section: 'Back',\n  capacity: '4'\n}\n*/\n"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB;AAErB,aAAM,kBAAkB;AAAA,EAAY;AAAA,EAAgB;AAAA,IACzD,OAAO,OAAO;AAAA;AAAA,MAEd,UAAU,CAAC;AAAA,IACZ;AAAA,IACC,SAAS;AAAA,MAET,MAAM,cAAc;AAClB,YAAI,OAAO,MAAM,OAAO,oBAAoB;AAG5C,aAAK,WAAW;AAChB,eAAO;AAAA,MACT;AAAA,MAEA,MAAM,cAAc,SAAS;AAE3B,YAAI,KAAK,KAAK,SAAS,SAAS;AAEhC,gBAAQ,KAAK;AAEb,cAAM;AAAA,UAAQ;AAAA,UAA8B;AAAA;AAAA,YAE1C,QAAQ;AAAA;AAAA,YACR,MAAM;AAAA,UACR;AAAA,QACA;AACA,aAAK,SAAS,KAAK,OAAO;AAC1B,gBAAQ,IAAI,iCAAiC;AAC7C,gBAAQ,IAAI,OAAO;AAAA,MACrB;AAAA,MAEA,MAAM,YAAY,SAAS;AACzB,YAAI,QAAQ,KAAK,SAAS,KAAK,OAAK,EAAE,OAAO,QAAQ,EAAE;AACvD,YAAI,OAAO;AACT,kBAAQ,IAAI,SAAS,MAAM,IAAI;AAC/B,gBAAM,OAAO,QAAQ;AACrB,gBAAM,UAAU,QAAQ;AACxB,gBAAM,WAAW,QAAQ;AACzB,gBAAM,WAAW,QAAQ;AACzB,cAAI,KAAK,MAAM;AAEf,cAAI,gBAAgB,qBAAqB,EAAE;AAE3C,gBAAM;AAAA,YAAO;AAAA,YAAe;AAAA,cACxB,QAAQ;AAAA;AAAA,cACR,MAAM;AAAA,YACR;AAAA,UACA;AAAA,QACJ;AAAA,MAGF;AAAA,MAEA,MAAM,cAAc,SAAS;AAC3B,YAAI,aAAa,KAAK,SAAS,UAAU,OAAK,EAAE,OAAO,QAAQ,EAAE;AACjE,YAAI,QAAQ,KAAK,SAAS,KAAK,OAAK,EAAE,OAAO,QAAQ,EAAE;AACvD,gBAAQ,IAAI,WAAW,QAAQ,IAAI;AACnC,YAAI,eAAe;AAAI,eAAK,SAAS,OAAO,YAAY,CAAC;AAEzD,YAAI,KAAK,MAAM;AAEf,YAAI,kBAAkB,qBAAqB,EAAE;AAE7C,cAAM,OAAO,iBAAiB;AAAA,UAC5B,QAAQ;AAAA,QACR,CAAC;AAAA,MAEL;AAAA,IAEF;AAAA,EACA;AACA;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1717261248386,
+      "end": 1717261248386,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1717261248386,
+      "end": 1717261248386,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1717261248386,
+      "end": 1717261248386,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1717261248386,
+      "end": 1717261248386,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261248386,
+      "end": 1717261248386,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1717261248386,
+      "end": 1717261248386,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1717261248386,
+      "end": 1717261248386,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1717261248386,
+      "end": 1717261248386,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261248386,
+      "end": 1717261248386,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1717261248386,
+      "end": 1717261248386,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1717261248386,
+      "end": 1717261248386,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1717261248386,
+      "end": 1717261248386,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1717261248386,
+      "end": 1717261248386,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1717261248386,
+      "end": 1717261248386,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1717261248386,
+      "end": 1717261248386,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1717261248386,
+      "end": 1717261248386,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1717261248386,
+      "end": 1717261248386,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1717261248386,
+      "end": 1717261248386,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1717261248386,
+      "end": 1717261248386,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1717261248386,
+      "end": 1717261248387,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1717261248387,
+      "end": 1717261248387,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1717261248387,
+      "end": 1717261248387,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1717261248387,
+      "end": 1717261248387,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1717261248387,
+      "end": 1717261248387,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1717261248387,
+      "end": 1717261248387,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1717261248387,
+      "end": 1717261248387,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1717261248387,
+      "end": 1717261248387,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1717261248387,
+      "end": 1717261248387,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "resolvedId": "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/LandingPage/section/restaurantpic.vue?vue&type=style&index=0&scoped=01be617c&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n\n.restaurant-pic-section-container {\n  width: 100%;\n  height: 55rem;\n  display: flex;\n  position: relative;\n  align-items: flex-start;\n  flex-direction: column;\n}\n.restaurant-pic-section-container1 {\n  flex: 0 0 auto;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-self: center;\n  align-items: flex-start;\n  background-size: cover;\n  background-image: url('https://images.pexels.com/photos/3201920/pexels-photo-3201920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');\n}\n.restaurant-pic-section-restaurantslide {\n  width: 100%;\n  height: 100%;\n  display: none;\n  overflow: hidden;\n  position: relative;\n  align-items: flex-start;\n  flex-shrink: 0;\n  background-image: linear-gradient(180deg, rgba(175, 155, 155, 0.75) 0%, rgba(161, 139, 141, 1) 99%);\n}\n.restaurant-pic-section-restaurantpic {\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  position: absolute;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n\n\n@media(max-width: 479px) {\n\n.restaurant-pic-section-container1 {\n  flex: 0 0 auto;\n  width: 100%;\n  height: 100%;\n  left: 0rem;\n  margin: 0rem 0rem;\n  padding: 0rem 0rem;\n  display: flex;\n  align-self: left;\n  align-items: flex-start;\n  background-size: fill;\n  background-image: url('https://images.pexels.com/photos/3201920/pexels-photo-3201920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');\n  background-position: center;\n}\n.restaurant-pic-section-restaurantpic {\n  top: -10rem;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  align-items: flex-start;\n  flex-shrink: 1;\n}\n}\n\n",
+      "start": 1717261249633,
+      "end": 1717261249633
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1717261249634,
+      "end": 1717261249634,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1717261249641,
+      "end": 1717261249642,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1717261249642,
+      "end": 1717261249642,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".restaurant-pic-section-container{align-items:flex-start;display:flex;flex-direction:column;height:55rem;position:relative;width:100%}.restaurant-pic-section-container1{align-items:flex-start;align-self:center;background-image:url(https://images.pexels.com/photos/3201920/pexels-photo-3201920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);background-size:cover;display:flex;flex:0 0 auto;height:100%;width:100%}.restaurant-pic-section-restaurantslide{align-items:flex-start;background-image:linear-gradient(180deg,hsla(0,11%,65%,.75),#a18b8d 99%);display:none;flex-shrink:0;height:100%;overflow:hidden;position:relative;width:100%}.restaurant-pic-section-restaurantpic{align-items:flex-start;display:flex;flex-shrink:1;height:100%;left:0;position:absolute;top:0;width:100%}@media(max-width:479px){.restaurant-pic-section-container1{align-items:flex-start;align-self:left;background-image:url(https://images.pexels.com/photos/3201920/pexels-photo-3201920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);background-position:50%;background-size:fill;display:flex;flex:0 0 auto;height:100%;left:0;margin:0;padding:0;width:100%}.restaurant-pic-section-restaurantpic{align-items:flex-start;display:flex;flex-shrink:1;height:100%;top:-10rem;width:100%}}",
+      "start": 1717261249642,
+      "end": 1717261249779,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1717261249786,
+      "end": 1717261249840,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1717261249847,
+      "end": 1717261249847,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1717261249851,
+      "end": 1717261249851,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".restaurant-pic-section-container[data-v-01be617c]{align-items:flex-start;display:flex;flex-direction:column;height:55rem;position:relative;width:100%}.restaurant-pic-section-container1[data-v-01be617c]{align-items:flex-start;align-self:center;background-image:url(https://images.pexels.com/photos/3201920/pexels-photo-3201920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);background-size:cover;display:flex;flex:0 0 auto;height:100%;width:100%}.restaurant-pic-section-restaurantslide[data-v-01be617c]{align-items:flex-start;background-image:linear-gradient(180deg,hsla(0,11%,65%,.75),#a18b8d 99%);display:none;flex-shrink:0;height:100%;overflow:hidden;position:relative;width:100%}.restaurant-pic-section-restaurantpic[data-v-01be617c]{align-items:flex-start;display:flex;flex-shrink:1;height:100%;left:0;position:absolute;top:0;width:100%}@media(max-width:479px){.restaurant-pic-section-container1[data-v-01be617c]{align-items:flex-start;align-self:left;background-image:url(https://images.pexels.com/photos/3201920/pexels-photo-3201920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);background-position:50%;background-size:fill;display:flex;flex:0 0 auto;height:100%;left:0;margin:0;padding:0;width:100%}.restaurant-pic-section-restaurantpic[data-v-01be617c]{align-items:flex-start;display:flex;flex-shrink:1;height:100%;top:-10rem;width:100%}}",
+      "start": 1717261249853,
+      "end": 1717261249862,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1717261249987,
+      "end": 1717261249987,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261249987,
+      "end": 1717261249987,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1717261250077,
+      "end": 1717261250078,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1717261250085,
+      "end": 1717261250085,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1717261250094,
+      "end": 1717261250095,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261250107,
+      "end": 1717261250108,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1717261250124,
+      "end": 1717261250126,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1717261250128,
+      "end": 1717261250128,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default ''",
+      "start": 1717261250128,
+      "end": 1717261250128,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1717261250193,
+      "end": 1717261250193,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1717261250197,
+      "end": 1717261250197,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1717261250211,
+      "end": 1717261250211,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1717261250228,
+      "end": 1717261250230,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1717261250235,
+      "end": 1717261250235,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1717261250235,
+      "end": 1717261250235,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1717261250236,
+      "end": 1717261250236,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1717261250236,
+      "end": 1717261250236,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1717261250237,
+      "end": 1717261250252,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1717261250254,
+      "end": 1717261250254,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1717261250256,
+      "end": 1717261250256,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1717261250257,
+      "end": 1717261250257,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1717261250259,
+      "end": 1717261250259,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1717261250260,
+      "end": 1717261250260,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1717261250261,
+      "end": 1717261250261,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1717261250262,
+      "end": 1717261250262,
+      "order": "normal"
+    }
+  ]
+}

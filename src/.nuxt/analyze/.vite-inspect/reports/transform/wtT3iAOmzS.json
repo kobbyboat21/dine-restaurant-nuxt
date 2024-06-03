@@ -1,0 +1,221 @@
+{
+  "resolvedId": "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/dashboard/utils/charts/Line.vue?vue&type=script&setup=true&lang.ts",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nimport {\n  Chart as ChartJS,\n  CategoryScale,\n  LinearScale,\n  PointElement,\n  LineElement,\n  Title,\n  Tooltip,\n  Legend\n } from 'chart.js'\nimport { Line } from 'vue-chartjs'\n\n\n// Register required chart components\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Line',\n  setup(__props) {\n\nChartJS.register(\n  CategoryScale,\n  LinearScale,\n  PointElement,\n  LineElement,\n  Title,\n  Tooltip,\n)\n\n\n// Create Chart Data\nconst data = {\n  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],\n  datasets: [\n    {\n      borderColor: '#36A2EB',\n      backgroundColor: '#9BD0F5',\n      tensions: 0.4,\n      data: [40, 39, 10, 40, 39, 80, 40]\n    }\n  ]\n}\n\nconst options = {\n  responsive: true,\n  maintainAspectRatio: true,\n}\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createBlock(_unref(Line), {\n    data: data,\n    options: options\n  }))\n}\n}\n\n})",
+      "start": 1717261252988,
+      "end": 1717261252988
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1717261252988,
+      "end": 1717261252988,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1717261252989,
+      "end": 1717261252989,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1717261252989,
+      "end": 1717261252989,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1717261252989,
+      "end": 1717261252989,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "result": "import { defineComponent as _defineComponent } from \"vue\";\nimport { unref as _unref, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nimport {\n  Chart as ChartJS,\n  CategoryScale,\n  LinearScale,\n  PointElement,\n  LineElement,\n  Title,\n  Tooltip\n} from \"chart.js\";\nimport { Line } from \"vue-chartjs\";\nexport default /* @__PURE__ */ _defineComponent({\n  __name: \"Line\",\n  setup(__props) {\n    ChartJS.register(\n      CategoryScale,\n      LinearScale,\n      PointElement,\n      LineElement,\n      Title,\n      Tooltip\n    );\n    const data = {\n      labels: [\"January\", \"February\", \"March\", \"April\", \"May\", \"June\", \"July\"],\n      datasets: [\n        {\n          borderColor: \"#36A2EB\",\n          backgroundColor: \"#9BD0F5\",\n          tensions: 0.4,\n          data: [40, 39, 10, 40, 39, 80, 40]\n        }\n      ]\n    };\n    const options = {\n      responsive: true,\n      maintainAspectRatio: true\n    };\n    return (_ctx, _cache) => {\n      return _openBlock(), _createBlock(_unref(Line), {\n        data,\n        options\n      });\n    };\n  }\n});\n",
+      "start": 1717261252989,
+      "end": 1717261253017,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/dashboard/utils/charts/Line.vue?vue&type=script&setup=true&lang.ts"
+        ],
+        "sourcesContent": [
+          "import { defineComponent as _defineComponent } from 'vue'\nimport { unref as _unref, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nimport {\n  Chart as ChartJS,\n  CategoryScale,\n  LinearScale,\n  PointElement,\n  LineElement,\n  Title,\n  Tooltip,\n  Legend\n } from 'chart.js'\nimport { Line } from 'vue-chartjs'\n\n\n// Register required chart components\n\nexport default /*#__PURE__*/_defineComponent({\n  __name: 'Line',\n  setup(__props) {\n\nChartJS.register(\n  CategoryScale,\n  LinearScale,\n  PointElement,\n  LineElement,\n  Title,\n  Tooltip,\n)\n\n\n// Create Chart Data\nconst data = {\n  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],\n  datasets: [\n    {\n      borderColor: '#36A2EB',\n      backgroundColor: '#9BD0F5',\n      tensions: 0.4,\n      data: [40, 39, 10, 40, 39, 80, 40]\n    }\n  ]\n}\n\nconst options = {\n  responsive: true,\n  maintainAspectRatio: true,\n}\n\nreturn (_ctx: any,_cache: any) => {\n  return (_openBlock(), _createBlock(_unref(Line), {\n    data: data,\n    options: options\n  }))\n}\n}\n\n})"
+        ],
+        "mappings": "AAAA,SAAS,mBAAmB,wBAAwB;AACpD,SAAS,SAAS,QAAQ,aAAa,YAAY,eAAe,oBAAoB;AAEtF;AAAA,EACE,SAAS;AAAA,EACT;AAAA,EACA;AAAA,EACA;AAAA,EACA;AAAA,EACA;AAAA,EACA;AAAA,OAEM;AACR,SAAS,YAAY;AAKrB,eAA4B,iCAAiB;AAAA,EAC3C,QAAQ;AAAA,EACR,MAAM,SAAS;AAEjB,YAAQ;AAAA,MACN;AAAA,MACA;AAAA,MACA;AAAA,MACA;AAAA,MACA;AAAA,MACA;AAAA,IACF;AAIA,UAAM,OAAO;AAAA,MACX,QAAQ,CAAC,WAAW,YAAY,SAAS,SAAS,OAAO,QAAQ,MAAM;AAAA,MACvE,UAAU;AAAA,QACR;AAAA,UACE,aAAa;AAAA,UACb,iBAAiB;AAAA,UACjB,UAAU;AAAA,UACV,MAAM,CAAC,IAAI,IAAI,IAAI,IAAI,IAAI,IAAI,EAAE;AAAA,QACnC;AAAA,MACF;AAAA,IACF;AAEA,UAAM,UAAU;AAAA,MACd,YAAY;AAAA,MACZ,qBAAqB;AAAA,IACvB;AAEA,WAAO,CAAC,MAAU,WAAgB;AAChC,aAAQ,WAAW,GAAG,aAAa,OAAO,IAAI,GAAG;AAAA,QAC/C;AAAA,QACA;AAAA,MACF,CAAC;AAAA,IACH;AAAA,EACA;AAEA,CAAC;",
+        "names": []
+      }
+    },
+    {
+      "name": "vite:json",
+      "start": 1717261253017,
+      "end": 1717261253017,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1717261253017,
+      "end": 1717261253017,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1717261253017,
+      "end": 1717261253017,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1717261253017,
+      "end": 1717261253017,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261253017,
+      "end": 1717261253017,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1717261253017,
+      "end": 1717261253017,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1717261253017,
+      "end": 1717261253017,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1717261253017,
+      "end": 1717261253017,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261253017,
+      "end": 1717261253017,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1717261253017,
+      "end": 1717261253017,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1717261253017,
+      "end": 1717261253018,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1717261253018,
+      "end": 1717261253018,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1717261253018,
+      "end": 1717261253018,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1717261253018,
+      "end": 1717261253018,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1717261253018,
+      "end": 1717261253018,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1717261253018,
+      "end": 1717261253018,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1717261253018,
+      "end": 1717261253018,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1717261253018,
+      "end": 1717261253018,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1717261253018,
+      "end": 1717261253018,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1717261253018,
+      "end": 1717261253019,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1717261253019,
+      "end": 1717261253019,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1717261253019,
+      "end": 1717261253019,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1717261253019,
+      "end": 1717261253019,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1717261253019,
+      "end": 1717261253019,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1717261253019,
+      "end": 1717261253019,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1717261253019,
+      "end": 1717261253019,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1717261253019,
+      "end": 1717261253019,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1717261253019,
+      "end": 1717261253019,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "resolvedId": "/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/components/dashboard/utils/navbars/Sidebar.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<script setup>\nconst links = [{\n  label: 'Dashboard',\n  to: '/dashboard',\n  icon: 'i-heroicons-adjustments-horizontal',\n}, { \n  label: 'Menus',\n  to: '/dashboard/menu',\n  icon: 'i-heroicons-bars-4',\n}, {\n  label: 'Bookings',\n  to: '/dashboard/bookings',\n  icon: 'i-heroicons-book-open',\n}, {\n  label: 'Inventory',\n  to: '/dashboard/inventory',\n  icon: 'i-heroicons-archive-box',\n}, {\n  label: 'Tasks',\n  to: '/dashboard/tasks',\n  icon: 'i-heroicons-rectangle-stack',\n}, {\n  label: 'Landing Page',\n  to: '/',\n  icon: 'i-heroicons-building-office-2',\n}]\n</script>\n\n<template>\n  <div class=\"mt-6 ml-3 w-40\">\n  <UIcon name=\"i-bx-menu\" \n      class=\"visible absolute text-red-100 text-opacity-30 left-[0.5rem] top-[0.5rem] w-[3rem] h-[3rem] md:invisible\" dynamic/>\n  <img src='/LOGO.png' class=\"invisible sm:visible ml-3 \"/>\n  <UVerticalNavigation :links=\"links\" class=\"invisible sm:visible mt-8\"/>\n  </div>\n</template>\n\n\n",
+      "start": 1717261247602,
+      "end": 1717261248096,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1717261248096,
+      "end": 1717261248096,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1717261248096,
+      "end": 1717261248096,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1717261248096,
+      "end": 1717261248096,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1717261248096,
+      "end": 1717261248096,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1717261248096,
+      "end": 1717261248096,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1717261248096,
+      "end": 1717261248096,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1717261248096,
+      "end": 1717261248096,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\nimport _imports_0 from '/LOGO.png'\n\n\nconst _hoisted_1 = { class: \"mt-6 ml-3 w-40\" }\nconst _hoisted_2 = /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_0,\n  class: \"invisible sm:visible ml-3\"\n}, null, -1)\n\n\nconst _sfc_main = {\n  __name: 'Sidebar',\n  setup(__props) {\n\nconst links = [{\n  label: 'Dashboard',\n  to: '/dashboard',\n  icon: 'i-heroicons-adjustments-horizontal',\n}, { \n  label: 'Menus',\n  to: '/dashboard/menu',\n  icon: 'i-heroicons-bars-4',\n}, {\n  label: 'Bookings',\n  to: '/dashboard/bookings',\n  icon: 'i-heroicons-book-open',\n}, {\n  label: 'Inventory',\n  to: '/dashboard/inventory',\n  icon: 'i-heroicons-archive-box',\n}, {\n  label: 'Tasks',\n  to: '/dashboard/tasks',\n  icon: 'i-heroicons-rectangle-stack',\n}, {\n  label: 'Landing Page',\n  to: '/',\n  icon: 'i-heroicons-building-office-2',\n}]\n\nreturn (_ctx, _cache) => {\n  const _component_UIcon = _resolveComponent(\"UIcon\")\n  const _component_UVerticalNavigation = _resolveComponent(\"UVerticalNavigation\")\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_UIcon, {\n      name: \"i-bx-menu\",\n      class: \"visible absolute text-red-100 text-opacity-30 left-[0.5rem] top-[0.5rem] w-[3rem] h-[3rem] md:invisible\",\n      dynamic: \"\"\n    }),\n    _hoisted_2,\n    _createVNode(_component_UVerticalNavigation, {\n      links: links,\n      class: \"invisible sm:visible mt-8\"\n    })\n  ]))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1717261248096,
+      "end": 1717261248098,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1717261248098,
+      "end": 1717261248098,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261248098,
+      "end": 1717261248098,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1717261248136,
+      "end": 1717261248136,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1717261248136,
+      "end": 1717261248136,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1717261248136,
+      "end": 1717261248136,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1717261248137,
+      "end": 1717261248137,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1717261248137,
+      "end": 1717261248137,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1717261248137,
+      "end": 1717261248137,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1717261248137,
+      "end": 1717261248137,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1717261248137,
+      "end": 1717261248137,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1717261248137,
+      "end": 1717261248137,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1717261248138,
+      "end": 1717261248138,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1717261248138,
+      "end": 1717261248138,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1717261248138,
+      "end": 1717261248138,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1717261248138,
+      "end": 1717261248138,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1717261248138,
+      "end": 1717261248138,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1717261248138,
+      "end": 1717261248139,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1717261248139,
+      "end": 1717261248139,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1717261248139,
+      "end": 1717261248139,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1717261248139,
+      "end": 1717261248139,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1717261248139,
+      "end": 1717261248139,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/node_modules/@nuxt/ui/dist/runtime/components/elements/Icon.vue\";\nimport { default as __nuxt_component_1 } from \"/media/linux/833cfef0-7984-46f2-8f58-ee0be3a5d0782/DATA/XPS-DATA/DEV/WORKSPACE/PROJECTS/PARTNERSHIPS/IMPERAMAX/OFFERS/nuxt-restaurant-management-system/src/node_modules/@nuxt/ui/dist/runtime/components/navigation/VerticalNavigation.vue\";\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\nimport _imports_0 from '/LOGO.png'\n\n\nconst _hoisted_1 = { class: \"mt-6 ml-3 w-40\" }\nconst _hoisted_2 = /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_0,\n  class: \"invisible sm:visible ml-3\"\n}, null, -1)\n\n\nconst _sfc_main = {\n  __name: 'Sidebar',\n  setup(__props) {\n\nconst links = [{\n  label: 'Dashboard',\n  to: '/dashboard',\n  icon: 'i-heroicons-adjustments-horizontal',\n}, { \n  label: 'Menus',\n  to: '/dashboard/menu',\n  icon: 'i-heroicons-bars-4',\n}, {\n  label: 'Bookings',\n  to: '/dashboard/bookings',\n  icon: 'i-heroicons-book-open',\n}, {\n  label: 'Inventory',\n  to: '/dashboard/inventory',\n  icon: 'i-heroicons-archive-box',\n}, {\n  label: 'Tasks',\n  to: '/dashboard/tasks',\n  icon: 'i-heroicons-rectangle-stack',\n}, {\n  label: 'Landing Page',\n  to: '/',\n  icon: 'i-heroicons-building-office-2',\n}]\n\nreturn (_ctx, _cache) => {\n  const _component_UIcon = __nuxt_component_0\n  const _component_UVerticalNavigation = __nuxt_component_1\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createVNode(_component_UIcon, {\n      name: \"i-bx-menu\",\n      class: \"visible absolute text-red-100 text-opacity-30 left-[0.5rem] top-[0.5rem] w-[3rem] h-[3rem] md:invisible\",\n      dynamic: \"\"\n    }),\n    _hoisted_2,\n    _createVNode(_component_UVerticalNavigation, {\n      links: links,\n      class: \"invisible sm:visible mt-8\"\n    })\n  ]))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1717261248139,
+      "end": 1717261248139,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1717261248139,
+      "end": 1717261248139,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1717261248139,
+      "end": 1717261248139,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1717261248139,
+      "end": 1717261248139,
+      "order": "normal"
+    }
+  ]
+}
