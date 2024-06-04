@@ -59,7 +59,7 @@ let openMenuModal = ref(false)
             variant="plain"
             size="xl"
             label="MENU"
-            class="text-xl text-stone-700"
+            class="text-xl text-stone-700 absolute"
             trailing
         />
       </div>
@@ -149,7 +149,6 @@ let openMenuModal = ref(false)
 }
 .navbar-logo1 {
   top: -4px;
-  left: 0px;
   width: 60px;
   height: 60px;
   position: absolute;
@@ -251,9 +250,11 @@ let openMenuModal = ref(false)
 @media(max-width: 479px) {
 
   .navbar-logo{
-    top:0rem;
-    left: 13rem;
-    width: 100vw;
+    position:fixed;
+    top:0rem; 
+    left:0rem;
+    width: 90vw;
+    justify-content: center;
   }
   .navbar-menuicon1{
     left:0rem;
@@ -276,9 +277,8 @@ let openMenuModal = ref(false)
 }
 
 .navbar-menunavlink{
-    left: 0.5rem;
     z-index: 60;
-    position: absolute;
+    left: 0rem;
   }
 
 .navbar-booknavlink{
@@ -290,6 +290,8 @@ let openMenuModal = ref(false)
   .navbar-logo1{
     width: 45px;
     height: 45px;
+    position: absolute;
+    top:-4px
   }
 }
 </style>

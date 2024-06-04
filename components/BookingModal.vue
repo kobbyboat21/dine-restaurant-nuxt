@@ -38,7 +38,7 @@ async function submit(){
         variant="plain"
         size="xl"
         label="BOOK"
-        class="text-xl text-stone-700"
+        class="fixed right-0 text-xl text-stone-700 "
     />
     </div>
     <div v-else>
