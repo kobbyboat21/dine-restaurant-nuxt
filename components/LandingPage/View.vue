@@ -11,7 +11,7 @@
     <div class="overflow-hidden">
       <LandingPageSectionBreakfast/>
       <UIcon name="i-bx-baguette" 
-        class="absolute z-20 left-[3.5rem] top-[153rem] w-[15rem] h-[15rem] text-opacity-10 md:absolute md:z-20 md:left-[74rem] md:top-[157.75rem] md:w-[30rem] md:h-[30rem] text-red-100 md:text-opacity-30 overflow-hidden"
+        class="absolute z-20 left-[3.5rem] top-[156rem] w-[15rem] h-[15rem] text-opacity-10 md:absolute md:z-20 md:left-[74rem] md:top-[157.75rem] md:w-[30rem] md:h-[30rem] text-red-100 md:text-opacity-30 overflow-hidden"
         data-aos="flip-right" data-aos-duration="1750" dynamic />
       <!--
       <UIcon name="i-bx-baguette" 

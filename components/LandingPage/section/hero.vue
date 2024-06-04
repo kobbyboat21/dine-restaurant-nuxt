@@ -116,38 +116,7 @@ export default {
   background-color: #c7bfbf;
 }
 
-
-/*
-@keyframes text-bounce {
-      0%, 
-            20%, 
-            50%, 
-            80%, 
-            100% { 
-                transform: translateY(0); 
-            } 
-  
-            40% { 
-                transform: translateY(-300px); 
-            } 
-  
-            60% { 
-                transform: translateY(-150px); 
-            } 
-        } 
-*/
-
-
-.hero-section-root-class-name {
-  margin-top: 0px;
-}
-.hero-section-root-class-name1 {
-  align-self: center;
-}
-
-
 @media(max-width: 479px) {
-
 
 .hero-section-button1 {
   color: #5d5050;
@@ -172,29 +141,6 @@ export default {
     top: 38.5rem;
     left: 1.25rem;
     width: 90%
-  }
-
-
-.navbar-navbar{
-  width:100vw;
-  top: 0rem;
-  position: absolute;
-}
-
-.navbar-logo1{
-  left: 1rem;
-  }
-
-.navbar-menunavlink{
-    left: 20rem;
-    z-index: 60;
-    position: absolute;
-  }
-
-.navbar-booknavlink{
-    top: 0rem;
-    left: 1rem;
-    position: absolute;
   }
 
 .hero-section-heropic {
