@@ -3,10 +3,10 @@
     <div class="breakfast-section-breakfastslide Content">
       <div v-if="$viewport.isLessThan('tablet')">
         <LandingPageSectionBreakfastHeadlineMobile
-          class="absolute top-[45rem] px-[1rem] 
+          class="absolute top-[49rem] px-[1rem] 
         text-[2.25rem] font-sans-serif text-[rgba(89,76,76)]"/>
         <LandingPageSectionBreakfastMessageMobile
-          class="absolute top-[52rem]"/>
+          class="absolute top-[54rem]"/>
       </div>
       <div v-else>
         <LandingPageSectionBreakfastHeadline/>
@@ -129,8 +129,6 @@ export default {
   position: absolute;
 
 }
-
-
 @media (max-width:479px) {
   
 .breakfast-section-sunicon1 {
@@ -153,7 +151,7 @@ export default {
 }
 
 .breakfast-section-breakfastbutton {
-  top: 70rem;
+  top: 73rem;
   left: 1.25rem;
   width: 90%
 }

@@ -1,40 +1,24 @@
 <template>
   <div class="all-day-section-container" v-bind:class="rootClassName">
     <div class="all-day-section-lunchslide">
-      <div class="all-day-section-container1">
+        <div v-if="$viewport.isLessThan('tablet')">
+          <LandingPageSectionAlldayHeadlineMobile
+            class="absolute top-[40rem] px-[0rem]
+          text-[2.25rem] text-[rgb(72,64,77)]"/> 
+          <LandingPageSectionAlldayMessageMobile
+            class="absolute top-[46rem]"/> 
+        </div>
+        <div v-else>
+          <LandingPageSectionAlldayHeadline/>
+          <LandingPageSectionAlldayMessage/>
+          <UIcon name="i-bx-time-five" 
+            class="absolute z-20 left-[35rem] top-[7.5rem] w-[7rem] h-[7rem] text-red-100 text-opacity-30"
+            data-aos="zoom-in-down" data-aos-duration="1750" dynamic />
+        </div>
         <div class="all-day-section-lunchbutton">
-          <span class="all-day-section-text">
-            <span>
-              <span>All-day menu</span>
-              <br />
-              <span></span>
-            </span>
-          </span>
           <button @click="gotoAllDayMenu" type="button" class="all-day-section-button button border border-2 border-red-400">
             All day menu
           </button>
-        </div>
-        <div class="all-day-section-lunchmessage" data-aos="fade-up" data-aos-duration="1250">
-          <div class="all-day-section-lunchmessage1">
-            <span class="all-day-section-text05">
-              <span class="all-day-section-text06">
-                Our
-                <span v-html="rawgdxl"></span>
-              </span>
-              <span class="all-day-section-text07">all-day</span>
-              <span class="all-day-section-text08">
-                menu is a testament to unwavering commitment, showcasing a
-                <span v-html="rawd2qa"></span>
-              </span>
-              <span class="all-day-section-text09">fusion</span>
-              <span class="all-day-section-text10">
-                of global
-                <span v-html="rawpngl"></span>
-              </span>
-              <span class="all-day-section-text11">artisanal</span>
-              <span>craftsmanship.</span>
-            </span>
-          </div>
         </div>
         <img
           alt="Rectangle82811"
@@ -42,40 +26,6 @@
           class="all-day-section-rectangle8 aos-item"
           data-aos="flip-right" data-aos-duration="1750"
         />
-        <div class="all-day-section-lunchbigtext" data-aos="zoom-in-down" data-aos-duration="1150">
-          <div class="all-day-section-lunchbigtext1">
-            <div class="all-day-section-lunchbigtext_timeless">
-              <span class="all-day-section-text13"> Timeless </span>
-            </div>
-            <div class="all-day-section-lunchbigtext_indulgence">
-              <span class="all-day-section-text13"> Indulgence </span>
-            </div>
-            <div class="all-day-section-lunchbigtext_alldaylong">
-              <span class="all-day-section-text13"> All day long </span>
-            </div>
-          </div>
-          <!--
-          <img
-            alt="timeicon1649"
-            src="/external/timeicon1649-pzeq-300h.png"
-            class="all-day-section-timeicon1"
-          />
--->
-          <UIcon name="i-bx-time-five" 
-            class="absolute z-20 left-[35rem] top-[7.5rem] w-[7rem] h-[7rem] text-red-100 text-opacity-30"
-            data-aos="zoom-in-down" data-aos-duration="1750" dynamic />
-          <!--
-          <img
-            alt="hotbowlicon"
-            src="/external/hot bowl icon.png"
-            class="all-day-hotbowlicon1"
-          />
--->
-      </div>
-        <!--
-        <UIcon name="i-bx-bowl-hot"  class="absolute left-[-35rem] top-[27.75rem] w-[40rem] h-[40rem] text-red-100 text-opacity-30" data-aos="fade-down" data-aos-duration="1150" dynamic />
--->
-      </div>
     </div>
   </div>
 </template>
@@ -379,8 +329,8 @@ export default {
   z-index: 0;
 }
 .all-day-section-lunchbutton {
-  left: 2.8rem;
-  width: 28.2rem;
+  left: 1.25rem;
+  width: 90%;
   bottom: 13rem;
   height: 67px;
   display: flex;
@@ -388,11 +338,11 @@ export default {
   align-items: flex-start;
   flex-shrink: 1;
   z-index: 10;
-  top: 60.5rem
+  top: 68.5rem
 }
 
 .all-day-section-button {
-    width: 85%;
+    width: 100%;
     font-size: 20px;
   }
 .all-day-section-lunchmessage {
