@@ -1,4 +1,6 @@
-class ModelOrders:
+# TODO: Change name to Repository
+class OrderRepository:
+# class ModelOrders:
     def __init__(self, DB):
         # Assign MongoDB database to object
         self.DB = DB
@@ -49,7 +51,8 @@ if __name__ == "__main__":
     mongo.connect()
 
     # Create an instance of ModelOrders
-    orders = ModelOrders(mongo)
+    # orders = ModelOrders(mongo)
+    orders = OrderRepository(mongo)
 
     # Create a new order
     order_data = {
