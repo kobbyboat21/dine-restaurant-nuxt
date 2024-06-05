@@ -1,6 +1,6 @@
 <template>
-  <div class="flex items-center justify-center min-h-screen">
-    <div class="max-w-md w-full bg-gray-600 rounded-lg shadow-md p-6">
+  <div class="flex items-center justify-center min-h-screen w-full h-screen z-50">
+    <div class="max-w-md w-full bg-gray-600 rounded-lg shadow-md p-6 z-10 opacity-70">
       <h2 class="text-2xl font-bold mb-6 text-center">Sign In</h2>
       <form @submit.prevent="handleSubmit">
         <div class="mb-4">
@@ -33,7 +33,7 @@
       </form>
     </div>
   </div>
-    <DashboardUtilsBackgroundsBlurryRestaurant class="z-10 bg-black w-full h-screen"/>
+  <DashboardUtilsBackgroundsBlurryRestaurant class="z-0 bg-black w-full h-screen"/>
 </template>
 
 <script setup>
