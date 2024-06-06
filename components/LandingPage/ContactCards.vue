@@ -1,101 +1,16 @@
 <template>
 
-<div v-if="$viewport.isLessThan('tablet')" class="contact-section-cards">
-        <div class="contact-section-findus">  
-          <span class="contact-section-text">
-            <span>
-              <span>123 Cullinary Street</span>
-              <br />
-              <span>London</span>
-              <br />
-              <span>E21 3GH</span>
-              <br />
-              <span></span>
-              <br />
-              <span>
-                Available on
-                <span v-html="rawnyvq"></span>
-              </span>
-              <br />
-              <span>Uber Eats and Deliveroo</span>
-              <br />
-              <span></span>
-              <br />
-              <span>Email Us</span>
-              <br />
-              <span>
-                dine@dine.com
-                <span v-html="raw7aoe"></span>
-              </span>
-            </span>
-          </span>
-          <span class="contact-section-text19"><span>Find Us</span></span>
-        </div>
-        <div class="contact-section-openingtimes">
-          <span class="contact-section-text21">
-            <span>
-              <span>Monday - Thursday</span>
-              <br />
-              <span>12pm - 11pm</span>
-              <br />
-              <span></span>
-              <br />
-              <span>Friday</span>
-              <br />
-              <span>12pm - 10pm</span>
-              <br />
-              <span></span>
-              <br />
-              <span>Saturday</span>
-              <br />
-              <span>12pm - 8pm</span>
-              <br />
-              <span></span>
-              <br />
-              <span>Sunday</span>
-              <br />
-              <span>12pm - 6pm</span>
-              <br />
-              <span></span>
-              <br />
-              <span></span>
-            </span>
-          </span>
-          <span class="contact-section-text48"><span>Opening Times</span></span>
-        </div>
-        <div class="contact-section-kitchentimes">
-          <span class="contact-section-text50"><span>Kitchen Times</span></span>
-          <span class="contact-section-text52">
-            <span>
-              <span>Monday - Thursday</span>
-              <br />
-              <span>12pm - 9pm</span>
-              <br />
-              <span></span>
-              <br />
-              <span>Friday</span>
-              <br />
-              <span>12pm - 8pm</span>
-              <br />
-              <span></span>
-              <br />
-              <span>Saturday</span>
-              <br />
-              <span>12pm - 8pm</span>
-              <br />
-              <span></span>
-              <br />
-              <span>Sunday</span>
-              <br />
-              <span>12pm - 6pm</span>
-              <br />
-              <span></span>
-              <br />
-              <span></span>
-            </span>
-          </span>
-        </div>
-      </div>
+  <div v-if="$viewport.isLessThan('tablet')">
+    <LandingPageSectionContactFindUs
+      class="absolute left-[2rem] mt-24 
+             w-4/5 h-[30rem] rounded-2xl"/>
+    <LandingPageSectionContactOpeningTimes
+      class="absolute top-[38.5rem] left-[2rem] 
+             w-4/5 h-[30rem] rounded-2xl"/>
+    <LandingPageSectionContactKitchenTimes 
+      class="absolute top-[73rem] left-[2rem] 
+             w-4/5 h-[30rem] rounded-2xl"/>
+  </div>
 <div v-else class="contact-section-cards">
         <div class="contact-section-findus" data-aos="fade-left" data-aos-duration="1750">  
           <span class="contact-section-text">
@@ -300,7 +215,7 @@ export default {
   font-size: 32px;
   text-align: right;
   font-family: K2D;
-  font-weight: 500;
+  font-weight: 500; 
   line-height: normal;
   font-stretch: normal;
   text-decoration: none;
@@ -425,20 +340,6 @@ export default {
   position: absolute;
 }
 
-.contact-section-findus {
-  top: -8rem;
-  left: 3rem;
-}
-
-.contact-section-openingtimes {
-  top: 32rem;
-  left: 3rem;
-}
-
-.contact-section-kitchentimes {
-  top: 72rem;
-  left: 3rem;
-}
 
 .contact-section-bgimage {
   background-image: url('https://images.pexels.com/photos/3201919/pexels-photo-3201919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') repeat-y;
