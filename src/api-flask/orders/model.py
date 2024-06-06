@@ -8,7 +8,8 @@ class OrderModel:
 
     '''
     self.DETAILS = {
-        "ID": int(),
+        "ORDER_ID": int(),
+        "CUSTOMER_ID": int(),
         "PLATFORM_NAME": str(),
         "ORDER_ITEMS_LIST": list(),
         "ORDER_VALUE": float(),
@@ -18,5 +19,9 @@ class OrderModel:
             "PREPARED": str(),
             "OUT_FOR_DELIVERY": str(),
             "DELIVERED": str(),
-        }
+        },
+        "DELIVERY_INFO": {
+            "NAME": str(),
+            "ADDRESS": str(), # Change to dictionary/custom object for country - region - city - zip code - street - property number
+        },
     }
