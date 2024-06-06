@@ -23,26 +23,15 @@
         </div>
       </div>
         <UIcon name="i-bx-dish" class="absolute left-[3rem] top-[41rem] w-[20rem] h-[20rem] md:left-[33rem] md:top-[26.75rem] md:w-[24rem] md:h-[40rem] text-red-100 text-opacity-30 " data-aos="fade-down" data-aos-duration="1150" dynamic />
-        <div class="hero-section-reservebutton">
-          <button @click="gotoBook" type="button" class="hero-section-button button">
-            Reserve a table
-          </button>
-        </div>
+        <LandingPageSectionHeroReserveButton/> 
+        <!-- <div class="hero-section-reservebutton"> -->
+        <!-- <button @click="openBookingModal = true" type="button" class="hero-section-button button"> -->
+        <!--     Reserve a table -->
+        <!-- </button> -->
+        <!-- </div> -->
   </div>
 </div>
 </template>
-
-<script>
-
-export default {
-   methods: { 
-    gotoBook() {
-      this.$router.push('/book');
-    }
-  },
-
-}
-</script>
 
 
 <style scoped>

@@ -3,10 +3,10 @@
     <div class="breakfast-section-breakfastslide Content">
       <div v-if="$viewport.isLessThan('tablet')">
         <LandingPageSectionBreakfastHeadlineMobile
-          class="absolute top-[49rem] px-[1rem] 
+          class="absolute top-[52rem] px-[1rem] 
         text-[2.25rem] font-sans-serif text-[rgba(89,76,76)]"/>
         <LandingPageSectionBreakfastMessageMobile
-          class="absolute top-[54rem]"/>
+          class="absolute top-[58rem]"/>
       </div>
       <div v-else>
         <LandingPageSectionBreakfastHeadline/>

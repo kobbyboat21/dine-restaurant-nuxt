@@ -2,16 +2,6 @@
   <div class="contact-section-container" v-bind:class="rootClassName">
     <div class="contact-section-bgimage"></div>
     <div class="contact-section-contactslide">
-      <!--
-      <div class="contact-section-logo">
-        <img
-          alt="logo6823"
-          src="/external/logo6823-t834-300h.png"
-          class="contact-section-logo1"
-          data-aos="zoom-in" data-aos-duration="1250"
-        />
-      </div>
--->
         <LandingPageContactCards/> 
     </div>
   </div>
@@ -75,11 +65,13 @@ export default {
  
 .contact-section-container {
     height: 100vh;
+    width: 100vw
 }
 
 
 .contact-section-contactslide {
   height: 100vh;
+  width: 100%;
   overflow-y: scroll;
   top: 0rem;
 }

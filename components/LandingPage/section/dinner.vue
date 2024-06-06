@@ -5,9 +5,9 @@
         <LandingPageSectionDinnerHeadlineMobile 
           class="mt-[8rem] px-[1rem] text-[2.25rem] 
           font-sans-serif text-[rgba(89,76,76)]
-          absolute top-[36rem]"/>
+          absolute top-[38rem]"/>
         <LandingPageSectionDinnerMessageMobile
-          class="absolute top-[50rem]"/>
+          class="absolute top-[52rem]"/>
       </div>
       <div v-else>
         <LandingPageSectionDinnerHeadline/>
@@ -171,7 +171,7 @@ export default {
 .dinner-section-rectangle8 {
     left: 0rem;
     top: 0rem;
-    height: 100vh;
+    height: 90vh;
   }
 }
 </style>

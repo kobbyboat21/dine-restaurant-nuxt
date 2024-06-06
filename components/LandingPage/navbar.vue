@@ -1,42 +1,48 @@
-<script>
-export default {
-  data() {
-    return {
-      limitPosition: 500,
-      scrolled: false,
-      lastPosition: 0
-    };
-  },
-  methods: {
-    handleScroll() {
-      if (typeof window !== 'undefined') {
-        if (this.lastPosition < window.scrollY && this.limitPosition < window.scrollY) {
-          this.scrolled = true;
-          // move up!
-        } 
-        
-        if (this.lastPosition > window.scrollY) {
-          this.scrolled = false;
-          // move down
-        }
-        
-        this.lastPosition = window.scrollY;
-      }
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+
+const limitPosition = ref(500);
+const scrolled = ref(false);
+const lastPosition = ref(0);
+let openMenuModal = ref(false)
+let createBookingModal = ref(false) 
+
+function toggleBookingModal(){
+    if (createBookingModal == true){
+      createBookingModal = false
+  } else {
+      createBookingModal = true
+  }
+}
+
+const handleScroll = () => {
+  if (typeof window !== 'undefined') {
+    if (lastPosition.value < window.scrollY && limitPosition.value < window.scrollY) {
+      scrolled.value = true;
+      // move up!
     }
-  },
-  created() {
-    if (typeof window !== 'undefined') {
-      window.addEventListener("scroll", this.handleScroll);
+
+    if (lastPosition.value > window.scrollY) {
+      scrolled.value = false;
+      // move down
     }
-  },
-  destroyed() {
-    if (typeof window !== 'undefined') {
-      window.removeEventListener("scroll", this.handleScroll);
-    }
+
+    lastPosition.value = window.scrollY;
   }
 };
 
-let openMenuModal = ref(false)
+onMounted(() => {
+  if (typeof window !== 'undefined') {
+    window.addEventListener('scroll', handleScroll);
+  }
+});
+
+onUnmounted(() => {
+  if (typeof window !== 'undefined') {
+    window.removeEventListener('scroll', handleScroll);
+  }
+});
+
 </script>
 
 <template>
@@ -47,7 +53,7 @@ let openMenuModal = ref(false)
         <img
           alt="logo627"
           src="/LOGO.png"
-          class="navbar-logo1"
+          class="navbar-logo1 z-100"
         />
         </NuxtLink>
       </div>
@@ -81,36 +87,9 @@ let openMenuModal = ref(false)
         </div>
       </UModal>
 
+      <div class="navbar-booknavlink-1 absolute right-0 ">
+        <BookingButton/>
 
-
-        <!--
-        <span class="navbar-text"><span>MENU</span></span>
-        <UIcon name="i-ep-fork-spoon" class="navbar-menuicon1 navbar-text" dynamic/>-->
-        <!--img -> CHANGE TO UICON
-          alt="menuicon16514"
-          src="/external/menuicon16514-t31p-200h.png"
-          class="navbar-menuicon1"
-        />
-<button type="button" class="navbar-button button">{{ menu_button }}</button>-->
-      <div class="navbar-booknavlink">
-        <!--img -> CHANGE TO UICON
-        <img
-          alt="calendaraddicon16716"
-          src="/external/calendaraddicon16716-jtid-200h.png"
-          class="navbar-calendaraddicon1"
-/>-->
-       <!-- <span class="navbar-text2"><span>BOOK</span></span>
-        <UIcon name="i-ep-calendar" class="navbar-menuicon1 navbar-text" dynamic/>
--->       
-        <BookingModal/>
-        <!--  
-        <UButton  @click="createBookingModal = true" variant="ghost" class="navbar-button1 button"/>
-        <UModal v-model="createBookingModal ">
-          <div class="p-4">
-            <Placeholder class="h-48" />
-          </div>
-        </UModal>
-         <BookingModal/> -->
       </div>
     </header>
   </div>
@@ -282,7 +261,7 @@ let openMenuModal = ref(false)
   }
 
 .navbar-booknavlink{
-    left: 20.5rem;
+    left: 18.5rem;
     z-index: 60;
     position: absolute;
   }

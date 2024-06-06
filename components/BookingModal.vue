@@ -1,6 +1,4 @@
 <script setup>
-
-let createBookingModal = ref(false)
 import { format } from 'date-fns'
 //import DatePicker from 'v-calendar'
 import { ref } from 'vue';
@@ -26,33 +24,14 @@ async function submit(){
   createBooking(booking)
 }
 
+let isOpen = ref(true)
+
 </script>
 
 <template>
 
   <div>
-    <div v-if="$viewport.isLessThan('tablet')">
-    <UButton @click="createBookingModal = true" 
-        icon="i-heroicons-calendar"
-        color="brown"
-        variant="plain"
-        size="xl"
-        label="BOOK"
-        class="fixed right-0 text-xl text-stone-700 "
-    />
-    </div>
-    <div v-else>
-    <UButton @click="createBookingModal = true" 
-        icon="i-heroicons-calendar"
-        color="brown"
-        variant="plain"
-        size="xl"
-        label="BOOK"
-        class="text-3xl text-stone-700"
-    />
-    </div>
-
-    <UModal v-model="createBookingModal">
+    <UModal v-model="isOpen">
       <UCard :ui="{ ring: '', divide: 'divide-y divide-gray-100 dark:divide-gray-800' }">
         <template #header>
           <h1 class="text-lg text-center font-extrabold"> Create Booking </h1>
@@ -77,7 +56,7 @@ async function submit(){
               </template>
             </UPopover>
           </UFormGroup>
-          <UButton type="submit" color="gray" @click="createBookingModal = false">
+          <UButton type="submit" color="gray" >
             Submit
           </UButton>
         </UForm> 

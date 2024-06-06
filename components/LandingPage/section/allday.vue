@@ -3,10 +3,10 @@
     <div class="all-day-section-lunchslide">
         <div v-if="$viewport.isLessThan('tablet')">
           <LandingPageSectionAlldayHeadlineMobile
-            class="absolute top-[40rem] px-[1rem]
-          text-[2.25rem] text-[rgb(72,64,77)]"/> 
+            class="absolute top-[43rem] px-[1rem]
+          text-[2.1rem] text-[rgb(72,64,77)]"/> 
           <LandingPageSectionAlldayMessageMobile
-            class="absolute top-[46rem]"/> 
+            class="absolute top-[50rem]"/> 
         </div>
         <div v-else>
           <LandingPageSectionAlldayHeadline/>
@@ -176,7 +176,7 @@ export default {
   align-items: flex-start;
   flex-shrink: 1;
   z-index: 10;
-  top: 68.5rem
+  top: 70.5rem
 }
 
 .all-day-section-button {
