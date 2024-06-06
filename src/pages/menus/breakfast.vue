@@ -5,3 +5,11 @@
   <DashboardUtilsBackgroundsBlurryRestaurant class="z-10 bg-black w-full h-screen"/>
   </div>
 </template>
+
+<script>
+import { definePageMeta } from '#imports'
+
+definePageMeta({
+  auth: false
+})
+</script>

@@ -1,5 +1,8 @@
 import { defineEventHandler, readBody } from 'h3'
-import User from '~/server/models/User' // Import your User model
+import { sign } from 'jsonwebtoken'
+import User from '~/server/models/User'
+
+const SECRET = 'dummy'
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event)
@@ -19,19 +22,37 @@ export default defineEventHandler(async (event) => {
       return { error: 'Invalid email or password' }
     }
 
-    // Verify the password using the verifyPassword method provided by mongoose-bcrypt
+    // Verify the password using the comparePassword method
     const isMatch = await user.verifyPassword(password)
-    console.log('Input: ', body)
-    console.log('User: ', user)
-    console.log('IS MATCH: ', isMatch)
+    console.log('IS MATCH:', isMatch)
 
     // If the password doesn't match, return an error
     if (!isMatch) {
       return { error: 'Invalid email or password' }
     }
 
-    // If the email and password are valid, return the user object
-    return { user }
+    const expiresIn = 1500
+    const refreshToken = Math.floor(Math.random() * (1000000000000000 - 1 + 1)) + 1
+    const userObject = {
+      _id: user._id,
+      username: user.username,
+      email: user.email,
+      picture: 'https://github.com/nuxt.png',
+      name: user.username
+    }
+
+    const accessToken = sign({ ...userObject, scope: ['test', 'user'] }, SECRET, { expiresIn })
+    const refreshTokens = {
+      accessToken,
+      user: userObject
+    }
+
+    return {
+      token: {
+        accessToken,
+        refreshToken
+      }
+    }
   } catch (err) {
     // Handle any errors that occurred during the authentication process
     console.error(err)

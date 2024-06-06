@@ -10,10 +10,5 @@ const UserSchema = new Schema({
 
 UserSchema.plugin(bcrypt, { rounds: 10 }) // Use the bcrypt plugin with a salt rounds value of 10
 
-// Compare the provided password with the hashed password
-UserSchema.methods.comparePassword = function (candidatePassword) {
-  return bcrypt.compareSync(candidatePassword, this.password)
-}
-
 export default model('User', UserSchema)
 

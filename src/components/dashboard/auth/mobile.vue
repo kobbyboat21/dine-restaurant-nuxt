@@ -38,21 +38,23 @@
 
 <script setup>
 import { ref } from 'vue'
+const { signIn, token, data, status, lastRefreshedAt } = useAuth()
 
 const email = ref('')
 const password = ref('')
 const error = ref('')
 const isLoading = ref(false)
 
+
 const handleSubmit = async () => {
   try {
     isLoading.value = true
-    const response = await $fetch('/api/auth/login', {
-      method: 'POST',
-      body: {
-        email: email.value,
-        password: password.value,
-      },
+    const response = await signIn('credentials', {
+      email: email.value,
+      password: password.value,
+      // redirect: false
+      callbackUrl: '/dashboard',
+      external: true
     })
 
     if (response.error) {
