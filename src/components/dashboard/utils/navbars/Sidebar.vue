@@ -24,14 +24,25 @@ const links = [{
   to: '/',
   icon: 'i-heroicons-building-office-2',
 }]
+
+const { signOut } = useAuth()
+function logOut(){
+  signOut( {callbackUrl: '/dashboard/login', external: true})
+  navigateTo('/dashboard/login', {external: true})
+  }
 </script>
 
 <template>
-  <div class="mt-6 ml-3 w-40">
-  <UIcon name="i-bx-menu" 
-      class="visible absolute text-red-100 text-opacity-30 left-[0.5rem] top-[0.5rem] w-[3rem] h-[3rem] md:invisible" dynamic/>
-  <img src='/LOGO.png' class="invisible sm:visible ml-3 "/>
-  <UVerticalNavigation :links="links" class="invisible sm:visible mt-8"/>
+  <div class="flex flex-col h-screen w-40">
+    <div class="flex justify-center mt-6">
+      <img src="/LOGO.png" class="sm:visible ml-3" />
+    </div>
+    <UVerticalNavigation :links="links" class="sm:visible mt-8 mx-auto" />
+    <div class="hidden sm:block mx-auto mt-8">
+      <div @click="logOut()" class="bg-red-500 hover:bg-red-600 text-white rounded-full px-4 py-2">
+        Logout
+      </div>
+    </div>
   </div>
 </template>
 
