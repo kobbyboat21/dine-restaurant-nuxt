@@ -9,7 +9,7 @@ export default defineEventHandler(async (event) => {
   //
   // ^^^ const user_data gets values/data from function inside Pinia store
 	const body = await readBody(event); 
-  return { body }
+  // return { body }
 
 	// create user
 	try {

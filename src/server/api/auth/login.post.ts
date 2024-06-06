@@ -21,6 +21,9 @@ export default defineEventHandler(async (event) => {
 
     // Verify the password using the verifyPassword method provided by mongoose-bcrypt
     const isMatch = await user.comparePassword(password)
+    console.log('Input: ', body)
+    console.log('User: ', user)
+    console.log('IS MATCH: ', isMatch)
 
     // If the password doesn't match, return an error
     if (!isMatch) {

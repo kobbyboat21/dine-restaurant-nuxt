@@ -4,6 +4,8 @@ export default defineNuxtRouteMiddleware(async (to) => {
   // Check if the user is trying to access the landing page
   const unauthenticated_routes = [
     '/',
+    '/tests/',
+    '/tests/user',
     '/menu',
     '/dashboard/login',
   ]
