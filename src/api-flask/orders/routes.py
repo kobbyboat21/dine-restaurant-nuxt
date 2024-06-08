@@ -65,3 +65,12 @@ def median_order_value():
     order_service = OrderService(order_repository)
     return order_service.median_order_value()
 
+@BLUEPRINT_ORDERS.route('/api/orders/populate', methods=['GET'])
+def populate_orders():
+    mongo = MongoDB(MONGO_URI)
+    mongo.connect()
+    order_repository = OrderRepository(mongo)
+    order_service = OrderService(order_repository)
+    order_service.populate_orders(5)
+    return 'success'
+
