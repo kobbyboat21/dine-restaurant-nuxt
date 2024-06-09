@@ -67,11 +67,42 @@ watch([median_order_value, most_popular_platform, upcoming_orders, completed_ord
     fetch_order_status_cards(time_period)
   }
 })
+
+const tabs_time_period = [
+  {label: 'Today', value: 'daily'},
+  {label: 'This Week', value: 'weekly'},
+  {label: 'This Month', value: 'monthly'},
+]
+
+const handleTabChange = (index) => {
+  time_period = tabs_time_period[index].value;
+  console.log("TIME PERIOD: ", time_period)
+  fetch_order_status_cards(time_period);
+  // TODO: fetch_menu_chart_cards(time_period.value);
+};
+
+
 </script>
 
 
 <template>
   <div>
+    <UTabs 
+        :items="tabs_time_period" 
+        :default-index="0" 
+        class="w-full"
+        @change="handleTabChange"
+    >
+      <template #item="{item}">
+        <div v-if="item.label === 'Today'">
+        </div>
+        <div v-if="item.label === 'This Week'">
+        </div>
+        <div v-if="item.label === 'This Month'">
+        </div>
+      </template>
+    </UTabs>
+
   <div class="grid grid-cols-1 sm:grid-cols-2 my-5 " >
       <DashboardUtilsCardsStatus 
         class="my-3 sm:my-0" 
