@@ -38,35 +38,41 @@ class OrderService:
         #TODO: Deserialise List and find most popular items from that - this is buggy
         return self.ORDERS_REPOSITORY.aggregate(pipeline)
 
-    def most_popular_platform(self):
+    # Most Popular Platform
+    def most_popular_platform(self, start_date=None, end_date=None):
+        #TODO: If no date range passed through, set to 1 year ago from today and today's date
         pipeline = [
+            {"$match": {"TIMESTAMPS.PLACED": {"$gte": start_date, "$lte": end_date}}} if start_date and end_date else {}
+        ]
+        pipeline.extend([
             {"$group": {"_id": "$PLATFORM_NAME", "count": {"$sum": 1}}},
             {"$sort": {"count": -1}},
             {"$limit": 1}
+        ])
+        result = self.ORDERS_REPOSITORY.aggregate(pipeline)
+        if result:
+            return result[0]["_id"]  # Return the platform name with highest count
+        else:
+            return 'NO DATA'  # Return 'NO DATA' if no results
+
+    def most_popular_payment_method(self, start_date=None, end_date=None):
+        pipeline = [
+            {"$match": {"TIMESTAMPS.PLACED": {"$gte": start_date, "$lte": end_date}}} if start_date and end_date else {},
+            {"$match": {"PAYMENT_METHOD": {"$ne": None}}},  # Filter out documents with null payment_method
+            {"$group": {"_id": "$PAYMENT_METHOD", "count": {"$sum": 1}}},  # Group by payment_method and count occurrences
+            {"$sort": {"count": -1}},  # Sort by count in descending order
+            {"$limit": 1}  # Take the first result, which is the most popular
         ]
         result = self.ORDERS_REPOSITORY.aggregate(pipeline)
         if result:
-            return result[0]["_id"] # Return the platform name with highest count
+            return result[0]["_id"]  # Return the payment_method with highest count
         else:
-            return 'NO DATA' # Return 'NO DATA' if no results
+            return 'NO DATA'  # Return 'NO DATA' if no results
 
 
-    def most_popular_payment_method(self):
+    def median_order_value(self, start_date=None, end_date=None):
         pipeline = [
-            {"$match": {"PAYMENT_METHOD": {"$ne": None}}}, # Filter out documents with null payment_method [2]
-            {"$group": {"_id": "$PAYMENT_METHOD", "count": {"$sum": 1}}}, # Group by payment_method and count occurrences
-            {"$sort": {"count": -1}}, # Sort by count in descending order
-            {"$limit": 1} # Take the first result, which is the most popular
-        ]
-        result = self.ORDERS_REPOSITORY.aggregate(pipeline)
-        if result:
-            return result[0]["_id"] # Return the payment_method with highest count
-        else:
-            return 'NO DATA' # Return 'NO DATA' if no results
-
-
-    def median_order_value(self):
-        pipeline = [
+            {"$match": {"TIMESTAMPS.PLACED": {"$gte": start_date, "$lte": end_date}}} if start_date and end_date else {},
             {"$match": {"ORDER_VALUE": {"$ne": None}}},  # Filter out documents with null ORDER_VALUE
             {"$group": {"_id": None, "order_values": {"$push": "$ORDER_VALUE"}}},  # Group all order values into an array
             {"$unwind": "$order_values"},  # Flatten the array of order values
