@@ -17,8 +17,9 @@ export const useOrderStore = defineStore('orderStore', {
     async getOrders() {
       const data = await useFetch("/api/orders");
       this.$patch((state) => {
-        state.orders = data.value;
+        state.orders = data.data;
       });
+      return data.data
     },
 
     async createOrder(order) {
@@ -89,7 +90,7 @@ export const useOrderStore = defineStore('orderStore', {
       this.$patch((state) => {
         state.upcomingOrders = data.data;
       });
-      return this.completedOrders
+      return this.upcomingOrders
     },
 
     async getCompletedOrders(startDate, endDate) {
@@ -98,6 +99,21 @@ export const useOrderStore = defineStore('orderStore', {
         state.completedOrders = data.data;
       });
       return this.completedOrders
+    },
+    async getUpcomingOrdersCount(startDate, endDate) {
+      const data = await useFetch(`/api/orders/upcoming?start_date=${startDate}&end_date=${endDate}`);
+      this.$patch((state) => {
+        state.upcomingOrders = data.data;
+      });
+      return JSON.parse(this.upcomingOrders).length
+    },
+
+    async getCompletedOrdersCount(startDate, endDate) {
+      const data = await useFetch(`/api/orders/completed?start_date=${startDate}&end_date=${endDate}`);
+      this.$patch((state) => {
+        state.completedOrders = data.data;
+      });
+      return JSON.parse(this.completedOrders).length
     },
 
     async getMostPopularPaymentMethod(startDate, endDate) {
