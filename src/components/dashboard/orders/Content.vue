@@ -8,7 +8,7 @@ const most_popular_platform = ref('')
 const upcoming_orders = ref('')
 const completed_orders = ref('')
 
-let time_period = 'annual'
+let time_period = 'daily'
 
 function formatDate(date) {
   return date.toISOString().slice(0, 10);
@@ -16,19 +16,21 @@ function formatDate(date) {
 
 const fetch_order_status_cards = async (time_period) => {
   const today = new Date();
+  const yesterday = new Date(today.getFullYear(), today.getMonth(), today.getDate() - 1);
+  const tomorrow = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1);
   let start_date, end_date;
 
   switch (time_period) {
     case 'daily':
-      start_date = new Date(today.getFullYear(), today.getMonth(), today.getDate());
-      end_date = new Date(start_date);
+      start_date = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1);
+      end_date = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 2);
       break;
     case 'weekly':
       const lastMonday = new Date(today);
       lastMonday.setDate(today.getDate() - (today.getDay() || 6) + 1); // Find last monday
       start_date = new Date(lastMonday.getFullYear(), lastMonday.getMonth(), lastMonday.getDate());
       end_date = new Date(start_date);
-      end_date.setDate(end_date.getDate() + 6);
+      end_date.setDate(end_date.getDate() + 7);
       break;
     case 'monthly':
       start_date = new Date(today.getFullYear(), today.getMonth(), 2);
@@ -39,13 +41,14 @@ const fetch_order_status_cards = async (time_period) => {
       end_date = new Date(today.getFullYear(), 11, 31);
       break;
     default:
-      start_date = new Date(today.getFullYear(), today.getMonth(), today.getDate());
-      end_date = new Date(start_date);
+      start_date = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1);
+      end_date = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 2);
       break;
   }
 
   start_date = formatDate(start_date)
   end_date = formatDate(end_date)
+  // console.log('DAILY', start_date, end_date)
 
   median_order_value.value = await getMedianOrderValue(start_date, end_date);
   most_popular_platform.value = await getMostPopularPlatform(start_date, end_date);

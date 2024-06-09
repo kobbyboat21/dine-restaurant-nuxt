@@ -102,6 +102,7 @@ export const useOrderStore = defineStore('orderStore', {
     },
     async getUpcomingOrdersCount(startDate, endDate) {
       const data = await useFetch(`/api/orders/upcoming?start_date=${startDate}&end_date=${endDate}`);
+      console.log("UPCOMING", startDate, endDate)
       this.$patch((state) => {
         state.upcomingOrders = data.data;
       });

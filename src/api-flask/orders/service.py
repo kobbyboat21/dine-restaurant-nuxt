@@ -6,32 +6,35 @@ class OrderService:
         from bson import json_util
         query = {
             "$or": [
-                {"TIMESTAMPS.PREPARED": None},
-                {"TIMESTAMPS.OUT_FOR_DELIVERY": None},
-                {"TIMESTAMPS.DELIVERED": None}
+                {"timestamps.prepared": None},
+                {"timestamps.out_for_delivery": None},
+                {"timestamps.delivered": None}
             ]
         }
+        # print("UPCOMING2", start_date, end_date)
         if start_date and end_date:
-            query["TIMESTAMPS.PLACED"] = {"$gte": start_date, "$lte": end_date}
-        orders = self.ORDERS_REPOSITORY.read_order(query)
-        orders = json_util.dumps(orders)
+            query["timestamps.placed"] = {"$gte": start_date, "$lte": end_date}
+            orders = self.ORDERS_REPOSITORY.read_order(query)
+            orders = json_util.dumps(orders)
+        else:
+            orders = "NO DATA"
         return orders
 
     def completed_orders(self, start_date=None, end_date=None):
         from bson import json_util
         query = {
-            "TIMESTAMPS.DELIVERED": {"$ne": None}
+            "timestamps.delivered": {"$ne": None}
         }
         if start_date and end_date:
-            query["TIMESTAMPS.DELIVERED"] = {"$gte": start_date, "$lte": end_date}
+            query["timestamps.delivered"] = {"$gte": start_date, "$lte": end_date}
         orders = self.ORDERS_REPOSITORY.read_order(query)
         orders = json_util.dumps(orders)
         return orders
 
     def most_popular_items(self):
         pipeline = [
-            {"$unwind": "$ORDER_ITEMS"},
-            {"$group": {"_id": "$ORDER_ITEMS", "count": {"$sum": 1}}},
+            {"$unwind": "$orderItemsList"},
+            {"$group": {"_id": "$orderItemsList", "count": {"$sum": 1}}},
             {"$sort": {"count": -1}},
             {"$limit": 3}
         ]
@@ -42,10 +45,10 @@ class OrderService:
     def most_popular_platform(self, start_date=None, end_date=None):
         #TODO: If no date range passed through, set to 1 year ago from today and today's date
         pipeline = [
-            {"$match": {"TIMESTAMPS.PLACED": {"$gte": start_date, "$lte": end_date}}} if start_date and end_date else {}
+            {"$match": {"timestamps.placed": {"$gte": start_date, "$lte": end_date}}} if start_date and end_date else {}
         ]
         pipeline.extend([
-            {"$group": {"_id": "$PLATFORM_NAME", "count": {"$sum": 1}}},
+            {"$group": {"_id": "$platformName", "count": {"$sum": 1}}},
             {"$sort": {"count": -1}},
             {"$limit": 1}
         ])
@@ -57,9 +60,9 @@ class OrderService:
 
     def most_popular_payment_method(self, start_date=None, end_date=None):
         pipeline = [
-            {"$match": {"TIMESTAMPS.PLACED": {"$gte": start_date, "$lte": end_date}}} if start_date and end_date else {},
-            {"$match": {"PAYMENT_METHOD": {"$ne": None}}},  # Filter out documents with null payment_method
-            {"$group": {"_id": "$PAYMENT_METHOD", "count": {"$sum": 1}}},  # Group by payment_method and count occurrences
+            {"$match": {"timestamps.placed": {"$gte": start_date, "$lte": end_date}}} if start_date and end_date else {},
+            {"$match": {"paymentMethod": {"$ne": None}}},  # Filter out documents with null payment_method
+            {"$group": {"_id": "$paymentMethod", "count": {"$sum": 1}}},  # Group by payment_method and count occurrences
             {"$sort": {"count": -1}},  # Sort by count in descending order
             {"$limit": 1}  # Take the first result, which is the most popular
         ]
@@ -72,9 +75,9 @@ class OrderService:
 
     def median_order_value(self, start_date=None, end_date=None):
         pipeline = [
-            {"$match": {"TIMESTAMPS.PLACED": {"$gte": start_date, "$lte": end_date}}} if start_date and end_date else {},
-            {"$match": {"ORDER_VALUE": {"$ne": None}}},  # Filter out documents with null ORDER_VALUE
-            {"$group": {"_id": None, "order_values": {"$push": "$ORDER_VALUE"}}},  # Group all order values into an array
+            {"$match": {"timestamps.placed": {"$gte": start_date, "$lte": end_date}}} if start_date and end_date else {},
+            {"$match": {"orderValue": {"$ne": None}}},  # Filter out documents with null ORDER_VALUE
+            {"$group": {"_id": None, "order_values": {"$push": "$orderValue"}}},  # Group all order values into an array
             {"$unwind": "$order_values"},  # Flatten the array of order values
             {"$sort": {"order_values": 1}},  # Sort the order values in ascending order
             {"$group": {"_id": None, "count": {"$sum": 1}, "sorted_values": {"$push": "$order_values"}}},  # Get the count and sorted order values
