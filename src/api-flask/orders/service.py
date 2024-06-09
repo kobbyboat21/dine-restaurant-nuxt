@@ -124,32 +124,41 @@ class OrderService:
         delivered = None
 
         timestamps = {
-            "PLACED": placed.isoformat(),
+            "placed": placed.isoformat(),
             # "PREPARED": prepared.isoformat(),
             # "OUT_FOR_DELIVERY": out_for_delivery.isoformat(),
             # "DELIVERED": delivered.isoformat(),
-            "PREPARED": prepared,
-            "OUT_FOR_DELIVERY": out_for_delivery,
-            "DELIVERED": delivered,
+            "prepared": prepared,
+            "out_for_delivery": out_for_delivery,
+            "delivered": delivered,
         }
 
         name = fake.name()
-        address = fake.address()
+        # address = fake.address()
+        address = {
+            "street": "Street",
+            "propertyNumber": "45",
+            "city": "London",
+            "region": "England",
+            "country": "UK",
+            "zipCode": "SW1 4AC",
+
+        }
 
         delivery_info = {
-            "NAME": name,
-            "ADDRESS": address,
+            "name": name,
+            "address": address,
         }
 
         order_model = {
-            "ORDER_ID": order_id,
-            "CUSTOMER_ID": customer_id,
-            "PLATFORM_NAME": platform_name,
-            "ORDER_ITEMS_LIST": order_items_list,
-            "ORDER_VALUE": order_value,
-            "PAYMENT_METHOD": payment_method,
-            "TIMESTAMPS": timestamps,
-            "DELIVERY_INFO": delivery_info,
+            "orderId": order_id,
+            "customerId": customer_id,
+            "platformName": platform_name,
+            "orderItemsList": order_items_list,
+            "orderValue": order_value,
+            "paymentMethod": payment_method,
+            "timestamps": timestamps,
+            "deliveryInfo": delivery_info,
         }
 
         return order_model
