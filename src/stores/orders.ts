@@ -7,6 +7,11 @@ export const useOrderStore = defineStore('orderStore', {
     mostOrderedBreakfastMeal: null,
     mostOrderedLunchMeal: null,
     mostOrderedDinnerMeal: null,
+    upcomingOrders: [],
+    completedOrders: [],
+    mostPopularPaymentMethod: null,
+    mostPopularPlatform: null,
+    medianOrderValue: null,
   }),
   actions: {
     async getOrders() {
@@ -60,6 +65,7 @@ export const useOrderStore = defineStore('orderStore', {
       this.$patch((state) => {
         state.mostOrderedBreakfastMeal = data.value;
       });
+      return this.mostOrderedBreakfastMeal
     },
 
     async getMostOrderedLunchMeal() {
@@ -67,6 +73,7 @@ export const useOrderStore = defineStore('orderStore', {
       this.$patch((state) => {
         state.mostOrderedLunchMeal = data.value;
       });
+      return this.mostOrderedLunchMeal
     },
 
     async getMostOrderedDinnerMeal() {
@@ -74,6 +81,48 @@ export const useOrderStore = defineStore('orderStore', {
       this.$patch((state) => {
         state.mostOrderedDinnerMeal = data.value;
       });
+      return this.mostOrderedDinnerMeal
+    },
+
+    async getUpcomingOrders(startDate, endDate) {
+      const data = await useFetch(`/api/orders/upcoming?start_date=${startDate}&end_date=${endDate}`);
+      this.$patch((state) => {
+        state.upcomingOrders = data.data;
+      });
+      return this.completedOrders
+    },
+
+    async getCompletedOrders(startDate, endDate) {
+      const data = await useFetch(`/api/orders/completed?start_date=${startDate}&end_date=${endDate}`);
+      this.$patch((state) => {
+        state.completedOrders = data.data;
+      });
+      return this.completedOrders
+    },
+
+    async getMostPopularPaymentMethod(startDate, endDate) {
+      const data = await useFetch(`/api/orders/analytics/most-popular/payment-method?start_date=${startDate}&end_date=${endDate}`);
+      this.$patch((state) => {
+        state.mostPopularPaymentMethod = data.data;
+      });
+      return this.mostPopularPaymentMethod
+    },
+
+    async getMostPopularPlatform(startDate, endDate) {
+      const data = await useFetch(`/api/orders/analytics/most-popular/platform?start_date=${startDate}&end_date=${endDate}`);
+      this.$patch((state) => {
+        state.mostPopularPlatform = data.data;
+      });
+      return this.mostPopularPlatform
+    },
+
+    async getMedianOrderValue(startDate, endDate) {
+      const data = await useFetch(`/api/orders/analytics/median-order-value?start_date=${startDate}&end_date=${endDate}`);
+      this.$patch((state) => {
+        state.medianOrderValue = data.data;
+      });
+      return this.medianOrderValue
     },
   },
 });
+

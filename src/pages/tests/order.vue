@@ -99,11 +99,77 @@
         </li>
       </ul>
     </div>
+
+    <!-- Analytics Section -->
+    <div class="container mx-auto px-4 py-8">
+      <h2 class="text-2xl font-bold mb-4">
+        <UTooltip text="This section displays the Order Analytics">
+          Order Analytics
+        </UTooltip>
+      </h2>
+
+      <!-- Fetch Data Button -->
+      <div class="container mx-auto px-4 py-8">
+        <UButton color="purple" class="w-full" @click="fetchData">
+          <UTooltip text="Click to fetch order data">
+            Fetch Order Data
+          </UTooltip>
+        </UButton>
+      </div>
+
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div class="bg-gray-800 rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold mb-4">
+            <UTooltip text="This card displays the median order value">
+              Median Order Value
+            </UTooltip>
+          </h3>
+          <p>{{ medianOrderValue }}</p>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold mb-4">
+            <UTooltip text="This card displays the most popular platform">
+              Most Popular Platform
+            </UTooltip>
+          </h3>
+          <p>{{ mostPopularPlatform }}</p>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold mb-4">
+            <UTooltip text="This card displays the most popular payment method">
+              Most Popular Payment Method
+            </UTooltip>
+          </h3>
+          <p>{{ mostPopularPaymentMethod }}</p>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold mb-4">
+            <UTooltip text="This card displays the upcoming orders">
+              Upcoming Orders
+            </UTooltip>
+          </h3>
+          <div class="overflow-auto">
+            <pre>{{ upcomingOrders }}</pre>
+          </div>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold mb-4">
+            <UTooltip text="This card displays the completed orders">
+              Completed Orders
+            </UTooltip>
+          </h3>
+          <div class="overflow-auto">
+            <pre>{{ completedOrders }}</pre>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { useOrderStore } from '@/stores/orders'
 
 const orderStore = useOrderStore()
@@ -114,6 +180,27 @@ const tests = ref([
   { name: 'Update Order Test', score: 0.9, isRunning: false, isPaused: false },
   { name: 'Delete Order Test', score: 0.7, isRunning: false, isPaused: false },
 ])
+
+const medianOrderValue = ref('')
+const mostPopularPlatform = ref('')
+const mostPopularPaymentMethod = ref('')
+const upcomingOrders = ref([])
+const completedOrders = ref([])
+
+const fetchData = async () => {
+  let start_date = '2024-05-03'
+  let end_date = '2024-09-03'
+  medianOrderValue.value = await orderStore.getMedianOrderValue(start_date, end_date)
+  mostPopularPlatform.value = await orderStore.getMostPopularPlatform(start_date, end_date)
+  mostPopularPaymentMethod.value = await orderStore.getMostPopularPaymentMethod(start_date, end_date)
+  upcomingOrders.value = await orderStore.getUpcomingOrders(start_date, end_date)
+  completedOrders.value = await orderStore.getCompletedOrders(start_date, end_date)
+  console.log(medianOrderValue.value)
+}
+
+onMounted(async () => {
+  await fetchData()
+})
 
 const handleAction = async (action) => {
   console.log(`Handling ${action} order action`)
@@ -146,6 +233,7 @@ const handleAction = async (action) => {
       },
     }
     await orderStore.createOrder(newOrder)
+    await fetchData()
   }
 
   // Read
@@ -168,12 +256,14 @@ const handleAction = async (action) => {
     const orderToDelete = orderStore.orders[0]
     if (orderToDelete) {
       await orderStore.deleteOrder(orderToDelete)
+      await fetchData()
     }
   }
 
   // Populate Orders
   if (action === 'populate orders') {
     await populateOrders()
+    await fetchData()
   }
 }
 

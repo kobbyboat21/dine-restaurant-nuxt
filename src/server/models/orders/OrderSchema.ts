@@ -9,8 +9,7 @@ const orderSchema = new mongoose.Schema({
     type: Number,
     required: true
   },
-  platformName: {
-    type: String,
+  platformName: { type: String,
     required: true
   },
   orderItemsList: [
@@ -79,4 +78,3 @@ const orderSchema = new mongoose.Schema({
 const Order = mongoose.model('Order', orderSchema)
 
 export default Order
-

@@ -4,7 +4,8 @@ export default defineNuxtConfig({
 // ENVIRONMENT VARIABLES
 devtools: { enabled: true },
   runtimeConfig: { 
-    MONGO_URI: process.env.MONGO_URI
+    MONGO_URI: process.env.MONGO_URI,
+    FLASK_API: process.env.FLASK_API
   },
 
 
