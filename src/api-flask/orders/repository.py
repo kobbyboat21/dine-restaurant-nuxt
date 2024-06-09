@@ -2,7 +2,7 @@ class OrderRepository:
     def __init__(self, DB):
         # Assign MongoDB database to object
         self.DB = DB
-        self.db_name = "orders_db"
+        self.db_name = "test"
         self.collection_name = "orders"
         self.collection = self.DB.create_collection(self.db_name, self.collection_name)
 
