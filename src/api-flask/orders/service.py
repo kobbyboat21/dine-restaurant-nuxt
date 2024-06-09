@@ -2,7 +2,7 @@ class OrderService:
     def __init__(self, ORDERS_REPOSITORY):
         self.ORDERS_REPOSITORY = ORDERS_REPOSITORY
 
-    def upcoming_orders(self):
+    def upcoming_orders(self, start_date=None, end_date=None):
         from bson import json_util
         query = {
             "$or": [
@@ -11,15 +11,19 @@ class OrderService:
                 {"TIMESTAMPS.DELIVERED": None}
             ]
         }
+        if start_date and end_date:
+            query["TIMESTAMPS.PLACED"] = {"$gte": start_date, "$lte": end_date}
         orders = self.ORDERS_REPOSITORY.read_order(query)
         orders = json_util.dumps(orders)
         return orders
 
-    def completed_orders(self):
+    def completed_orders(self, start_date=None, end_date=None):
         from bson import json_util
         query = {
             "TIMESTAMPS.DELIVERED": {"$ne": None}
         }
+        if start_date and end_date:
+            query["TIMESTAMPS.DELIVERED"] = {"$gte": start_date, "$lte": end_date}
         orders = self.ORDERS_REPOSITORY.read_order(query)
         orders = json_util.dumps(orders)
         return orders

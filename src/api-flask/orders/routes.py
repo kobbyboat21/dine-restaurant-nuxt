@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Blueprint, request
 from .service import OrderService
 from .repository import OrderRepository
 from util.db.mongo import MongoDB
@@ -14,20 +14,32 @@ def version():
 # Upcoming Orders
 @BLUEPRINT_ORDERS.route('/api/orders/upcoming', methods=['GET'])
 def upcoming_orders():
+    start_date = request.args.get('start_date')
+    end_date = request.args.get('end_date')
     mongo = MongoDB(MONGO_URI)
     mongo.connect()
     order_repository = OrderRepository(mongo)
     order_service = OrderService(order_repository)
-    return order_service.upcoming_orders()
+    return order_service.upcoming_orders(start_date, end_date)
+
 
 # Completed Orders
+# @BLUEPRINT_ORDERS.route('/api/orders/completed', methods=['GET'])
+# def completed_orders():
+#     mongo = MongoDB(MONGO_URI)
+#     mongo.connect()
+#     order_repository = OrderRepository(mongo)
+#     order_service = OrderService(order_repository)
+#     return order_service.completed_orders()
 @BLUEPRINT_ORDERS.route('/api/orders/completed', methods=['GET'])
 def completed_orders():
+    start_date = request.args.get('start_date')
+    end_date = request.args.get('end_date')
     mongo = MongoDB(MONGO_URI)
     mongo.connect()
     order_repository = OrderRepository(mongo)
     order_service = OrderService(order_repository)
-    return order_service.completed_orders()
+    return order_service.completed_orders(start_date, end_date)
 
 # Most Popular Items
 @BLUEPRINT_ORDERS.route('/api/orders/most-popular-items', methods=['GET'])
