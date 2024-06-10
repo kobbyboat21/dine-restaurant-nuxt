@@ -37,7 +37,12 @@ const chartData = reactive({
 })
 
 const options = {
-  responsive: true
+  responsive: true,
+  plugins: {
+  legend: {
+    display: false
+  }
+}
 }
 
 watchEffect(() => {
@@ -52,7 +57,7 @@ watchEffect(() => {
     chartData.labels = [meal1_title.value, meal2_title.value, meal3_title.value]
     chartData.datasets = [
       {
-        backgroundColor: '#9BD0F5',
+        backgroundColor: '#4ADE80',
         data: [meal1_data.value, meal2_data.value, meal3_data.value],
       },
     ]
