@@ -9,6 +9,7 @@ export const useOrderStore = defineStore('orderStore', {
     mostOrderedDinnerMeal: null,
     upcomingOrders: [],
     completedOrders: [],
+    mostPopularItems: [],
     mostPopularPaymentMethod: null,
     mostPopularPlatform: null,
     medianOrderValue: null,
@@ -132,6 +133,17 @@ export const useOrderStore = defineStore('orderStore', {
       });
       return this.mostPopularPlatform
     },
+
+    async getMostPopularItems(startDate, endDate) {
+      const data = await useFetch(`/api/orders/analytics/most-popular/items?start_date=${startDate}&end_date=${endDate}`);
+      this.$patch((state) => {
+        state.mostPopularItems = data.data;
+      });
+      console.log("MOST POPULAR: ", data.data, this.mostPopularItems)
+      return this.mostPopularItems
+    },
+
+
 
     async getMedianOrderValue(startDate, endDate) {
       const data = await useFetch(`/api/orders/analytics/median-order-value?start_date=${startDate}&end_date=${endDate}`);

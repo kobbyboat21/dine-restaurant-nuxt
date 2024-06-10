@@ -31,15 +31,29 @@ class OrderService:
         orders = json_util.dumps(orders)
         return orders
 
-    def most_popular_items(self):
+    def most_popular_items(self, start_date=None, end_date=None):
         pipeline = [
+            # Unwind the orderItemsList field to create a separate document for each item in the list.
             {"$unwind": "$orderItemsList"},
-            {"$group": {"_id": "$orderItemsList", "count": {"$sum": 1}}},
-            {"$sort": {"count": -1}},
-            {"$limit": 3}
+            # Filter the documents based on the timestamps
+            {"$match": {
+                "timestamps.placed": {
+                    "$ne": None,
+                    "$gte": start_date,
+                    "$lte": end_date
+                }
+            }},
         ]
-        #TODO: Deserialise List and find most popular items from that - this is buggy
+        pipeline.extend([
+            # # Group the documents by each unique item and count the occurrences of each item.
+            {"$group": {"_id": "$orderItemsList", "count": {"$sum": 1}}},
+            # Sort the results in descending order based on the count.
+            {"$sort": {"count": -1}},
+            # Limit the results to 3 documents, which will be the most popular single items.
+            {"$limit": 3}
+        ])
         return self.ORDERS_REPOSITORY.aggregate(pipeline)
+
 
     # Most Popular Platform
     def most_popular_platform(self, start_date=None, end_date=None):

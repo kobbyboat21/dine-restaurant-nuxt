@@ -36,11 +36,13 @@ def completed_orders():
 # Most Popular Items
 @BLUEPRINT_ORDERS.route('/api/orders/most-popular-items', methods=['GET'])
 def most_popular_items():
+    start_date = request.args.get('start_date')
+    end_date = request.args.get('end_date')
     mongo = MongoDB(MONGO_URI)
     mongo.connect()
     order_repository = OrderRepository(mongo)
     order_service = OrderService(order_repository)
-    return order_service.most_popular_items()
+    return order_service.most_popular_items(start_date, end_date)
 
 # Most Popular Platform
 @BLUEPRINT_ORDERS.route('/api/orders/most-popular-platform', methods=['GET'])

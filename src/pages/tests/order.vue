@@ -145,6 +145,16 @@
         </div>
         <div class="bg-gray-800 rounded-lg shadow-md p-6">
           <h3 class="text-xl font-bold mb-4">
+            <UTooltip text="This card displays the most popular items">
+              Most Popular Items
+            </UTooltip>
+          </h3>
+          <div class="overflow-auto">
+            <pre>{{ mostPopularItems }}</pre>
+          </div>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold mb-4">
             <UTooltip text="This card displays the upcoming orders">
               Upcoming Orders
             </UTooltip>
@@ -184,6 +194,7 @@ const tests = ref([
 const medianOrderValue = ref('')
 const mostPopularPlatform = ref('')
 const mostPopularPaymentMethod = ref('')
+const mostPopularItems = ref([])
 const upcomingOrders = ref([])
 const completedOrders = ref([])
 
@@ -193,6 +204,7 @@ const fetchData = async () => {
   medianOrderValue.value = await orderStore.getMedianOrderValue(start_date, end_date)
   mostPopularPlatform.value = await orderStore.getMostPopularPlatform(start_date, end_date)
   mostPopularPaymentMethod.value = await orderStore.getMostPopularPaymentMethod(start_date, end_date)
+  mostPopularItems.value = await orderStore.getMostPopularItems(start_date, end_date)
   upcomingOrders.value = await orderStore.getUpcomingOrders(start_date, end_date)
   completedOrders.value = await orderStore.getCompletedOrders(start_date, end_date)
   console.log(medianOrderValue.value)
