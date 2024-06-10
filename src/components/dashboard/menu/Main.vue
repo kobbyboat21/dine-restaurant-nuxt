@@ -41,6 +41,7 @@ let mostPopularItems = ref([])
 let mostOrderedBreakfast = ref('')
 let mostOrderedLunch = ref('')
 let mostOrderedDinner = ref('')
+let chartItems = ref([])
 
 function formatDate(date) {
   return date.toISOString().slice(0, 10);
@@ -81,20 +82,22 @@ const fetch_order_chart_cards = async (time_period) => {
 
   start_date = formatDate(start_date)
   end_date = formatDate(end_date)
-  // console.log('DAILY', start_date, end_date)
+
   mostPopularItems.value = await orderStore.getMostPopularItems(start_date, end_date)
-  mostOrderedBreakfast.value = mostPopularItems.value[0]['_id']
-  mostOrderedLunch.value = mostPopularItems.value[1]['_id']
+
+  mostOrderedBreakfast.value = await mostPopularItems.value[0]['_id']
+  mostOrderedLunch.value = await mostPopularItems.value[1]['_id']
   if (mostPopularItems[2]){
-    mostOrderedDinner.value = mostPopularItems.value[2]['_id']
+    mostOrderedDinner.value = await mostPopularItems.value[2]['_id']
   } 
   else {
-    mostOrderedDinner.value = mostPopularItems.value[0]['_id']
+    mostOrderedDinner.value = await mostPopularItems.value[0]['_id']
   }
 
-  console.log("MOST POPULAR ITEMS MENU: ", mostPopularItems.value, "BREAKFAST: ", mostOrderedBreakfast)
-  console.log("LUNCH: ", mostOrderedLunch)
-  console.log("DINNER: ", mostOrderedDinner)
+  if (mostPopularItems.value){
+    chartItems.value = await mostPopularItems.value
+    console.log(chartItems)
+  }
 };
 
 // Run on load
@@ -111,8 +114,6 @@ watch([mostPopularItems, mostOrderedBreakfast, mostOrderedLunch, mostOrderedDinn
     fetch_order_chart_cards(time_period)
   }
 })
-
-
 </script>
 
 
@@ -163,35 +164,41 @@ watch([mostPopularItems, mostOrderedBreakfast, mostOrderedLunch, mostOrderedDinn
   </div>
   <div v-if="$viewport.isLessThan('tablet')" class="hidden my-5">
       <DashboardMenuChartCard 
-        type="Avocado Toast with Smoked Salmon" 
-        meal="Breakfast" 
+        :meal="mostOrderedBreakfast" 
+        type="Breakfast" 
+        :values="chartItems"
         data-aos="fade-right"
       />
       <DashboardMenuChartCard 
-        type="Mushroom and Truffle Risotto" 
-        meal="Lunch" 
+        :meal="mostOrderedLunch" 
+        type="Lunch" 
+        :values="chartItems"
         data-aos="fade-down"
       />
       <DashboardMenuChartCard 
-        type="Lobster Ravioli with Saffron Cream Sauce" 
-        meal="Dinner" 
+        :meal="mostOrderedDinner" 
+        type="Dinner" 
+        :values="chartItems"
         data-aos="fade-left"
       />
   </div>
   <div v-else class="visible grid grid-cols-3 my-5">
       <DashboardMenuChartCard 
-        type="Avocado Toast with Smoked Salmon" 
-        meal="Breakfast" 
+        :meal="mostOrderedBreakfast" 
+        type="Breakfast" 
+        :values="chartItems"
         data-aos="fade-right"
       />
       <DashboardMenuChartCard 
-        type="Mushroom and Truffle Risotto" 
-        meal="Lunch" 
+        :meal="mostOrderedLunch" 
+        type="Lunch" 
+        :values="chartItems"
         data-aos="fade-down"
       />
       <DashboardMenuChartCard 
-        type="Lobster Ravioli with Saffron Cream Sauce" 
-        meal="Dinner" 
+        :meal="mostOrderedDinner" 
+        type="Dinner" 
+        :values="chartItems"
         data-aos="fade-left"
       />
   </div>

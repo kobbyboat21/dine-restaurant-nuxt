@@ -1,8 +1,9 @@
 <script setup>
 
-defineProps({
+let props = defineProps({
   type: String,
-  meal: String
+  meal: String,
+  values: Array
 })
 
 </script>
@@ -12,10 +13,15 @@ defineProps({
 <template>
 
 <UCard class="mx-3 text-center">
-  <p class="font-bold text-l text-green-400">{{ type }}</p>
-    <p class="mt-2"> Most Ordered {{meal}} Meal </p>
-    <p> This Year </p>
-  <DashboardUtilsChartsBar/>
+    <div v-if="props.values.length > 0">
+    <p class="font-bold text-l text-green-400">{{ meal }}</p>
+      <p class="mt-2"> Most Ordered {{type}} </p>
+      <p> Today </p>
+    <DashboardUtilsChartsBar :values="props.values"/>
+  </div>
+  <div v-else>
+    Loading...
+  </div>
 </UCard>
 
 </template>
