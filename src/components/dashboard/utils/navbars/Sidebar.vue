@@ -3,23 +3,33 @@ const links = [{
   label: 'Dashboard',
   to: '/dashboard',
   icon: 'i-heroicons-adjustments-horizontal',
-}, { 
+}, 
+  { 
   label: 'Menus',
   to: '/dashboard/menu',
   icon: 'i-heroicons-bars-4',
-}, {
+}, 
+  { 
+  label: 'Orders',
+  to: '/dashboard/orders',
+  icon: 'i-material-symbols-package-2',
+}, 
+  {
   label: 'Bookings',
   to: '/dashboard/bookings',
   icon: 'i-heroicons-book-open',
-}, {
+}, 
+  {
   label: 'Inventory',
   to: '/dashboard/inventory',
   icon: 'i-heroicons-archive-box',
-}, {
+}, 
+  {
   label: 'Tasks',
   to: '/dashboard/tasks',
   icon: 'i-heroicons-rectangle-stack',
-}, {
+}, 
+  {
   label: 'Landing Page',
   to: '/',
   icon: 'i-heroicons-building-office-2',
@@ -30,6 +40,10 @@ function logOut(){
   signOut( {callbackUrl: '/dashboard/login', external: true})
   navigateTo('/dashboard/login', {external: true})
   }
+
+function containsHeroIcons(str) {
+  return str.includes('heroicons');
+}
 </script>
 
 <template>
@@ -37,7 +51,25 @@ function logOut(){
     <div class="flex justify-center mt-6">
       <img src="/LOGO.png" class="sm:visible ml-3" />
     </div>
-    <UVerticalNavigation :links="links" class="sm:visible mt-8 mx-auto" />
+    <UVerticalNavigation :links="links" class="sm:visible mt-8 mx-auto">
+          <template #icon="{ link, isActive }">
+            <div v-if="isActive" class="flex items-center">
+              <UIcon name="i-heroicons-arrow-small-right-solid" class="bg-green-400"/>
+            </div>
+            <div v-else>
+              <UIcon :name="link.icon" dynamic />
+            </div>
+          </template>
+    </UVerticalNavigation>
+    <!-- <UVerticalNavigation :links="links" class="sm:visible mt-8 mx-auto"> -->
+    <!--   <template #icon="{ link, isActive }"> -->
+    <!--     <UIcon :name="link.icon" :class="{ 'active-icon': isActive }" dynamic /> -->
+    <!--   </template> -->
+    <!--   <template #label="{ link, isActive }"> -->
+    <!--     <span :class="{ 'active-label': isActive }">{{ link.label }}</span> -->
+    <!--   </template> -->
+    <!-- </UVerticalNavigation> -->
+
     <div class="hidden sm:block mx-auto mt-8">
       <div @click="logOut()" class="bg-red-500 hover:bg-red-600 text-white rounded-full px-4 py-2">
         Logout
