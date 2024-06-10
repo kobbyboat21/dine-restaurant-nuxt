@@ -3,17 +3,78 @@ import { defineStore } from "pinia";
 export const useBookingStore = defineStore('bookingStore', {
   state: () => ({
 		// List of all bookings
-		bookings: [] 
+		bookings: [],
+    upcomingBookings: [],
+    completedBookings: [],
+    cancelledBookings: [],
+
 	}),
   actions: {
  
   async getBookings() {
-    let data = await $fetch("/api/reservations/") // bookings gotten from the database
+    let data = await $fetch("/api/bookings/") // bookings gotten from the database
       //
   // 2 -- Use Javascript For - In Loop on data array to set bookings to contain data's contents
     this.bookings = data
     return data
   },
+
+  async getCompletedBookings(startDate, endDate) {
+    const data = await useFetch(`/api/bookings/completed?start_date=${startDate}&end_date=${endDate}`);
+    this.$patch((state) => {
+      state.completedBookings = data.data;
+    });
+    return this.completedBookings
+  },
+
+  async getUpcomingBookings(startDate, endDate) {
+    const data = await useFetch(`/api/bookings/upcoming?start_date=${startDate}&end_date=${endDate}`);
+    // console.log("UPCOmIng", data)
+    this.$patch((state) => {
+      state.upcomingBookings = data.data;
+    });
+    return this.upcomingBookings },
+
+  async getCancelledBookings(startDate, endDate) {
+    const data = await useFetch(`/api/bookings/cancelled?start_date=${startDate}&end_date=${endDate}`);
+    this.$patch((state) => {
+      state.cancelledBookings = data.data;
+    });
+    return this.cancelledBookings
+  },
+
+  async getCompletedBookingsCount(startDate, endDate) {
+    const data = await useFetch(`/api/bookings/completed?start_date=${startDate}&end_date=${endDate}`);
+    // console.log("UPCOmIng", data)
+    this.$patch((state) => {
+      state.completedBookings = data.data;
+    });
+    return this.completedBookings.length
+  },
+
+  async getUpcomingBookingsCount(startDate, endDate) {
+    const data = await useFetch(`/api/bookings/upcoming?start_date=${startDate}&end_date=${endDate}`);
+    this.$patch((state) => {
+      state.upcomingBookings = data.data;
+    });
+    return this.upcomingBookings.length
+  },
+
+  async getCancelledBookingsCount(startDate, endDate) {
+    const data = await useFetch(`/api/bookings/cancelled?start_date=${startDate}&end_date=${endDate}`);
+    this.$patch((state) => {
+      state.cancelledBookings = data.data;
+    });
+    return this.cancelledBookings.length
+  },
+
+  async getRemainingCapacityCount(startDate, endDate) {
+    const upcomingBookingsCount = await this.getUpcomingBookingsCount(startDate, endDate);
+    const totalCapacity = 200; // Will be manually entered by restaurant
+    const remainingCapacity = totalCapacity - upcomingBookingsCount;
+    console.log(`Remaining capacity: ${remainingCapacity}`)
+    return remainingCapacity
+    },
 
   async createBooking(booking) {
     // Get Auto-increment ID
@@ -39,6 +100,7 @@ export const useBookingStore = defineStore('bookingStore', {
       found.name = booking.name
       found.section = booking.section
       found.capacity = booking.capacity
+      found.status = booking.status
       found.datetime = booking.datetime
       let id = found._id
 
@@ -50,7 +112,6 @@ export const useBookingStore = defineStore('bookingStore', {
         }
         )
     }
-
       
   },
 

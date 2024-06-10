@@ -2,7 +2,7 @@
 from flask import Flask
 # Import Flask Blueprints (Routes)
 from menus.routes import BLUEPRINT_MENUS
-from reservations.routes import BLUEPRINT_RESERVATIONS
+from bookings.routes import BLUEPRINT_BOOKINGS
 from orders.routes import BLUEPRINT_ORDERS
 from inventory.routes import BLUEPRINT_INVENTORY
 from tasks.routes import BLUEPRINT_TASKS
@@ -16,7 +16,7 @@ def ping():
 
 # Register blueprints for API domains
 app.register_blueprint(BLUEPRINT_MENUS)
-app.register_blueprint(BLUEPRINT_RESERVATIONS)
+app.register_blueprint(BLUEPRINT_BOOKINGS)
 app.register_blueprint(BLUEPRINT_ORDERS)
 app.register_blueprint(BLUEPRINT_INVENTORY)
 app.register_blueprint(BLUEPRINT_TASKS)

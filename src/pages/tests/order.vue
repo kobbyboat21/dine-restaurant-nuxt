@@ -199,8 +199,8 @@ const upcomingOrders = ref([])
 const completedOrders = ref([])
 
 const fetchData = async () => {
-  let start_date = '2024-05-03'
-  let end_date = '2024-09-03'
+  let start_date = '2022-05-03'
+  let end_date = '2025-09-03'
   medianOrderValue.value = await orderStore.getMedianOrderValue(start_date, end_date)
   mostPopularPlatform.value = await orderStore.getMostPopularPlatform(start_date, end_date)
   mostPopularPaymentMethod.value = await orderStore.getMostPopularPaymentMethod(start_date, end_date)

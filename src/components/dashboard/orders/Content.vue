@@ -56,6 +56,8 @@ const fetch_order_status_cards = async (time_period) => {
   completed_orders.value = await getCompletedOrdersCount(start_date, end_date);
 };
 
+console.log(completed_orders)
+  
 // Run on load
 onMounted(async() => {
   await fetch_order_status_cards(time_period)
