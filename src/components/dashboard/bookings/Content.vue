@@ -1,11 +1,14 @@
 <script setup>
 
 const bookingStore = useBookingStore()
-const { getBookings, getUpcomingBookingsCount, getCompletedBookingsCount, getUpcomingBookings, getCompletedBookings, getCancelledBookings } = bookingStore
+const { getBookings, getUpcomingBookingsCount, getCompletedBookingsCount, 
+        getUpcomingBookings, getCompletedBookings, getCancelledBookingsCount, 
+        getRemainingCapacityCount } = bookingStore
 
 const upcoming_bookings = ref('')
 const completed_bookings = ref('')
 const cancelled_bookings = ref('')
+const remaining_capacity = ref('')
 
 let time_period = 'annual'
 
@@ -49,6 +52,7 @@ const fetch_booking_status_cards = async (time_period) => {
   upcoming_bookings.value = await getUpcomingBookingsCount(start_date, end_date);
   completed_bookings.value = await getCompletedBookingsCount(start_date, end_date);
   cancelled_bookings.value = await getCancelledBookingsCount(start_date, end_date);
+  remaining_capacity.value = await getRemainingCapacityCount(start_date, end_date);
 };
 
 // Run on load
@@ -58,8 +62,8 @@ onMounted(async() => {
 
 // Update display when data changes
 
-watch([upcoming_bookings, completed_bookings, cancelled_bookings], ([newUpcoming, newCompleted, newCancelled]) => {
-  if (newUpcoming && newCompleted && newCancelled) {
+watch([upcoming_bookings, completed_bookings, remaining_capacity, cancelled_bookings], ([newUpcoming, newCompleted, newRemainingCapacity, newCancelled]) => {
+  if (newUpcoming && newCompleted && newCancelled && newRemainingCapacity) {
     console.log('All data fetched successfully');
   } else {
     console.log('Data fetch failed.');
@@ -126,7 +130,7 @@ const handleTabChange = (index) => {
         data-aos="fade-right" 
       />
       <DashboardUtilsCardsStatus 
-        :value=most_popular_platform 
+        :value=remaining_capacity 
         icon="i-material-symbols-table-restaurant-outline" 
         type="Remaining Capacity" 
         data-aos="fade-left" 
