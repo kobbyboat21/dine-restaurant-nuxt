@@ -1,4 +1,6 @@
 <script setup>
+//TODO: Extract Modal into it's own component shared with the "Edit" button
+//TODO: Convert Pinia Store to be Order Store
 
 let createBookingModal = ref(false)
 import { format } from 'date-fns'
@@ -35,7 +37,8 @@ async function submit(){
         icon="i-heroicons-plus"
         color="gray"
         variant="solid"
-        label="Create Booking"/>
+        label="Create Order"
+  />
 
     <UModal v-model="createBookingModal">
       <UCard :ui="{ ring: '', divide: 'divide-y divide-gray-100 dark:divide-gray-800' }">

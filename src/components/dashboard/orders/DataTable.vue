@@ -100,7 +100,7 @@ const dateFields = [
     </div>
     <!-- v-else, then render full size component -->
     <div v-else >
-      <DashboardBookingsModalsCreate />
+      <DashboardOrdersModalsCreate />
      <DashboardUtilsTablesDesktop :menu='orders' :columns='columns' :dateFields='dateFields'/>
     </div>
   </UCard>
