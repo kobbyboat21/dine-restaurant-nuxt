@@ -61,6 +61,7 @@ class BookingService:
         booking_date = datetime.now()
         booking_section = random.choice(['Front View', 'Back View', 'Bar Island'])
         booking_status = random.choice(['upcoming', 'cancelled', 'completed'])
+        # booking_status = 'cancelled'
         booking_capacity = fake.random_int(min=2, max=6)
 
         return {

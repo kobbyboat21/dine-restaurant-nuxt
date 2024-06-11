@@ -17,6 +17,7 @@ const booking = {
   name: "",
   section: "",
   capacity: "",
+  status: "upcoming",
   datetime: Date()
 }
 

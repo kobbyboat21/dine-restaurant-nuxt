@@ -22,6 +22,9 @@ function edit() {
   editBooking(booking)
 }
 
+const status = ['upcoming', 'completed', 'cancelled']
+
+const status_placeholder = ref(status[0])
 </script>
 
 <template>
@@ -48,6 +51,9 @@ function edit() {
           </UFormGroup>
           <UFormGroup label="Number of Guests">
             <UInput v-model="booking.capacity"/>
+          </UFormGroup>
+          <UFormGroup label="Status">
+            <USelect v-model="booking.status" :options="status"/>
           </UFormGroup>
           <UFormGroup label="Date & Time">
             <UPopover :popper="{ placement: 'bottom-start' }">

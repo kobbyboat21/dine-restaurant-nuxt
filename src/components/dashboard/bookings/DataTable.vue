@@ -31,6 +31,9 @@ const columns = [{
   label: 'Maximum Capacity',
   direction: 'desc'
 }, {
+  key:'status',
+  label: 'Status'
+}, {
   key: 'edit',
   label: 'Edit',
 }, {
@@ -64,6 +67,7 @@ const mobile_columns = [{
     </div>
     <!-- v-else, then render full size component -->
     <div v-else >
+      <DashboardBookingsModalsCreate />
      <DashboardUtilsTablesDesktop :menu='bookings' :columns='columns'/>
     </div>
   </UCard>
