@@ -24,6 +24,9 @@ function format_dates(date_string) {
     <template v-for="field in dateFields" :key="field.key" #[field.key]="{row}">
       {{ format_dates(row[field.key]) }}
     </template>
+    <template #deliveryInfo-data="{row}">
+      <DashboardOrdersModalsDetails class="ml-11" :bookingitem="row" />
+    </template>
     <template #edit-data="{row}">
       <DashboardBookingsModalsEdit :bookingitem="row" />
     </template>

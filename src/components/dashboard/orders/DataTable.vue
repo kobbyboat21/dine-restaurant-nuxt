@@ -13,17 +13,18 @@ defineProps({
   columns: String
 })
 
-const columns = [{
+const columns = [
+  {
   key: 'orderId',
   label: 'ID'
 }, 
   {
-  key: 'platformName',
-  label: 'Platform Name',
-}, 
-  {
   key: 'customerId',
   label: 'Customer ID',
+}, 
+  {
+  key: 'platformName',
+  label: 'Platform Name',
 }, 
   {
   key: 'orderValue',
@@ -34,10 +35,6 @@ const columns = [{
   label: 'Order Items',
 }, 
   {
-  key: 'deliveryInfo.address',
-  label: 'Delivery Information',
-}, 
-  {
   key: 'paymentMethod',
   label: 'Payment Method',
 }, 
@@ -46,17 +43,21 @@ const columns = [{
   label: 'Placed',
   sortable: true
 }, 
+//   {
+//   key: 'timestamps.prepared',
+//   label: 'Prepared',
+// },
+//   {
+//   key: 'timestamps.outForDelivery',
+//   label: 'Out for Delivery',
+// }, 
+//   {
+//   key: 'timestamps.delivered',
+//   label: 'Delivered',
+// }, 
   {
-  key: 'timestamps.prepared',
-  label: 'Prepared',
-},
-  {
-  key: 'timestamps.outForDelivery',
-  label: 'Out for Delivery',
-}, 
-  {
-  key: 'timestamps.delivered',
-  label: 'Delivered',
+  key: 'deliveryInfo',
+  label: 'Delivery Information',
 }, 
   {
   key: 'edit',
