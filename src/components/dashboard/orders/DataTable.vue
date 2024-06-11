@@ -70,38 +70,45 @@ const columns = [
 
 ]
 
-const mobile_columns = [{
-  key: 'name',
-  label: 'Booking Name',
-}, {
-  key: 'time',
-  label: 'Time',
+const mobile_columns = [
+  {
+  key: 'orderId',
+  label: 'Order ID',
+}, 
+{
+  key: 'customerId',
+  label: 'Customer ID',
+}, 
+{
+  key: 'deliveryInfo',
+  label: 'Details',
+}, 
+  {
+  key: 'timestamps.placed',
+  label: 'Placed',
   sortable: true
-}, {
-  key: 'edit',
-    label: 'Edit',
-}
+}, 
 ]
 
 const dateFields = [
-  { key: 'timestamps.placed', label: 'Placed' },
-  { key: 'timestamps.prepared', label: 'Prepared' },
-  { key: 'timestamps.outForDelivery', label: 'Out for Delivery' },
-  { key: 'timestamps.delivered', label: 'Delivered' },
+  { key: 'placed', label: 'Placed' },
+  { key: 'prepared', label: 'Prepared' },
+  { key: 'outForDelivery', label: 'Out for Delivery' },
+  { key: 'delivered', label: 'Delivered' },
 ]
 
 </script>
 
 <template>
   <!-- v-if < tablet screen size, then render mobile -->
-  <UCard>
     <div v-if="$viewport.isLessThan('tablet')" >
-     <DashboardUtilsTablesMobile :menu='orders' :columns='mobile_columns'/>
+     <DashboardUtilsTablesMobile :menu='orders' :columns='mobile_columns' :dateFields='dateFields'/>
     </div>
     <!-- v-else, then render full size component -->
     <div v-else >
-      <DashboardOrdersModalsCreate />
-     <DashboardUtilsTablesDesktop :menu='orders' :columns='columns' :dateFields='dateFields'/>
+    <UCard>
+        <DashboardOrdersModalsCreate />
+       <DashboardUtilsTablesDesktop :menu='orders' :columns='columns' :dateFields='dateFields'/>
+    </UCard>
     </div>
-  </UCard>
 </template>

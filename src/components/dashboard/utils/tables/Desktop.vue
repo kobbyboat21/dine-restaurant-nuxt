@@ -17,6 +17,12 @@ function format_dates(date_string) {
   var result = "" + (date.getDay() + 1) + "/" + (date.getMonth() + 1) + "/" + date.getFullYear() + ", " + date.toLocaleTimeString()
   return result
 }
+function get_date_slot_name(field_key){
+  const slot_name = `timestamps.${field_key}-data`
+  return slot_name
+}
+
+
 </script>
 
 <template>
@@ -33,6 +39,9 @@ function format_dates(date_string) {
     <template #delete-data="{row}">
       <DashboardBookingsModalsDelete :bookingitem="row" />
     </template>
+      <template v-for="field in dateFields" :key="field.key" #[get_date_slot_name(field.key)]="{row}">
+            {{ format_dates(row.timestamps[field.key]) }}
+      </template>
   </UTable>
 </template>
 
