@@ -6,6 +6,8 @@ devtools: { enabled: true },
   runtimeConfig: { 
     MONGO_URI: process.env.MONGO_URI,
     FLASK_API: process.env.FLASK_API
+    // MONGO_URI: 'mongodb://root:example@mongo:27017',
+    // FLASK_API: 'http://flask:5000/api/'
   },
 
 
@@ -47,7 +49,8 @@ devtools: { enabled: true },
       enableRefreshPeriodically: 5000
     },
     globalAppMiddleware: {
-      isEnabled: true
+      // isEnabled: true
+      isEnabled: false
     }
   },
   routeRules: {

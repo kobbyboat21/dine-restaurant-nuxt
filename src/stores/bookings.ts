@@ -49,7 +49,7 @@ export const useBookingStore = defineStore('bookingStore', {
     this.$patch((state) => {
       state.completedBookings = data.data;
     });
-    return this.completedBookings.length
+    return JSON.parse(this.completedBookings).length
   },
 
   async getUpcomingBookingsCount(startDate, endDate) {
@@ -57,7 +57,7 @@ export const useBookingStore = defineStore('bookingStore', {
     this.$patch((state) => {
       state.upcomingBookings = data.data;
     });
-    return this.upcomingBookings.length
+    return JSON.parse(this.upcomingBookings).length
   },
 
   async getCancelledBookingsCount(startDate, endDate) {
@@ -65,7 +65,7 @@ export const useBookingStore = defineStore('bookingStore', {
     this.$patch((state) => {
       state.cancelledBookings = data.data;
     });
-    return this.cancelledBookings.length
+    return JSON.parse(this.cancelledBookings).length
   },
 
   async getRemainingCapacityCount(startDate, endDate) {

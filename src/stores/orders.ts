@@ -107,7 +107,7 @@ export const useOrderStore = defineStore('orderStore', {
       this.$patch((state) => {
         state.upcomingOrders = data.data;
       });
-      return this.upcomingOrders.length
+      return JSON.parse(this.upcomingOrders).length
     },
 
     async getCompletedOrdersCount(startDate, endDate) {
@@ -115,7 +115,7 @@ export const useOrderStore = defineStore('orderStore', {
       this.$patch((state) => {
         state.completedOrders = data.data;
       });
-      return this.completedOrders.length
+      return JSON.parse(this.completedOrders).length
     },
 
     async getMostPopularPaymentMethod(startDate, endDate) {

@@ -4,6 +4,7 @@ from .repository import OrderRepository
 from util.db.mongo import MongoDB
 
 
+# MONGO_URI = "mongodb://root:example@mongo:27017/"
 MONGO_URI = "mongodb://root:example@localhost:27017/"
 BLUEPRINT_ORDERS = Blueprint('orders', __name__)
 
