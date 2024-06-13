@@ -17,7 +17,7 @@ const time_period = 'Today'
   <!-- <UIcon :name="icon" class="bg-green-400" dynamic /> -->
       {{value}}</p>
   <p>{{type}}</p>
-    <p> {{time_period}} </p>
+    <!-- <p> {{time_period}} </p> -->
 </UCard>
 
 </template>

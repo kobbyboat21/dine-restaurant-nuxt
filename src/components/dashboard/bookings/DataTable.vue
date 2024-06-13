@@ -61,14 +61,14 @@ const mobile_columns = [{
 
 <template>
   <!-- v-if < tablet screen size, then render mobile -->
-  <UCard>
     <div v-if="$viewport.isLessThan('tablet')" >
      <DashboardUtilsTablesMobile :menu='bookings' :columns='mobile_columns'/>
     </div>
     <!-- v-else, then render full size component -->
     <div v-else >
+    <UCard>
       <DashboardBookingsModalsCreate />
      <DashboardUtilsTablesDesktop :menu='bookings' :columns='columns'/>
+    </UCard>
     </div>
-  </UCard>
 </template>
