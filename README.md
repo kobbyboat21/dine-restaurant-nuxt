@@ -6,6 +6,8 @@ to be offered as a Productised Service,
 to Restaurant Owners and Food Catering Agencies,
 generating $100K+ in annual revenue.***
 
+> **Note:** The codebase here is intentionally incomplete to comply with contractual obligations.
+
 ## Features:
 - Analytics
     - Centralised Data Analytics for all domains:
